@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeView: {fileID: 18568592130359717, guid: cbd35eed42bb52146997b1953b878f43, type: 3}
+  tileView: {fileID: 3754691207158329042, guid: 69ffd2d5cf3851e4ab8dcb7b879f55c7,
+    type: 3}
 --- !u!4 &276696990
 Transform:
   m_ObjectHideFlags: 0

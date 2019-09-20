@@ -8,19 +8,19 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public ViewComponent view { get { return (ViewComponent)GetComponent(GameComponentsLookup.View); } }
+    public _1010C.Components.ViewComponent view { get { return (_1010C.Components.ViewComponent)GetComponent(GameComponentsLookup.View); } }
     public bool hasView { get { return HasComponent(GameComponentsLookup.View); } }
 
-    public void AddView(IView newValue) {
+    public void AddView(_1010C.Mono.View.View newValue) {
         var index = GameComponentsLookup.View;
-        var component = (ViewComponent)CreateComponent(index, typeof(ViewComponent));
+        var component = (_1010C.Components.ViewComponent)CreateComponent(index, typeof(_1010C.Components.ViewComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
-    public void ReplaceView(IView newValue) {
+    public void ReplaceView(_1010C.Mono.View.View newValue) {
         var index = GameComponentsLookup.View;
-        var component = (ViewComponent)CreateComponent(index, typeof(ViewComponent));
+        var component = (_1010C.Components.ViewComponent)CreateComponent(index, typeof(_1010C.Components.ViewComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

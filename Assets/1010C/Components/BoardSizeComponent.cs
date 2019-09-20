@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace _1010C.Components
 {
-    [Game, Event(EventTarget.Self)]
-    public class GridPositionComponent : IComponent
+    [Game, Unique]
+    public class BoardSizeComponent : IComponent
     {
         public Vector2Int Value;
     }

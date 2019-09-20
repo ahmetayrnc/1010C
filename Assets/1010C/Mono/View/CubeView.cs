@@ -1,12 +1,16 @@
-﻿using Entitas;
-using UnityEngine;
+﻿using _1010C.Mono.ScriptableObjects;
 
-public class CubeView : MonoBehaviour, IView
+namespace _1010C.Mono.View
 {
-    public CubeColors cubeColors;
-    
-    public void Link(IEntity entity)
+    public class CubeView : View
     {
-        throw new System.NotImplementedException();
+        public CubeColors cubeColors;
+        protected override void AddListeners(GameEntity entity)
+        {
+        }
+
+        protected override void InitializeView(GameEntity entity)
+        {
+        }
     }
 }

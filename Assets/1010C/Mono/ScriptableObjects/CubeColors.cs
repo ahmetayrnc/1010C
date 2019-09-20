@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu]
-public class CubeColors : ScriptableObject
+namespace _1010C.Mono.ScriptableObjects
 {
-    public Color color1;
-    public Color color2;
-    public Color color3;
+    [CreateAssetMenu]
+    public class CubeColors : ScriptableObject
+    {
+        public Color color1;
+        public Color color2;
+        public Color color3;
+    }
 }

@@ -9,7 +9,9 @@
       <e p="Assets" t="Include">
         <e p="1010C" t="Include">
           <e p="Components" t="Include">
+            <e p="BoardSizeComponent.cs" t="Include" />
             <e p="GridPositionComponent.cs" t="Include" />
+            <e p="TileComponent.cs" t="Include" />
             <e p="ViewComponent.cs" t="Include" />
           </e>
           <e p="Mono" t="Include">
@@ -19,25 +21,37 @@
             </e>
             <e p="View" t="Include">
               <e p="CubeView.cs" t="Include" />
-              <e p="IView.cs" t="Include" />
+              <e p="TileView.cs" t="Include" />
               <e p="View.cs" t="Include" />
               <e p="ViewFactory.cs" t="Include" />
             </e>
           </e>
-          <e p="Services" t="Include">
-            <e p="ViewService.cs" t="Include" />
-          </e>
           <e p="Systems" t="Include">
             <e p="AddViewSystem.cs" t="Include" />
-            <e p="TestSystem.cs" t="Include" />
+            <e p="InitializeBoardSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
           <e p="Contexts.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="Components" t="Include">
+              <e p="GridPositionListenerComponent.cs" t="Include" />
+            </e>
+            <e p="GameEventSystems.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="IGridPositionListener.cs" t="Include" />
+            </e>
+            <e p="Systems" t="Include">
+              <e p="GridPositionEventSystem.cs" t="Include" />
+            </e>
+          </e>
           <e p="Feature.cs" t="Include" />
           <e p="Game" t="Include">
             <e p="Components" t="Include">
+              <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
+              <e p="GameGridPositionListenerComponent.cs" t="Include" />
+              <e p="GameTileComponent.cs" t="Include" />
               <e p="GameViewComponent.cs" t="Include" />
             </e>
             <e p="GameAttribute.cs" t="Include" />

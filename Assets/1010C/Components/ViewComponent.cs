@@ -1,7 +1,11 @@
-﻿using Entitas;
+﻿using _1010C.Mono.View;
+using Entitas;
 
-[Game]
-public class ViewComponent : IComponent
+namespace _1010C.Components
 {
-    public IView Value;
+    [Game]
+    public class ViewComponent : IComponent
+    {
+        public View Value;
+    }
 }

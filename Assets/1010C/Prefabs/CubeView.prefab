@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5882145618500331928}
   - component: {fileID: 2387453625941658827}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ Transform:
   m_GameObject: {fileID: 3063396259092178922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 8678624552630115065}
   m_Father: {fileID: 5882145618500331928}

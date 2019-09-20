@@ -1,34 +1,39 @@
-﻿using Entitas;
+﻿using _1010C.Systems;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+namespace _1010C.Mono
 {
-    private Systems _systems;
-    private Contexts _contexts;
-
-    void Start()
+    public class GameController : MonoBehaviour
     {
-        _contexts = Contexts.sharedInstance;
-        _systems = CreateSystems(_contexts);
-        InitWorld();
-    }
+        private Entitas.Systems _systems;
+        private Contexts _contexts;
 
-    void Update()
-    {
-        _systems.Execute();
-        _systems.Cleanup();
-    }
+        void Start()
+        {
+            _contexts = Contexts.sharedInstance;
+            _systems = CreateSystems(_contexts);
+            InitWorld();
+        }
 
-    private static Systems CreateSystems(Contexts contexts)
-    {
-        return new Feature("Systems")
-                .Add(new AddViewSystem(contexts))
-            ;
-    }
+        void Update()
+        {
+            _systems.Execute();
+            _systems.Cleanup();
+        }
 
-    private void InitWorld()
-    {
-        _systems.ActivateReactiveSystems();
-        _systems.Initialize();
+        private static Entitas.Systems CreateSystems(Contexts contexts)
+        {
+            return new Feature("Systems")
+                    .Add(new InitializeBoardSystem(contexts))
+                    .Add(new AddViewSystem(contexts))
+                    .Add(new GameEventSystems(contexts))
+                ;
+        }
+
+        private void InitWorld()
+        {
+            _systems.ActivateReactiveSystems();
+            _systems.Initialize();
+        }
     }
 }
