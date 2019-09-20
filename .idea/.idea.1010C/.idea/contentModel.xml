@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\ASTOD\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -10,9 +10,16 @@
         <e p="1010C" t="Include">
           <e p="Components" t="Include">
             <e p="GridPositionComponent.cs" t="Include" />
+            <e p="ViewComponent.cs" t="Include" />
           </e>
           <e p="Mono" t="Include">
             <e p="GameController.cs" t="Include" />
+            <e p="IView.cs" t="Include" />
+            <e p="View.cs" t="Include" />
+          </e>
+          <e p="Systems" t="Include">
+            <e p="AddViewSystem.cs" t="Include" />
+            <e p="TestSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
@@ -21,6 +28,7 @@
           <e p="Game" t="Include">
             <e p="Components" t="Include">
               <e p="GameGridPositionComponent.cs" t="Include" />
+              <e p="GameViewComponent.cs" t="Include" />
             </e>
             <e p="GameAttribute.cs" t="Include" />
             <e p="GameComponentsLookup.cs" t="Include" />

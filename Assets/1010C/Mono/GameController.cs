@@ -13,9 +13,17 @@ public class GameController : MonoBehaviour
         InitWorld();
     }
 
+    void Update()
+    {
+        _systems.Execute();
+        _systems.Cleanup();
+    }
+
     private static Systems CreateSystems(Contexts contexts)
     {
-        return new Feature("Systems");
+        return new Feature("Systems")
+                .Add(new AddViewSystem(contexts))
+            ;
     }
 
     private void InitWorld()

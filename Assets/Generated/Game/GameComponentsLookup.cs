@@ -9,14 +9,17 @@
 public static class GameComponentsLookup {
 
     public const int GridPosition = 0;
+    public const int View = 1;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
-        "GridPosition"
+        "GridPosition",
+        "View"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(GridPositionComponent)
+        typeof(GridPositionComponent),
+        typeof(ViewComponent)
     };
 }
