@@ -15,7 +15,6 @@ namespace _1010C.Mono.View
 
         public void OnGridPosition(GameEntity entity, Vector2Int value)
         {
-            Debug.Log("Hello");
             transform.position = (Vector2) value;
         }
     }

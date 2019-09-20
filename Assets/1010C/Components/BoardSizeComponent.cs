@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace _1010C.Components
 {
-    [Game, Unique]
+    [Game, Unique, Event(EventTarget.Any)]
     public class BoardSizeComponent : IComponent
     {
         public Vector2Int Value;
