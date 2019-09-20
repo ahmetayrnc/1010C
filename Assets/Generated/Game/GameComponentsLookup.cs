@@ -11,27 +11,33 @@ public static class GameComponentsLookup {
     public const int BoardSize = 0;
     public const int GridPosition = 1;
     public const int Tile = 2;
-    public const int View = 3;
-    public const int AnyBoardSizeListener = 4;
-    public const int GridPositionListener = 5;
+    public const int TileState = 3;
+    public const int View = 4;
+    public const int AnyBoardSizeListener = 5;
+    public const int GridPositionListener = 6;
+    public const int TileStateListener = 7;
 
-    public const int TotalComponents = 6;
+    public const int TotalComponents = 8;
 
     public static readonly string[] componentNames = {
         "BoardSize",
         "GridPosition",
         "Tile",
+        "TileState",
         "View",
         "AnyBoardSizeListener",
-        "GridPositionListener"
+        "GridPositionListener",
+        "TileStateListener"
     };
 
     public static readonly System.Type[] componentTypes = {
         typeof(_1010C.Components.BoardSizeComponent),
         typeof(_1010C.Components.GridPositionComponent),
-        typeof(_1010C.Components.TileComponent),
+        typeof(_1010C.Components.Tile.TileComponent),
+        typeof(_1010C.Components.Tile.TileStateComponent),
         typeof(_1010C.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
-        typeof(GridPositionListenerComponent)
+        typeof(GridPositionListenerComponent),
+        typeof(TileStateListenerComponent)
     };
 }

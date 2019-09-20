@@ -11,7 +11,10 @@
           <e p="Components" t="Include">
             <e p="BoardSizeComponent.cs" t="Include" />
             <e p="GridPositionComponent.cs" t="Include" />
-            <e p="TileComponent.cs" t="Include" />
+            <e p="Tile" t="Include">
+              <e p="TileComponent.cs" t="Include" />
+              <e p="TileStateComponent.cs" t="Include" />
+            </e>
             <e p="ViewComponent.cs" t="Include" />
           </e>
           <e p="Mono" t="Include">

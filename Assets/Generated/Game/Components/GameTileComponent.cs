@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    static readonly _1010C.Components.TileComponent tileComponent = new _1010C.Components.TileComponent();
+    static readonly _1010C.Components.Tile.TileComponent tileComponent = new _1010C.Components.Tile.TileComponent();
 
     public bool isTile {
         get { return HasComponent(GameComponentsLookup.Tile); }
