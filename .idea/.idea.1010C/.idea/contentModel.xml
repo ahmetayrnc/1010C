@@ -14,8 +14,18 @@
           </e>
           <e p="Mono" t="Include">
             <e p="GameController.cs" t="Include" />
-            <e p="IView.cs" t="Include" />
-            <e p="View.cs" t="Include" />
+            <e p="ScriptableObjects" t="Include">
+              <e p="CubeColors.cs" t="Include" />
+            </e>
+            <e p="View" t="Include">
+              <e p="CubeView.cs" t="Include" />
+              <e p="IView.cs" t="Include" />
+              <e p="View.cs" t="Include" />
+              <e p="ViewFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Services" t="Include">
+            <e p="ViewService.cs" t="Include" />
           </e>
           <e p="Systems" t="Include">
             <e p="AddViewSystem.cs" t="Include" />

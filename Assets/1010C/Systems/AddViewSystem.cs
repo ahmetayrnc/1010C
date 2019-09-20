@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Entitas;
-using UnityEngine;
 
 public class AddViewSystem : ReactiveSystem<GameEntity>
 {
@@ -22,15 +21,15 @@ public class AddViewSystem : ReactiveSystem<GameEntity>
     {
         foreach (var e in entities)
         {
-            e.AddView(InstantiateView(e));
+            InstantiateView(e);
         }
     }
 
-    IView InstantiateView(GameEntity entity)
+    private static void InstantiateView(GameEntity entity)
     {
-        var gameObject = new GameObject();
-        var view = gameObject.AddComponent<View>();
+        var gameObject = ViewFactory.SpawnCube();
+        var view = gameObject.GetComponent<CubeView>();
         view.Link(entity);
-        return view;
+        entity.AddView(view);
     }
 }
