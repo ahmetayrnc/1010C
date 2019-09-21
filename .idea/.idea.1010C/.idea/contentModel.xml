@@ -51,6 +51,8 @@
             <e p="InitializeTilesSystem.cs" t="Include" />
             <e p="Input" t="Include">
               <e p="InputSystem.cs" t="Include" />
+              <e p="ProcessTouchDownSystem.cs" t="Include" />
+              <e p="ProcessTouchUpSystem.cs" t="Include" />
             </e>
             <e p="ReserveFillSystem.cs" t="Include" />
           </e>

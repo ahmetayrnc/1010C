@@ -25,10 +25,17 @@ namespace _1010C.Mono
         private static Entitas.Systems CreateSystems(Contexts contexts)
         {
             return new Feature("Systems")
+                    //initialize
                     .Add(new InitializeBoardSystem(contexts))
                     .Add(new InitializeTilesSystem(contexts))
                     .Add(new InitializeReserveSlotsSystem(contexts))
+
+                    //input
                     .Add(new InputSystem(contexts))
+                    .Add(new ProcessTouchDownSystem(contexts))
+                    .Add(new ProcessTouchUpSystem(contexts))
+                    
+                    //
                     .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))

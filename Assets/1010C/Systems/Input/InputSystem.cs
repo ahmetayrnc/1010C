@@ -1,5 +1,4 @@
-﻿using System;
-using Entitas;
+﻿using Entitas;
 using UnityEngine;
 
 namespace _1010C.Systems.Input
