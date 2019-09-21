@@ -1,4 +1,5 @@
-﻿using Entitas;
+﻿using _1010C.Components.Reserve;
+using Entitas;
 using UnityEngine;
 
 namespace _1010C.Systems
@@ -16,15 +17,22 @@ namespace _1010C.Systems
         {
             var boardSize = _contexts.game.boardSize;
 
-            const int reserveSlotY = -4;
             const int reserveSlotCount = 3;
+            const int reserveSlotY = -3;
+            float[] xPositions = { 1.5f,  5f, 8.5f};
 
             for (var i = 0; i < reserveSlotCount; i++)
             {
-                var entity = _contexts.game.CreateEntity();
-                entity.isReserveSlot = true;
-                entity.AddPosition(new Vector2(reserveSlotY, i * (boardSize.Value.x / reserveSlotCount)));
+                CreateReserveSlot(new Vector2(xPositions[i], reserveSlotY));
             }
+        }
+
+        private void CreateReserveSlot(Vector2 pos)
+        {
+            var entity = _contexts.game.CreateEntity();
+            entity.isReserveSlot = true;
+            entity.AddPosition(pos);
+            entity.AddReserveSlotState(ReserveSlotState.Empty);
         }
     }
 }

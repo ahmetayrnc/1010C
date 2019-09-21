@@ -17,6 +17,7 @@
             <e p="Reserve" t="Include">
               <e p="PieceComponent.cs" t="Include" />
               <e p="ReserveSlotComponent.cs" t="Include" />
+              <e p="ReserveSlotStateComponent.cs" t="Include" />
             </e>
             <e p="Tile" t="Include">
               <e p="TileComponent.cs" t="Include" />
@@ -34,6 +35,7 @@
             </e>
             <e p="View" t="Include">
               <e p="CubeView.cs" t="Include" />
+              <e p="PieceView.cs" t="Include" />
               <e p="TileView.cs" t="Include" />
               <e p="View.cs" t="Include" />
               <e p="ViewFactory.cs" t="Include" />
@@ -44,6 +46,7 @@
             <e p="InitializeBoardSystem.cs" t="Include" />
             <e p="InitializeReserveSlotsSystem.cs" t="Include" />
             <e p="InitializeTilesSystem.cs" t="Include" />
+            <e p="ReserveFillSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
@@ -53,6 +56,7 @@
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
+              <e p="ReserveSlotStateListenerComponent.cs" t="Include" />
               <e p="TileStateListenerComponent.cs" t="Include" />
             </e>
             <e p="GameEventSystems.cs" t="Include" />
@@ -60,12 +64,14 @@
               <e p="IAnyBoardSizeListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
+              <e p="IReserveSlotStateListener.cs" t="Include" />
               <e p="ITileStateListener.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
+              <e p="ReserveSlotStateEventSystem.cs" t="Include" />
               <e p="TileStateEventSystem.cs" t="Include" />
             </e>
           </e>
@@ -80,6 +86,8 @@
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />
+              <e p="GameReserveSlotStateComponent.cs" t="Include" />
+              <e p="GameReserveSlotStateListenerComponent.cs" t="Include" />
               <e p="GameTileComponent.cs" t="Include" />
               <e p="GameTileStateComponent.cs" t="Include" />
               <e p="GameTileStateListenerComponent.cs" t="Include" />

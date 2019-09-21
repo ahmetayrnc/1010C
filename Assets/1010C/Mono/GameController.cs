@@ -27,6 +27,7 @@ namespace _1010C.Mono
                     .Add(new InitializeBoardSystem(contexts))
                     .Add(new InitializeTilesSystem(contexts))
                     .Add(new InitializeReserveSlotsSystem(contexts))
+                    .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))
                 ;
