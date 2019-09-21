@@ -8,14 +8,14 @@ namespace _1010C.Mono
         private Entitas.Systems _systems;
         private Contexts _contexts;
 
-        void Start()
+        private void Start()
         {
             _contexts = Contexts.sharedInstance;
             _systems = CreateSystems(_contexts);
             InitWorld();
         }
 
-        void Update()
+        private void Update()
         {
             _systems.Execute();
             _systems.Cleanup();
@@ -25,6 +25,7 @@ namespace _1010C.Mono
         {
             return new Feature("Systems")
                     .Add(new InitializeBoardSystem(contexts))
+                    .Add(new InitializeTilesSystem(contexts))
                     .Add(new InitializeReserveSlotsSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))

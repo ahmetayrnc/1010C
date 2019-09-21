@@ -40,6 +40,7 @@
             <e p="AddViewSystem.cs" t="Include" />
             <e p="InitializeBoardSystem.cs" t="Include" />
             <e p="InitializeReserveSlotsSystem.cs" t="Include" />
+            <e p="InitializeTilesSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
