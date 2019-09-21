@@ -4,6 +4,8 @@ namespace _1010C.Mono.View
 {
     public class TileView : View, IGridPositionListener
     {
+        public SpriteRenderer spriteRenderer;
+        
         protected override void AddListeners(GameEntity entity)
         {
             entity.AddGridPositionListener(this);
@@ -11,6 +13,7 @@ namespace _1010C.Mono.View
 
         protected override void InitializeView(GameEntity entity)
         {
+            spriteRenderer.sortingLayerName = TileLayer;
         }
 
         public void OnGridPosition(GameEntity entity, Vector2Int value)
