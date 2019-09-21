@@ -25,6 +25,7 @@ namespace _1010C.Mono
         {
             return new Feature("Systems")
                     .Add(new InitializeBoardSystem(contexts))
+                    .Add(new InitializeReserveSlotsSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))
                 ;

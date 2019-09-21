@@ -34,12 +34,12 @@ namespace _1010C.Mono.View
 
         private GameObject SpawnCubeInternal()
         {
-            return Instantiate(cubeView);
+            return Instantiate(cubeView, transform);
         }
         
         private GameObject SpawnTileInternal()
         {
-            return Instantiate(tileView);
+            return Instantiate(tileView, transform);
         }
     }
 }

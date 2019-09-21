@@ -14,6 +14,7 @@ namespace _1010C.Systems
 
         public void Initialize()
         {
+            //Todo read this from somewhere else
             _contexts.game.SetBoardSize(new Vector2Int(10, 10));
 
             var boardSize = _contexts.game.boardSize;
