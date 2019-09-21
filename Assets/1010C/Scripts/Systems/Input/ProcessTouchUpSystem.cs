@@ -28,7 +28,7 @@ namespace _1010C.Scripts.Systems.Input
             var inputEntity = entities.SingleEntity();
             var input = inputEntity.touchUp;
 
-            Debug.Log($"touched up: {input.Value}");
+//            Debug.Log($"touched up: {input.Value}");
         }
     }
 }

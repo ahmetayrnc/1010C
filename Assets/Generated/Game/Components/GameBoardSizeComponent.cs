@@ -6,18 +6,15 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Board;
-
 public partial class GameContext {
 
     public GameEntity boardSizeEntity { get { return GetGroup(GameMatcher.BoardSize).GetSingleEntity(); } }
-    public BoardSizeComponent boardSize { get { return boardSizeEntity.boardSize; } }
+    public _1010C.Scripts.Components.Board.BoardSizeComponent boardSize { get { return boardSizeEntity.boardSize; } }
     public bool hasBoardSize { get { return boardSizeEntity != null; } }
 
     public GameEntity SetBoardSize(UnityEngine.Vector2Int newValue) {
         if (hasBoardSize) {
-            throw new Entitas.EntitasException("Could not set BoardSize!\n" + this + " already has an entity with _1010C.Components.BoardSizeComponent!",
+            throw new Entitas.EntitasException("Could not set BoardSize!\n" + this + " already has an entity with _1010C.Scripts.Components.Board.BoardSizeComponent!",
                 "You should check if the context already has a boardSizeEntity before setting it or use context.ReplaceBoardSize().");
         }
         var entity = CreateEntity();
@@ -49,19 +46,19 @@ public partial class GameContext {
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public BoardSizeComponent boardSize { get { return (BoardSizeComponent)GetComponent(GameComponentsLookup.BoardSize); } }
+    public _1010C.Scripts.Components.Board.BoardSizeComponent boardSize { get { return (_1010C.Scripts.Components.Board.BoardSizeComponent)GetComponent(GameComponentsLookup.BoardSize); } }
     public bool hasBoardSize { get { return HasComponent(GameComponentsLookup.BoardSize); } }
 
     public void AddBoardSize(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.BoardSize;
-        var component = (BoardSizeComponent)CreateComponent(index, typeof(BoardSizeComponent));
+        var component = (_1010C.Scripts.Components.Board.BoardSizeComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Board.BoardSizeComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceBoardSize(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.BoardSize;
-        var component = (BoardSizeComponent)CreateComponent(index, typeof(BoardSizeComponent));
+        var component = (_1010C.Scripts.Components.Board.BoardSizeComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Board.BoardSizeComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

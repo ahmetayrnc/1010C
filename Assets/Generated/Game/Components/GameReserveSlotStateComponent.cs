@@ -6,24 +6,21 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Reserve;
-
 public partial class GameEntity {
 
-    public ReserveSlotStateComponent reserveSlotState { get { return (ReserveSlotStateComponent)GetComponent(GameComponentsLookup.ReserveSlotState); } }
+    public _1010C.Scripts.Components.Reserve.ReserveSlotStateComponent reserveSlotState { get { return (_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent)GetComponent(GameComponentsLookup.ReserveSlotState); } }
     public bool hasReserveSlotState { get { return HasComponent(GameComponentsLookup.ReserveSlotState); } }
 
-    public void AddReserveSlotState(ReserveSlotState newValue) {
+    public void AddReserveSlotState(_1010C.Scripts.Components.Reserve.ReserveSlotState newValue) {
         var index = GameComponentsLookup.ReserveSlotState;
-        var component = (ReserveSlotStateComponent)CreateComponent(index, typeof(ReserveSlotStateComponent));
+        var component = (_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
-    public void ReplaceReserveSlotState(ReserveSlotState newValue) {
+    public void ReplaceReserveSlotState(_1010C.Scripts.Components.Reserve.ReserveSlotState newValue) {
         var index = GameComponentsLookup.ReserveSlotState;
-        var component = (ReserveSlotStateComponent)CreateComponent(index, typeof(ReserveSlotStateComponent));
+        var component = (_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

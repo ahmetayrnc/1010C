@@ -6,9 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Input;
-
 public static class InputComponentsLookup {
 
     public const int TouchDown = 0;
@@ -22,7 +19,7 @@ public static class InputComponentsLookup {
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(TouchDownComponent),
-        typeof(TouchUpComponent)
+        typeof(_1010C.Scripts.Components.Input.TouchDownComponent),
+        typeof(_1010C.Scripts.Components.Input.TouchUpComponent)
     };
 }

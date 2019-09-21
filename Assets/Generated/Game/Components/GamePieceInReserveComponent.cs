@@ -6,24 +6,21 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Reserve;
-
 public partial class GameEntity {
 
-    public PieceInReserveComponent pieceInReserve { get { return (PieceInReserveComponent)GetComponent(GameComponentsLookup.PieceInReserve); } }
+    public _1010C.Scripts.Components.Reserve.PieceInReserveComponent pieceInReserve { get { return (_1010C.Scripts.Components.Reserve.PieceInReserveComponent)GetComponent(GameComponentsLookup.PieceInReserve); } }
     public bool hasPieceInReserve { get { return HasComponent(GameComponentsLookup.PieceInReserve); } }
 
     public void AddPieceInReserve(int newId) {
         var index = GameComponentsLookup.PieceInReserve;
-        var component = (PieceInReserveComponent)CreateComponent(index, typeof(PieceInReserveComponent));
+        var component = (_1010C.Scripts.Components.Reserve.PieceInReserveComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent));
         component.Id = newId;
         AddComponent(index, component);
     }
 
     public void ReplacePieceInReserve(int newId) {
         var index = GameComponentsLookup.PieceInReserve;
-        var component = (PieceInReserveComponent)CreateComponent(index, typeof(PieceInReserveComponent));
+        var component = (_1010C.Scripts.Components.Reserve.PieceInReserveComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent));
         component.Id = newId;
         ReplaceComponent(index, component);
     }

@@ -6,12 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components;
-using _1010C.Scripts.Components.Board;
-using _1010C.Scripts.Components.Reserve;
-using _1010C.Scripts.Components.Tile;
-
 public static class GameComponentsLookup {
 
     public const int BoardSize = 0;
@@ -57,19 +51,19 @@ public static class GameComponentsLookup {
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(BoardSizeComponent),
-        typeof(GridPositionComponent),
-        typeof(IdComponent),
-        typeof(IdCountComponent),
-        typeof(PositionComponent),
-        typeof(PieceComponent),
-        typeof(PieceInReserveComponent),
-        typeof(ReserveSlotComponent),
-        typeof(ReserveSlotPositionsComponent),
-        typeof(ReserveSlotStateComponent),
-        typeof(TileComponent),
-        typeof(TileStateComponent),
-        typeof(ViewComponent),
+        typeof(_1010C.Scripts.Components.Board.BoardSizeComponent),
+        typeof(_1010C.Scripts.Components.GridPositionComponent),
+        typeof(_1010C.Scripts.Components.IdComponent),
+        typeof(_1010C.Scripts.Components.IdCountComponent),
+        typeof(_1010C.Scripts.Components.PositionComponent),
+        typeof(_1010C.Scripts.Components.Reserve.PieceComponent),
+        typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
+        typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
+        typeof(_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent),
+        typeof(_1010C.Scripts.Components.Reserve.ReserveSlotStateComponent),
+        typeof(_1010C.Scripts.Components.Tile.TileComponent),
+        typeof(_1010C.Scripts.Components.Tile.TileStateComponent),
+        typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(GridPositionListenerComponent),
         typeof(PositionListenerComponent),

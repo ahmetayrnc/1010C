@@ -6,24 +6,21 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Input;
-
 public partial class InputEntity {
 
-    public TouchDownComponent touchDown { get { return (TouchDownComponent)GetComponent(InputComponentsLookup.TouchDown); } }
+    public _1010C.Scripts.Components.Input.TouchDownComponent touchDown { get { return (_1010C.Scripts.Components.Input.TouchDownComponent)GetComponent(InputComponentsLookup.TouchDown); } }
     public bool hasTouchDown { get { return HasComponent(InputComponentsLookup.TouchDown); } }
 
     public void AddTouchDown(UnityEngine.Vector2 newValue) {
         var index = InputComponentsLookup.TouchDown;
-        var component = (TouchDownComponent)CreateComponent(index, typeof(TouchDownComponent));
+        var component = (_1010C.Scripts.Components.Input.TouchDownComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Input.TouchDownComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceTouchDown(UnityEngine.Vector2 newValue) {
         var index = InputComponentsLookup.TouchDown;
-        var component = (TouchDownComponent)CreateComponent(index, typeof(TouchDownComponent));
+        var component = (_1010C.Scripts.Components.Input.TouchDownComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Input.TouchDownComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }
