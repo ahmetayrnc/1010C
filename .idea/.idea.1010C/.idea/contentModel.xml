@@ -13,12 +13,15 @@
               <e p="BoardSizeComponent.cs" t="Include" />
             </e>
             <e p="GridPositionComponent.cs" t="Include" />
+            <e p="IdComponent.cs" t="Include" />
+            <e p="IdCountComponent.cs" t="Include" />
             <e p="Input" t="Include">
               <e p="TouchDownComponent.cs" t="Include" />
             </e>
             <e p="PositionComponent.cs" t="Include" />
             <e p="Reserve" t="Include">
               <e p="PieceComponent.cs" t="Include" />
+              <e p="PieceInReserveComponent.cs" t="Include" />
               <e p="ReserveSlotComponent.cs" t="Include" />
               <e p="ReserveSlotStateComponent.cs" t="Include" />
             </e>
@@ -33,6 +36,9 @@
               <e p="CameraScaler.cs" t="Include" />
             </e>
             <e p="GameController.cs" t="Include" />
+            <e p="Input" t="Include">
+              <e p="InputEmitter.cs" t="Include" />
+            </e>
             <e p="ScriptableObjects" t="Include">
               <e p="CubeColors.cs" t="Include" />
             </e>
@@ -44,13 +50,15 @@
               <e p="ViewFactory.cs" t="Include" />
             </e>
           </e>
+          <e p="Services" t="Include">
+            <e p="IdService.cs" t="Include" />
+          </e>
           <e p="Systems" t="Include">
             <e p="AddViewSystem.cs" t="Include" />
             <e p="InitializeBoardSystem.cs" t="Include" />
             <e p="InitializeReserveSlotsSystem.cs" t="Include" />
             <e p="InitializeTilesSystem.cs" t="Include" />
             <e p="Input" t="Include">
-              <e p="InputSystem.cs" t="Include" />
               <e p="ProcessTouchDownSystem.cs" t="Include" />
               <e p="ProcessTouchUpSystem.cs" t="Include" />
             </e>
@@ -90,7 +98,10 @@
               <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
               <e p="GameGridPositionListenerComponent.cs" t="Include" />
+              <e p="GameIdComponent.cs" t="Include" />
+              <e p="GameIdCountComponent.cs" t="Include" />
               <e p="GamePieceComponent.cs" t="Include" />
+              <e p="GamePieceInReserveComponent.cs" t="Include" />
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />

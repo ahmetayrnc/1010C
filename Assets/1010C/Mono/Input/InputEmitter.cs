@@ -1,24 +1,22 @@
-﻿using Entitas;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace _1010C.Systems.Input
+namespace _1010C.Mono.Input
 {
-    public sealed class InputSystem : IExecuteSystem, IInitializeSystem
+    public class InputEmitter : MonoBehaviour
     {
-        private readonly Contexts _contexts;
-        private Camera _cam;
+        private Contexts _contexts;
 
-        public InputSystem(Contexts contexts)
+        private UnityEngine.Camera _cam;
+
+        // Start is called before the first frame update
+        private void Start()
         {
-            _contexts = contexts;
+            _cam = UnityEngine.Camera.main;
+            _contexts = Contexts.sharedInstance;
         }
 
-        public void Initialize()
-        {
-            _cam = Camera.main;
-        }
-
-        public void Execute()
+        // Update is called once per frame
+        private void Update()
         {
             EmitInput();
         }

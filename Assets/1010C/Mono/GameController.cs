@@ -31,7 +31,7 @@ namespace _1010C.Mono
                     .Add(new InitializeReserveSlotsSystem(contexts))
 
                     //input
-                    .Add(new InputSystem(contexts))
+//                    .Add(new InputSystem(contexts))
                     .Add(new ProcessTouchDownSystem(contexts))
                     .Add(new ProcessTouchUpSystem(contexts))
                     

@@ -15,6 +15,7 @@ namespace _1010C.Systems
         public void Initialize()
         {
             _contexts.game.SetBoardSize(new Vector2Int(10, 10));
+            _contexts.game.SetIdCount(0);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _1010C.Components.Reserve;
+using _1010C.Services;
 using Entitas;
 using UnityEngine;
 
@@ -45,15 +46,17 @@ namespace _1010C.Systems
             foreach (var reserveSlot in entities)
             {
                 reserveSlot.ReplaceReserveSlotState(ReserveSlotState.Full);
-                CreateReservePiece(reserveSlot.position.Value);
+                CreateReservePiece(reserveSlot);
             }
         }
 
-        private void CreateReservePiece(Vector2 pos)
+        private void CreateReservePiece(GameEntity reserveSlot)
         {
             var piece = _contexts.game.CreateEntity();
             piece.isPiece = true;
-            piece.AddPosition(pos);
+            piece.AddId(IdService.GetNewId());
+            piece.AddPosition(reserveSlot.position.Value);
+            reserveSlot.AddPieceInReserve(piece.id.Value);
         }
     }
 }
