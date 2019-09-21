@@ -19,6 +19,10 @@
               <e p="Input" t="Include">
                 <e p="TouchDownComponent.cs" t="Include" />
               </e>
+              <e p="Piece" t="Include">
+                <e p="PieceInAirComponent.cs" t="Include" />
+                <e p="PieceStateComponent.cs" t="Include" />
+              </e>
               <e p="PositionComponent.cs" t="Include" />
               <e p="Reserve" t="Include">
                 <e p="PieceComponent.cs" t="Include" />
@@ -74,6 +78,7 @@
             <e p="Components" t="Include">
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
+              <e p="PieceStateListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
               <e p="ReserveSlotStateListenerComponent.cs" t="Include" />
               <e p="TileStateListenerComponent.cs" t="Include" />
@@ -82,6 +87,7 @@
             <e p="Interfaces" t="Include">
               <e p="IAnyBoardSizeListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
+              <e p="IPieceStateListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
               <e p="IReserveSlotStateListener.cs" t="Include" />
               <e p="ITileStateListener.cs" t="Include" />
@@ -89,6 +95,7 @@
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
+              <e p="PieceStateEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
               <e p="ReserveSlotStateEventSystem.cs" t="Include" />
               <e p="TileStateEventSystem.cs" t="Include" />
@@ -104,7 +111,10 @@
               <e p="GameIdComponent.cs" t="Include" />
               <e p="GameIdCountComponent.cs" t="Include" />
               <e p="GamePieceComponent.cs" t="Include" />
+              <e p="GamePieceInAirComponent.cs" t="Include" />
               <e p="GamePieceInReserveComponent.cs" t="Include" />
+              <e p="GamePieceStateComponent.cs" t="Include" />
+              <e p="GamePieceStateListenerComponent.cs" t="Include" />
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />

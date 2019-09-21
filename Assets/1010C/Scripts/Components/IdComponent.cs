@@ -1,10 +1,11 @@
 ﻿using Entitas;
+using Entitas.CodeGeneration.Attributes;
 
 namespace _1010C.Scripts.Components
 {
     [Game]
     public class IdComponent : IComponent
     {
-        public int Value;
+        [PrimaryEntityIndex] public int Value;
     }
 }

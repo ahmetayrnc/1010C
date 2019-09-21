@@ -12,28 +12,33 @@ public static class GameComponentsLookup {
     public const int GridPosition = 1;
     public const int Id = 2;
     public const int IdCount = 3;
-    public const int Position = 4;
-    public const int Piece = 5;
-    public const int PieceInReserve = 6;
-    public const int ReserveSlot = 7;
-    public const int ReserveSlotPositions = 8;
-    public const int ReserveSlotState = 9;
-    public const int Tile = 10;
-    public const int TileState = 11;
-    public const int View = 12;
-    public const int AnyBoardSizeListener = 13;
-    public const int GridPositionListener = 14;
-    public const int PositionListener = 15;
-    public const int ReserveSlotStateListener = 16;
-    public const int TileStateListener = 17;
+    public const int PieceInAir = 4;
+    public const int PieceState = 5;
+    public const int Position = 6;
+    public const int Piece = 7;
+    public const int PieceInReserve = 8;
+    public const int ReserveSlot = 9;
+    public const int ReserveSlotPositions = 10;
+    public const int ReserveSlotState = 11;
+    public const int Tile = 12;
+    public const int TileState = 13;
+    public const int View = 14;
+    public const int AnyBoardSizeListener = 15;
+    public const int GridPositionListener = 16;
+    public const int PieceStateListener = 17;
+    public const int PositionListener = 18;
+    public const int ReserveSlotStateListener = 19;
+    public const int TileStateListener = 20;
 
-    public const int TotalComponents = 18;
+    public const int TotalComponents = 21;
 
     public static readonly string[] componentNames = {
         "BoardSize",
         "GridPosition",
         "Id",
         "IdCount",
+        "PieceInAir",
+        "PieceState",
         "Position",
         "Piece",
         "PieceInReserve",
@@ -45,6 +50,7 @@ public static class GameComponentsLookup {
         "View",
         "AnyBoardSizeListener",
         "GridPositionListener",
+        "PieceStateListener",
         "PositionListener",
         "ReserveSlotStateListener",
         "TileStateListener"
@@ -55,6 +61,8 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
+        typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
+        typeof(_1010C.Scripts.Components.Piece.PieceStateComponent),
         typeof(_1010C.Scripts.Components.PositionComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
@@ -66,6 +74,7 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(GridPositionListenerComponent),
+        typeof(PieceStateListenerComponent),
         typeof(PositionListenerComponent),
         typeof(ReserveSlotStateListenerComponent),
         typeof(TileStateListenerComponent)

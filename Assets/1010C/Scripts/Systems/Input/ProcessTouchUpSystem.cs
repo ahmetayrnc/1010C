@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _1010C.Scripts.Components.Piece;
 using Entitas;
 using UnityEngine;
 
@@ -28,7 +29,13 @@ namespace _1010C.Scripts.Systems.Input
             var inputEntity = entities.SingleEntity();
             var input = inputEntity.touchUp;
 
-//            Debug.Log($"touched up: {input.Value}");
+            if (!_contexts.game.hasPieceInAir) return;
+
+            var piece = _contexts.game.GetEntityWithId(_contexts.game.pieceInAir.Id);
+
+            piece?.ReplacePieceState(PieceState.InReserve);
+
+            _contexts.game.RemovePieceInAir();
         }
     }
 }

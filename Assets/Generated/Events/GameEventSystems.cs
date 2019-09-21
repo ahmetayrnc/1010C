@@ -11,6 +11,7 @@ public sealed class GameEventSystems : Feature {
     public GameEventSystems(Contexts contexts) {
         Add(new AnyBoardSizeEventSystem(contexts)); // priority: 0
         Add(new GridPositionEventSystem(contexts)); // priority: 0
+        Add(new PieceStateEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
         Add(new ReserveSlotStateEventSystem(contexts)); // priority: 0
         Add(new TileStateEventSystem(contexts)); // priority: 0

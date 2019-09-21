@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _1010C.Scripts.Components.Piece;
 using _1010C.Scripts.Components.Reserve;
 using _1010C.Scripts.Services;
 using Entitas;
@@ -51,6 +52,8 @@ namespace _1010C.Scripts.Systems
             piece.isPiece = true;
             piece.AddId(IdService.GetNewId());
             piece.AddPosition(reserveSlot.position.Value);
+            piece.AddPieceState(PieceState.InReserve);
+            
             reserveSlot.AddPieceInReserve(piece.id.Value);
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _1010C.Scripts.Components.Piece;
 using _1010C.Scripts.Components.Reserve;
 using Entitas;
 using UnityEngine;
@@ -8,7 +9,7 @@ namespace _1010C.Scripts.Systems.Input
     public class ProcessTouchDownSystem : ReactiveSystem<InputEntity>
     {
         private readonly Contexts _contexts;
-        private IGroup<GameEntity> _reserveSlots;
+        private readonly IGroup<GameEntity> _reserveSlots;
 
         public ProcessTouchDownSystem(Contexts contexts) : base(contexts.input)
         {
@@ -44,8 +45,17 @@ namespace _1010C.Scripts.Systems.Input
                 if (reserveSlot.reserveSlotState.Value == ReserveSlotState.Empty) continue;
                 if (!reserveSlot.hasPieceInReserve) continue;
 
-                Debug.Log($"touched down to piece with id: {reserveSlot.pieceInReserve.Id}");
+                var pieceId = reserveSlot.pieceInReserve.Id;
+                PieceTouchedDown(pieceId);
+                break;
             }
+        }
+
+        private void PieceTouchedDown(int pieceId)
+        {
+            var piece = _contexts.game.GetEntityWithId(pieceId);
+            piece.ReplacePieceState(PieceState.InAir);
+            _contexts.game.SetPieceInAir(pieceId);
         }
     }
 }
