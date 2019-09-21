@@ -4,10 +4,13 @@
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Components/BoardSizeComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Components/BoardSizeComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotComponent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Mono/View/ViewFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Mono/View/ViewFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,22 +27,24 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/Camera/CameraScaler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/ViewComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/BoardSizeComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeTilesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/PositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/TileView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/CubeView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Tile/TileComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Tile/TileStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,20 +61,23 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Components/TileComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/GridPositionComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/BoardSizeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/Camera/CameraScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Tile/TileComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Tile/TileStateComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/PositionComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeTilesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/ViewFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +129,7 @@
       <updated>1568974924084</updated>
       <workItem from="1568974933235" duration="1499000" />
       <workItem from="1568977184781" duration="2099000" />
-      <workItem from="1568980848936" duration="8659000" />
+      <workItem from="1568980848936" duration="9250000" />
     </task>
     <servers />
   </component>

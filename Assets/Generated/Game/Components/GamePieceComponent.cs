@@ -8,18 +8,18 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    static readonly _1010C.Components.Reserve.ReserveSlotComponent reserveSlotComponent = new _1010C.Components.Reserve.ReserveSlotComponent();
+    static readonly _1010C.Components.Reserve.PieceComponent pieceComponent = new _1010C.Components.Reserve.PieceComponent();
 
-    public bool isReserveSlot {
-        get { return HasComponent(GameComponentsLookup.ReserveSlot); }
+    public bool isPiece {
+        get { return HasComponent(GameComponentsLookup.Piece); }
         set {
-            if (value != isReserveSlot) {
-                var index = GameComponentsLookup.ReserveSlot;
+            if (value != isPiece) {
+                var index = GameComponentsLookup.Piece;
                 if (value) {
                     var componentPool = GetComponentPool(index);
                     var component = componentPool.Count > 0
                             ? componentPool.Pop()
-                            : reserveSlotComponent;
+                            : pieceComponent;
 
                     AddComponent(index, component);
                 } else {
@@ -40,17 +40,17 @@ public partial class GameEntity {
 //------------------------------------------------------------------------------
 public sealed partial class GameMatcher {
 
-    static Entitas.IMatcher<GameEntity> _matcherReserveSlot;
+    static Entitas.IMatcher<GameEntity> _matcherPiece;
 
-    public static Entitas.IMatcher<GameEntity> ReserveSlot {
+    public static Entitas.IMatcher<GameEntity> Piece {
         get {
-            if (_matcherReserveSlot == null) {
-                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.ReserveSlot);
+            if (_matcherPiece == null) {
+                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.Piece);
                 matcher.componentNames = GameComponentsLookup.componentNames;
-                _matcherReserveSlot = matcher;
+                _matcherPiece = matcher;
             }
 
-            return _matcherReserveSlot;
+            return _matcherPiece;
         }
     }
 }

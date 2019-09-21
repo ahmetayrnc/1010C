@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using _1010C.Mono.View;
 using Entitas;
+using UnityEngine;
 
 namespace _1010C.Systems
 {
@@ -30,8 +31,21 @@ namespace _1010C.Systems
 
         private static void InstantiateView(GameEntity entity)
         {
-            var gameObject = entity.isTile ? ViewFactory.SpawnTile() : ViewFactory.SpawnCube();
-            var view = gameObject.GetComponent<View>();
+            GameObject go;
+            if (entity.isTile)
+            {
+                go = ViewFactory.SpawnTile();
+            }
+            else if (entity.isPiece)
+            {
+                go = ViewFactory.SpawnPiece();
+            }
+            else
+            {
+                go = ViewFactory.SpawnCube();
+            }
+
+            var view = go.GetComponent<View>();
             view.Link(entity);
             entity.AddView(view);
         }

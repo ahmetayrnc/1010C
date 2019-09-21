@@ -21,6 +21,7 @@ namespace _1010C.Mono.View
 
         public GameObject cubeView;
         public GameObject tileView;
+        public GameObject pieceView;
 
         public static GameObject SpawnCube()
         {
@@ -31,6 +32,11 @@ namespace _1010C.Mono.View
         {
             return Instance.SpawnTileInternal();
         }
+        
+        public static GameObject SpawnPiece()
+        {
+            return Instance.SpawnPieceInternal();
+        }
 
         private GameObject SpawnCubeInternal()
         {
@@ -40,6 +46,11 @@ namespace _1010C.Mono.View
         private GameObject SpawnTileInternal()
         {
             return Instantiate(tileView, transform);
+        }
+        
+        private GameObject SpawnPieceInternal()
+        {
+            return Instantiate(pieceView, transform);
         }
     }
 }

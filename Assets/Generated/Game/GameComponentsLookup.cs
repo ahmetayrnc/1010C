@@ -11,21 +11,23 @@ public static class GameComponentsLookup {
     public const int BoardSize = 0;
     public const int GridPosition = 1;
     public const int Position = 2;
-    public const int ReserveSlot = 3;
-    public const int Tile = 4;
-    public const int TileState = 5;
-    public const int View = 6;
-    public const int AnyBoardSizeListener = 7;
-    public const int GridPositionListener = 8;
-    public const int PositionListener = 9;
-    public const int TileStateListener = 10;
+    public const int Piece = 3;
+    public const int ReserveSlot = 4;
+    public const int Tile = 5;
+    public const int TileState = 6;
+    public const int View = 7;
+    public const int AnyBoardSizeListener = 8;
+    public const int GridPositionListener = 9;
+    public const int PositionListener = 10;
+    public const int TileStateListener = 11;
 
-    public const int TotalComponents = 11;
+    public const int TotalComponents = 12;
 
     public static readonly string[] componentNames = {
         "BoardSize",
         "GridPosition",
         "Position",
+        "Piece",
         "ReserveSlot",
         "Tile",
         "TileState",
@@ -40,7 +42,8 @@ public static class GameComponentsLookup {
         typeof(_1010C.Components.BoardSizeComponent),
         typeof(_1010C.Components.GridPositionComponent),
         typeof(_1010C.Components.PositionComponent),
-        typeof(_1010C.Components.Reserve.ReserveSlot),
+        typeof(_1010C.Components.Reserve.PieceComponent),
+        typeof(_1010C.Components.Reserve.ReserveSlotComponent),
         typeof(_1010C.Components.Tile.TileComponent),
         typeof(_1010C.Components.Tile.TileStateComponent),
         typeof(_1010C.Components.ViewComponent),

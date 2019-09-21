@@ -9,11 +9,14 @@
       <e p="Assets" t="Include">
         <e p="1010C" t="Include">
           <e p="Components" t="Include">
-            <e p="BoardSizeComponent.cs" t="Include" />
+            <e p="Board" t="Include">
+              <e p="BoardSizeComponent.cs" t="Include" />
+            </e>
             <e p="GridPositionComponent.cs" t="Include" />
             <e p="PositionComponent.cs" t="Include" />
             <e p="Reserve" t="Include">
-              <e p="ReserveSlot.cs" t="Include" />
+              <e p="PieceComponent.cs" t="Include" />
+              <e p="ReserveSlotComponent.cs" t="Include" />
             </e>
             <e p="Tile" t="Include">
               <e p="TileComponent.cs" t="Include" />
@@ -73,6 +76,7 @@
               <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
               <e p="GameGridPositionListenerComponent.cs" t="Include" />
+              <e p="GamePieceComponent.cs" t="Include" />
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />
