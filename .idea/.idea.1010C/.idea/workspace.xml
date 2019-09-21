@@ -5,11 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Prefabs/PieceView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Prefabs/PieceView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +30,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeTilesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/PositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/TileView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/CubeView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,15 +72,18 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/ViewFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/CubeView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotStateComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/PieceView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Components/Input/InputComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Components/Input/TouchDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/Input/InputSystem.cs" />
       </list>
     </option>
   </component>
@@ -134,7 +135,7 @@
       <updated>1568974924084</updated>
       <workItem from="1568974933235" duration="1499000" />
       <workItem from="1568977184781" duration="2099000" />
-      <workItem from="1568980848936" duration="11209000" />
+      <workItem from="1568980848936" duration="13887000" />
     </task>
     <servers />
   </component>

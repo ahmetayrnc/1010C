@@ -1,4 +1,5 @@
 ﻿using _1010C.Systems;
+using _1010C.Systems.Input;
 using UnityEngine;
 
 namespace _1010C.Mono
@@ -27,6 +28,7 @@ namespace _1010C.Mono
                     .Add(new InitializeBoardSystem(contexts))
                     .Add(new InitializeTilesSystem(contexts))
                     .Add(new InitializeReserveSlotsSystem(contexts))
+                    .Add(new InputSystem(contexts))
                     .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))

@@ -8,15 +8,18 @@
 //------------------------------------------------------------------------------
 public static class InputComponentsLookup {
 
+    public const int TouchDown = 0;
+    public const int TouchUp = 1;
 
-
-    public const int TotalComponents = 0;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
-
+        "TouchDown",
+        "TouchUp"
     };
 
     public static readonly System.Type[] componentTypes = {
-
+        typeof(_1010C.Components.Input.TouchDownComponent),
+        typeof(_1010C.Components.Input.TouchUpComponent)
     };
 }
