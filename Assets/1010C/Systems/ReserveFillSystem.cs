@@ -15,10 +15,6 @@ namespace _1010C.Systems
             _contexts = contexts;
         }
 
-        public ReserveFillSystem(ICollector<GameEntity> collector) : base(collector)
-        {
-        }
-
         protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
         {
             return context.CreateCollector(GameMatcher.AnyOf(GameMatcher.ReserveSlotState));

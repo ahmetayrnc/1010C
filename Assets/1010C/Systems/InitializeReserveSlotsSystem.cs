@@ -17,13 +17,12 @@ namespace _1010C.Systems
         {
             var boardSize = _contexts.game.boardSize;
 
-            const int reserveSlotCount = 3;
             const int reserveSlotY = -3;
-            float[] xPositions = { 1.5f,  5f, 8.5f};
+            float[] xPositions = {1.5f, 5f, 8.5f};
 
-            for (var i = 0; i < reserveSlotCount; i++)
+            foreach (var x in xPositions)
             {
-                CreateReserveSlot(new Vector2(xPositions[i], reserveSlotY));
+                CreateReserveSlot(new Vector2(x, reserveSlotY));
             }
         }
 
