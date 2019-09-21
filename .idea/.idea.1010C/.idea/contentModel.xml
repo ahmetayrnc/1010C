@@ -8,61 +8,64 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="1010C" t="Include">
-          <e p="Components" t="Include">
-            <e p="Board" t="Include">
-              <e p="BoardSizeComponent.cs" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Components" t="Include">
+              <e p="Board" t="Include">
+                <e p="BoardSizeComponent.cs" t="Include" />
+              </e>
+              <e p="GridPositionComponent.cs" t="Include" />
+              <e p="IdComponent.cs" t="Include" />
+              <e p="IdCountComponent.cs" t="Include" />
+              <e p="Input" t="Include">
+                <e p="TouchDownComponent.cs" t="Include" />
+              </e>
+              <e p="PositionComponent.cs" t="Include" />
+              <e p="Reserve" t="Include">
+                <e p="PieceComponent.cs" t="Include" />
+                <e p="PieceInReserveComponent.cs" t="Include" />
+                <e p="ReserveSlotComponent.cs" t="Include" />
+                <e p="ReserveSlotPositionsComponent.cs" t="Include" />
+                <e p="ReserveSlotStateComponent.cs" t="Include" />
+              </e>
+              <e p="Tile" t="Include">
+                <e p="TileComponent.cs" t="Include" />
+                <e p="TileStateComponent.cs" t="Include" />
+              </e>
+              <e p="ViewComponent.cs" t="Include" />
             </e>
-            <e p="GridPositionComponent.cs" t="Include" />
-            <e p="IdComponent.cs" t="Include" />
-            <e p="IdCountComponent.cs" t="Include" />
-            <e p="Input" t="Include">
-              <e p="TouchDownComponent.cs" t="Include" />
+            <e p="Mono" t="Include">
+              <e p="Camera" t="Include">
+                <e p="CameraScaler.cs" t="Include" />
+              </e>
+              <e p="GameController.cs" t="Include" />
+              <e p="Input" t="Include">
+                <e p="InputEmitter.cs" t="Include" />
+              </e>
+              <e p="ScriptableObjects" t="Include">
+                <e p="CubeColors.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="CubeView.cs" t="Include" />
+                <e p="PieceView.cs" t="Include" />
+                <e p="TileView.cs" t="Include" />
+                <e p="View.cs" t="Include" />
+                <e p="ViewFactory.cs" t="Include" />
+              </e>
             </e>
-            <e p="PositionComponent.cs" t="Include" />
-            <e p="Reserve" t="Include">
-              <e p="PieceComponent.cs" t="Include" />
-              <e p="PieceInReserveComponent.cs" t="Include" />
-              <e p="ReserveSlotComponent.cs" t="Include" />
-              <e p="ReserveSlotStateComponent.cs" t="Include" />
+            <e p="Services" t="Include">
+              <e p="IdService.cs" t="Include" />
             </e>
-            <e p="Tile" t="Include">
-              <e p="TileComponent.cs" t="Include" />
-              <e p="TileStateComponent.cs" t="Include" />
+            <e p="Systems" t="Include">
+              <e p="AddViewSystem.cs" t="Include" />
+              <e p="InitializeBoardSystem.cs" t="Include" />
+              <e p="InitializeReserveSlotsSystem.cs" t="Include" />
+              <e p="InitializeTilesSystem.cs" t="Include" />
+              <e p="Input" t="Include">
+                <e p="ProcessTouchDownSystem.cs" t="Include" />
+                <e p="ProcessTouchUpSystem.cs" t="Include" />
+              </e>
+              <e p="ReserveFillSystem.cs" t="Include" />
             </e>
-            <e p="ViewComponent.cs" t="Include" />
-          </e>
-          <e p="Mono" t="Include">
-            <e p="Camera" t="Include">
-              <e p="CameraScaler.cs" t="Include" />
-            </e>
-            <e p="GameController.cs" t="Include" />
-            <e p="Input" t="Include">
-              <e p="InputEmitter.cs" t="Include" />
-            </e>
-            <e p="ScriptableObjects" t="Include">
-              <e p="CubeColors.cs" t="Include" />
-            </e>
-            <e p="View" t="Include">
-              <e p="CubeView.cs" t="Include" />
-              <e p="PieceView.cs" t="Include" />
-              <e p="TileView.cs" t="Include" />
-              <e p="View.cs" t="Include" />
-              <e p="ViewFactory.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Services" t="Include">
-            <e p="IdService.cs" t="Include" />
-          </e>
-          <e p="Systems" t="Include">
-            <e p="AddViewSystem.cs" t="Include" />
-            <e p="InitializeBoardSystem.cs" t="Include" />
-            <e p="InitializeReserveSlotsSystem.cs" t="Include" />
-            <e p="InitializeTilesSystem.cs" t="Include" />
-            <e p="Input" t="Include">
-              <e p="ProcessTouchDownSystem.cs" t="Include" />
-              <e p="ProcessTouchUpSystem.cs" t="Include" />
-            </e>
-            <e p="ReserveFillSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
@@ -105,6 +108,7 @@
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />
+              <e p="GameReserveSlotPositionsComponent.cs" t="Include" />
               <e p="GameReserveSlotStateComponent.cs" t="Include" />
               <e p="GameReserveSlotStateListenerComponent.cs" t="Include" />
               <e p="GameTileComponent.cs" t="Include" />

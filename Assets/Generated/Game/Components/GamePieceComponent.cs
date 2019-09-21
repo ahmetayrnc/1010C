@@ -6,9 +6,12 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Reserve;
+
 public partial class GameEntity {
 
-    static readonly _1010C.Components.Reserve.PieceComponent pieceComponent = new _1010C.Components.Reserve.PieceComponent();
+    static readonly PieceComponent pieceComponent = new PieceComponent();
 
     public bool isPiece {
         get { return HasComponent(GameComponentsLookup.Piece); }

@@ -6,9 +6,12 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Tile;
+
 public partial class GameEntity {
 
-    static readonly _1010C.Components.Tile.TileComponent tileComponent = new _1010C.Components.Tile.TileComponent();
+    static readonly TileComponent tileComponent = new TileComponent();
 
     public bool isTile {
         get { return HasComponent(GameComponentsLookup.Tile); }

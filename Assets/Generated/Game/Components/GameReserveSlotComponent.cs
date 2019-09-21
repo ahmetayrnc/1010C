@@ -6,9 +6,12 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Reserve;
+
 public partial class GameEntity {
 
-    static readonly _1010C.Components.Reserve.ReserveSlotComponent reserveSlotComponent = new _1010C.Components.Reserve.ReserveSlotComponent();
+    static readonly ReserveSlotComponent reserveSlotComponent = new ReserveSlotComponent();
 
     public bool isReserveSlot {
         get { return HasComponent(GameComponentsLookup.ReserveSlot); }

@@ -6,21 +6,24 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Tile;
+
 public partial class GameEntity {
 
-    public _1010C.Components.Tile.TileStateComponent tileState { get { return (_1010C.Components.Tile.TileStateComponent)GetComponent(GameComponentsLookup.TileState); } }
+    public TileStateComponent tileState { get { return (TileStateComponent)GetComponent(GameComponentsLookup.TileState); } }
     public bool hasTileState { get { return HasComponent(GameComponentsLookup.TileState); } }
 
-    public void AddTileState(_1010C.Components.Tile.TileState newValue) {
+    public void AddTileState(TileState newValue) {
         var index = GameComponentsLookup.TileState;
-        var component = (_1010C.Components.Tile.TileStateComponent)CreateComponent(index, typeof(_1010C.Components.Tile.TileStateComponent));
+        var component = (TileStateComponent)CreateComponent(index, typeof(TileStateComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
-    public void ReplaceTileState(_1010C.Components.Tile.TileState newValue) {
+    public void ReplaceTileState(TileState newValue) {
         var index = GameComponentsLookup.TileState;
-        var component = (_1010C.Components.Tile.TileStateComponent)CreateComponent(index, typeof(_1010C.Components.Tile.TileStateComponent));
+        var component = (TileStateComponent)CreateComponent(index, typeof(TileStateComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

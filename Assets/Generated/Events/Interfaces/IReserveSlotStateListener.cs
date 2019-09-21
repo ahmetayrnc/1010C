@@ -6,6 +6,9 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Reserve;
+
 public interface IReserveSlotStateListener {
-    void OnReserveSlotState(GameEntity entity, _1010C.Components.Reserve.ReserveSlotState value);
+    void OnReserveSlotState(GameEntity entity, ReserveSlotState value);
 }

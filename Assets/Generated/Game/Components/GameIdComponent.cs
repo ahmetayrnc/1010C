@@ -6,21 +6,24 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components;
+
 public partial class GameEntity {
 
-    public _1010C.Components.IdComponent id { get { return (_1010C.Components.IdComponent)GetComponent(GameComponentsLookup.Id); } }
+    public IdComponent id { get { return (IdComponent)GetComponent(GameComponentsLookup.Id); } }
     public bool hasId { get { return HasComponent(GameComponentsLookup.Id); } }
 
     public void AddId(int newValue) {
         var index = GameComponentsLookup.Id;
-        var component = (_1010C.Components.IdComponent)CreateComponent(index, typeof(_1010C.Components.IdComponent));
+        var component = (IdComponent)CreateComponent(index, typeof(IdComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceId(int newValue) {
         var index = GameComponentsLookup.Id;
-        var component = (_1010C.Components.IdComponent)CreateComponent(index, typeof(_1010C.Components.IdComponent));
+        var component = (IdComponent)CreateComponent(index, typeof(IdComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

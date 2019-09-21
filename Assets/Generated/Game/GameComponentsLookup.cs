@@ -6,6 +6,12 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components;
+using _1010C.Scripts.Components.Board;
+using _1010C.Scripts.Components.Reserve;
+using _1010C.Scripts.Components.Tile;
+
 public static class GameComponentsLookup {
 
     public const int BoardSize = 0;
@@ -16,17 +22,18 @@ public static class GameComponentsLookup {
     public const int Piece = 5;
     public const int PieceInReserve = 6;
     public const int ReserveSlot = 7;
-    public const int ReserveSlotState = 8;
-    public const int Tile = 9;
-    public const int TileState = 10;
-    public const int View = 11;
-    public const int AnyBoardSizeListener = 12;
-    public const int GridPositionListener = 13;
-    public const int PositionListener = 14;
-    public const int ReserveSlotStateListener = 15;
-    public const int TileStateListener = 16;
+    public const int ReserveSlotPositions = 8;
+    public const int ReserveSlotState = 9;
+    public const int Tile = 10;
+    public const int TileState = 11;
+    public const int View = 12;
+    public const int AnyBoardSizeListener = 13;
+    public const int GridPositionListener = 14;
+    public const int PositionListener = 15;
+    public const int ReserveSlotStateListener = 16;
+    public const int TileStateListener = 17;
 
-    public const int TotalComponents = 17;
+    public const int TotalComponents = 18;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -37,6 +44,7 @@ public static class GameComponentsLookup {
         "Piece",
         "PieceInReserve",
         "ReserveSlot",
+        "ReserveSlotPositions",
         "ReserveSlotState",
         "Tile",
         "TileState",
@@ -49,18 +57,19 @@ public static class GameComponentsLookup {
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(_1010C.Components.BoardSizeComponent),
-        typeof(_1010C.Components.GridPositionComponent),
-        typeof(_1010C.Components.IdComponent),
-        typeof(_1010C.Components.IdCountComponent),
-        typeof(_1010C.Components.PositionComponent),
-        typeof(_1010C.Components.Reserve.PieceComponent),
-        typeof(_1010C.Components.Reserve.PieceInReserveComponent),
-        typeof(_1010C.Components.Reserve.ReserveSlotComponent),
-        typeof(_1010C.Components.Reserve.ReserveSlotStateComponent),
-        typeof(_1010C.Components.Tile.TileComponent),
-        typeof(_1010C.Components.Tile.TileStateComponent),
-        typeof(_1010C.Components.ViewComponent),
+        typeof(BoardSizeComponent),
+        typeof(GridPositionComponent),
+        typeof(IdComponent),
+        typeof(IdCountComponent),
+        typeof(PositionComponent),
+        typeof(PieceComponent),
+        typeof(PieceInReserveComponent),
+        typeof(ReserveSlotComponent),
+        typeof(ReserveSlotPositionsComponent),
+        typeof(ReserveSlotStateComponent),
+        typeof(TileComponent),
+        typeof(TileStateComponent),
+        typeof(ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(GridPositionListenerComponent),
         typeof(PositionListenerComponent),

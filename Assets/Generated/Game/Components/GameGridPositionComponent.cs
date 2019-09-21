@@ -6,21 +6,24 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components;
+
 public partial class GameEntity {
 
-    public _1010C.Components.GridPositionComponent gridPosition { get { return (_1010C.Components.GridPositionComponent)GetComponent(GameComponentsLookup.GridPosition); } }
+    public GridPositionComponent gridPosition { get { return (GridPositionComponent)GetComponent(GameComponentsLookup.GridPosition); } }
     public bool hasGridPosition { get { return HasComponent(GameComponentsLookup.GridPosition); } }
 
     public void AddGridPosition(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.GridPosition;
-        var component = (_1010C.Components.GridPositionComponent)CreateComponent(index, typeof(_1010C.Components.GridPositionComponent));
+        var component = (GridPositionComponent)CreateComponent(index, typeof(GridPositionComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceGridPosition(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.GridPosition;
-        var component = (_1010C.Components.GridPositionComponent)CreateComponent(index, typeof(_1010C.Components.GridPositionComponent));
+        var component = (GridPositionComponent)CreateComponent(index, typeof(GridPositionComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

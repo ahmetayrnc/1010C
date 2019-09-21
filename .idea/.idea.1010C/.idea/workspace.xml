@@ -4,13 +4,8 @@
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/Input/InputSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/Input/InputSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,38 +17,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/ViewFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/Input/ProcessTouchUpSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceInReserveComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/Camera/CameraScaler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/ViewComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/InitializeTilesSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/PositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Services/IdService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/IdCountComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/TileView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/Input/InputEmitter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/CubeView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Mono/View/PieceView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Tile/TileComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/Tile/TileStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Components/IdComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -87,7 +53,6 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/View.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/PieceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/AddViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Input/InputComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Input/TouchDownComponent.cs" />
@@ -104,6 +69,9 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Services/IdService.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/ReserveFillSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/ReserveSlotPositionsComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" />
       </list>
     </option>
   </component>
@@ -155,7 +123,7 @@
       <updated>1568974924084</updated>
       <workItem from="1568974933235" duration="1499000" />
       <workItem from="1568977184781" duration="2099000" />
-      <workItem from="1568980848936" duration="15951000" />
+      <workItem from="1568980848936" duration="17122000" />
     </task>
     <servers />
   </component>

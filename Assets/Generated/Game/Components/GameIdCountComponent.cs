@@ -6,10 +6,13 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components;
+
 public partial class GameContext {
 
     public GameEntity idCountEntity { get { return GetGroup(GameMatcher.IdCount).GetSingleEntity(); } }
-    public _1010C.Components.IdCountComponent idCount { get { return idCountEntity.idCount; } }
+    public IdCountComponent idCount { get { return idCountEntity.idCount; } }
     public bool hasIdCount { get { return idCountEntity != null; } }
 
     public GameEntity SetIdCount(int newValue) {
@@ -46,19 +49,19 @@ public partial class GameContext {
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public _1010C.Components.IdCountComponent idCount { get { return (_1010C.Components.IdCountComponent)GetComponent(GameComponentsLookup.IdCount); } }
+    public IdCountComponent idCount { get { return (IdCountComponent)GetComponent(GameComponentsLookup.IdCount); } }
     public bool hasIdCount { get { return HasComponent(GameComponentsLookup.IdCount); } }
 
     public void AddIdCount(int newValue) {
         var index = GameComponentsLookup.IdCount;
-        var component = (_1010C.Components.IdCountComponent)CreateComponent(index, typeof(_1010C.Components.IdCountComponent));
+        var component = (IdCountComponent)CreateComponent(index, typeof(IdCountComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceIdCount(int newValue) {
         var index = GameComponentsLookup.IdCount;
-        var component = (_1010C.Components.IdCountComponent)CreateComponent(index, typeof(_1010C.Components.IdCountComponent));
+        var component = (IdCountComponent)CreateComponent(index, typeof(IdCountComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

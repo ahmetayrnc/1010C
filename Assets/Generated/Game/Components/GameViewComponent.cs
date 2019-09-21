@@ -6,21 +6,25 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components;
+using _1010C.Scripts.Mono.View;
+
 public partial class GameEntity {
 
-    public _1010C.Components.ViewComponent view { get { return (_1010C.Components.ViewComponent)GetComponent(GameComponentsLookup.View); } }
+    public ViewComponent view { get { return (ViewComponent)GetComponent(GameComponentsLookup.View); } }
     public bool hasView { get { return HasComponent(GameComponentsLookup.View); } }
 
-    public void AddView(_1010C.Mono.View.View newValue) {
+    public void AddView(View newValue) {
         var index = GameComponentsLookup.View;
-        var component = (_1010C.Components.ViewComponent)CreateComponent(index, typeof(_1010C.Components.ViewComponent));
+        var component = (ViewComponent)CreateComponent(index, typeof(ViewComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
-    public void ReplaceView(_1010C.Mono.View.View newValue) {
+    public void ReplaceView(View newValue) {
         var index = GameComponentsLookup.View;
-        var component = (_1010C.Components.ViewComponent)CreateComponent(index, typeof(_1010C.Components.ViewComponent));
+        var component = (ViewComponent)CreateComponent(index, typeof(ViewComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

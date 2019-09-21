@@ -6,10 +6,13 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Board;
+
 public partial class GameContext {
 
     public GameEntity boardSizeEntity { get { return GetGroup(GameMatcher.BoardSize).GetSingleEntity(); } }
-    public _1010C.Components.BoardSizeComponent boardSize { get { return boardSizeEntity.boardSize; } }
+    public BoardSizeComponent boardSize { get { return boardSizeEntity.boardSize; } }
     public bool hasBoardSize { get { return boardSizeEntity != null; } }
 
     public GameEntity SetBoardSize(UnityEngine.Vector2Int newValue) {
@@ -46,19 +49,19 @@ public partial class GameContext {
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public _1010C.Components.BoardSizeComponent boardSize { get { return (_1010C.Components.BoardSizeComponent)GetComponent(GameComponentsLookup.BoardSize); } }
+    public BoardSizeComponent boardSize { get { return (BoardSizeComponent)GetComponent(GameComponentsLookup.BoardSize); } }
     public bool hasBoardSize { get { return HasComponent(GameComponentsLookup.BoardSize); } }
 
     public void AddBoardSize(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.BoardSize;
-        var component = (_1010C.Components.BoardSizeComponent)CreateComponent(index, typeof(_1010C.Components.BoardSizeComponent));
+        var component = (BoardSizeComponent)CreateComponent(index, typeof(BoardSizeComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceBoardSize(UnityEngine.Vector2Int newValue) {
         var index = GameComponentsLookup.BoardSize;
-        var component = (_1010C.Components.BoardSizeComponent)CreateComponent(index, typeof(_1010C.Components.BoardSizeComponent));
+        var component = (BoardSizeComponent)CreateComponent(index, typeof(BoardSizeComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }
