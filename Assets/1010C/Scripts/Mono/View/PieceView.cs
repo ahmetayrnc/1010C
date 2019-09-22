@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class PieceView : View, IPositionListener, IPieceStateListener
+    public class PieceView : View, IPositionListener, IPieceStateListener, IDragStartedListener
     {
         public SortingGroup sortingGroup;
 
@@ -12,6 +12,7 @@ namespace _1010C.Scripts.Mono.View
         {
             entity.AddPositionListener(this);
             entity.AddPieceStateListener(this);
+            entity.AddDragStartedListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
@@ -27,6 +28,12 @@ namespace _1010C.Scripts.Mono.View
         public void OnPieceState(GameEntity entity, PieceState value)
         {
             Debug.Log($"piece with id: {entity.id.Value} is in {value}");
+        }
+
+        public void OnDragStarted(GameEntity entity)
+        {
+            //make the piece bigger and increase the gaps in between
+            Debug.Log("OnDragStarted");
         }
     }
 }

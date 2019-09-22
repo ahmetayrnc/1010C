@@ -54,6 +54,7 @@ namespace _1010C.Scripts.Systems.Input
         private void PieceTouchedDown(int pieceId)
         {
             var piece = _contexts.game.GetEntityWithId(pieceId);
+            piece.isDragStarted = true;
             piece.ReplacePieceState(PieceState.InAir);
             _contexts.game.SetPieceInAir(pieceId);
         }
