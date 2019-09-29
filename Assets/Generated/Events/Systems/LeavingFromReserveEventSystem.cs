@@ -6,31 +6,31 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public sealed class ReturnToReserveStartedEventSystem : Entitas.ReactiveSystem<GameEntity> {
+public sealed class LeavingFromReserveEventSystem : Entitas.ReactiveSystem<GameEntity> {
 
-    readonly System.Collections.Generic.List<IReturnToReserveStartedListener> _listenerBuffer;
+    readonly System.Collections.Generic.List<ILeavingFromReserveListener> _listenerBuffer;
 
-    public ReturnToReserveStartedEventSystem(Contexts contexts) : base(contexts.game) {
-        _listenerBuffer = new System.Collections.Generic.List<IReturnToReserveStartedListener>();
+    public LeavingFromReserveEventSystem(Contexts contexts) : base(contexts.game) {
+        _listenerBuffer = new System.Collections.Generic.List<ILeavingFromReserveListener>();
     }
 
     protected override Entitas.ICollector<GameEntity> GetTrigger(Entitas.IContext<GameEntity> context) {
         return Entitas.CollectorContextExtension.CreateCollector(
-            context, Entitas.TriggerOnEventMatcherExtension.Added(GameMatcher.ReturnToReserveStarted)
+            context, Entitas.TriggerOnEventMatcherExtension.Added(GameMatcher.LeavingFromReserve)
         );
     }
 
     protected override bool Filter(GameEntity entity) {
-        return entity.isReturnToReserveStarted && entity.hasReturnToReserveStartedListener;
+        return entity.isLeavingFromReserve && entity.hasLeavingFromReserveListener;
     }
 
     protected override void Execute(System.Collections.Generic.List<GameEntity> entities) {
         foreach (var e in entities) {
             
             _listenerBuffer.Clear();
-            _listenerBuffer.AddRange(e.returnToReserveStartedListener.value);
+            _listenerBuffer.AddRange(e.leavingFromReserveListener.value);
             foreach (var listener in _listenerBuffer) {
-                listener.OnReturnToReserveStarted(e);
+                listener.OnLeavingFromReserve(e);
             }
         }
     }

@@ -7,6 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 [Entitas.CodeGeneration.Attributes.DontGenerate(false)]
-public sealed class ReturnToReserveStartedListenerComponent : Entitas.IComponent {
-    public System.Collections.Generic.List<IReturnToReserveStartedListener> value;
+public sealed class ReturningToReserveListenerComponent : Entitas.IComponent {
+    public System.Collections.Generic.List<IReturningToReserveListener> value;
 }

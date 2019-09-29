@@ -5,19 +5,40 @@ using UnityEngine.Rendering;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class PieceView : View, IPositionListener, IReturnToReserveStartedListener
+    public class PieceView : View, IPositionListener, IReturningToReserveListener, ILeavingFromReserveListener
     {
         public SortingGroup sortingGroup;
+        public Transform scaleContainer;
+        public Transform relativeContainer;
+        public Transform[] cubes;
+
+        private const float ReserveScale = 0.65f;
+        private const float BoardScale = 0.95f;
+        private const float ReturnToReserveDuration = 0.5f;
+        private const float LeaveFromReserveDuration = 0.24f;
 
         protected override void AddListeners(GameEntity entity)
         {
             entity.AddPositionListener(this);
-            entity.AddReturnToReserveStartedListener(this);
+            entity.AddReturningToReserveListener(this);
+            entity.AddLeavingFromReserveListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
         {
             sortingGroup.sortingLayerName = PieceLayer;
+            var totalX = 0f;
+            var totalY = 0f;
+            foreach (var cube in cubes)
+            {
+                var position = cube.transform.localPosition;
+                totalX += position.x;
+                totalY += position.y;
+            }
+
+            var centerX = totalX / cubes.Length;
+            var centerY = totalY / cubes.Length;
+            Debug.Log($"({centerX}, {centerY})");
         }
 
         public void OnPosition(GameEntity entity, Vector2 value)
@@ -25,17 +46,29 @@ namespace _1010C.Scripts.Mono.View
             transform.position = value;
         }
 
-        public void OnReturnToReserveStarted(GameEntity entity)
+        public void OnReturningToReserve(GameEntity entity)
         {
             var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
-            transform.DOMove(reserveSlot.position.Value, 1f).OnComplete(() => OnReturnToReserveEnded(entity));
-            Debug.Log("The Piece should return to its reserve slot here");
-            Debug.Log("The Piece should shrink to its reserve size here");
+
+            scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
+            transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration)
+                .OnComplete(() => OnReturnToReserveEnded(entity));
         }
 
         private static void OnReturnToReserveEnded(GameEntity entity)
         {
-            entity.isReturnToReserveStarted = false;
+            entity.isReturningToReserve = false;
+        }
+
+        public void OnLeavingFromReserve(GameEntity entity)
+        {
+            scaleContainer.DOScale(BoardScale, LeaveFromReserveDuration)
+                .OnComplete(() => OnLeaveFromReserveEnded(entity));
+        }
+
+        private static void OnLeaveFromReserveEnded(GameEntity entity)
+        {
+            entity.isLeavingFromReserve = false;
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4003093131368464000}
   - component: {fileID: 5316484589979605383}
   m_Layer: 0
-  m_Name: Sprite3 (6)
+  m_Name: Cube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 2452446327184996455}
   - component: {fileID: 3145769277962087880}
   m_Layer: 0
-  m_Name: Sprite3 (2)
+  m_Name: Cube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,11 +105,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3544064192869307709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 2, y: 1, z: 0}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 4451434425726141861}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3145769277962087880
 SpriteRenderer:
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 8198925961906831561}
   - component: {fileID: 7161054745717365873}
   m_Layer: 0
-  m_Name: Sprite3
+  m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365880809620908889}
   m_Layer: 0
-  m_Name: RelativeContainer
+  m_Name: ScaleContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,8 +264,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4853051821091708725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
   m_Children:
   - {fileID: 4451434425726141861}
   m_Father: {fileID: 4581840250843111597}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 3245347087027855768}
   - component: {fileID: 4448782001933670522}
   m_Layer: 0
-  m_Name: Sprite2
+  m_Name: Cube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 9209697773099396982}
   - component: {fileID: 1743860021465307844}
   m_Layer: 0
-  m_Name: Sprite3 (4)
+  m_Name: Cube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,11 +376,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6580812086608708080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 1, y: 2, z: 0}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 4451434425726141861}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1743860021465307844
 SpriteRenderer:
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 985579534101178119}
   - component: {fileID: 8438698204607930257}
   m_Layer: 0
-  m_Name: Sprite1
+  m_Name: Cube0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 4451434425726141861}
   - component: {fileID: 5842020847675850070}
   m_Layer: 0
-  m_Name: Sprites
+  m_Name: Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,11 +542,11 @@ Transform:
   - {fileID: 985579534101178119}
   - {fileID: 3245347087027855768}
   - {fileID: 8198925961906831561}
+  - {fileID: 1824218093694174732}
   - {fileID: 1022719313356486218}
   - {fileID: 2452446327184996455}
   - {fileID: 9186174602767524522}
   - {fileID: 9209697773099396982}
-  - {fileID: 1824218093694174732}
   - {fileID: 4003093131368464000}
   m_Father: {fileID: 365880809620908889}
   m_RootOrder: 0
@@ -607,6 +607,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingGroup: {fileID: 5842020847675850070}
+  scaleContainer: {fileID: 365880809620908889}
+  relativeContainer: {fileID: 4581840250843111597}
+  cubes:
+  - {fileID: 985579534101178119}
+  - {fileID: 3245347087027855768}
+  - {fileID: 8198925961906831561}
+  - {fileID: 1824218093694174732}
+  - {fileID: 1022719313356486218}
+  - {fileID: 2452446327184996455}
+  - {fileID: 9186174602767524522}
+  - {fileID: 9209697773099396982}
+  - {fileID: 4003093131368464000}
 --- !u!1 &8130508929926062404
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +630,7 @@ GameObject:
   - component: {fileID: 1824218093694174732}
   - component: {fileID: 3531524346841022859}
   m_Layer: 0
-  m_Name: Sprite3 (5)
+  m_Name: Cube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,11 +644,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8130508929926062404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 4451434425726141861}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3531524346841022859
 SpriteRenderer:
@@ -697,7 +709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4581840250843111597}
   m_Layer: 0
-  m_Name: ScaleContainer
+  m_Name: RelativePositionContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,8 +723,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8140585562511068963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 365880809620908889}
   m_Father: {fileID: 8127764728925845103}
@@ -729,7 +741,7 @@ GameObject:
   - component: {fileID: 1022719313356486218}
   - component: {fileID: 6363972847827525411}
   m_Layer: 0
-  m_Name: Sprite3 (1)
+  m_Name: Cube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,11 +755,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8184468546525635914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 1, y: 1, z: 0}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 4451434425726141861}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6363972847827525411
 SpriteRenderer:
@@ -809,7 +821,7 @@ GameObject:
   - component: {fileID: 9186174602767524522}
   - component: {fileID: 8976478457646048579}
   m_Layer: 0
-  m_Name: Sprite3 (3)
+  m_Name: Cube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,11 +835,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8669375305479149294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 4451434425726141861}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8976478457646048579
 SpriteRenderer:

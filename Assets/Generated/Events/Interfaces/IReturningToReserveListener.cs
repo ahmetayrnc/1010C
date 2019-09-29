@@ -6,6 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public interface IReturnToReserveStartedListener {
-    void OnReturnToReserveStarted(GameEntity entity);
+public interface IReturningToReserveListener {
+    void OnReturningToReserve(GameEntity entity);
 }

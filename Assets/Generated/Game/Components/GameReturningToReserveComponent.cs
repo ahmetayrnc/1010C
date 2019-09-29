@@ -8,18 +8,18 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    static readonly _1010C.Scripts.Components.Piece.ReturnToReserveStartedComponent returnToReserveStartedComponent = new _1010C.Scripts.Components.Piece.ReturnToReserveStartedComponent();
+    static readonly _1010C.Scripts.Components.Piece.ReturningToReserveComponent returningToReserveComponent = new _1010C.Scripts.Components.Piece.ReturningToReserveComponent();
 
-    public bool isReturnToReserveStarted {
-        get { return HasComponent(GameComponentsLookup.ReturnToReserveStarted); }
+    public bool isReturningToReserve {
+        get { return HasComponent(GameComponentsLookup.ReturningToReserve); }
         set {
-            if (value != isReturnToReserveStarted) {
-                var index = GameComponentsLookup.ReturnToReserveStarted;
+            if (value != isReturningToReserve) {
+                var index = GameComponentsLookup.ReturningToReserve;
                 if (value) {
                     var componentPool = GetComponentPool(index);
                     var component = componentPool.Count > 0
                             ? componentPool.Pop()
-                            : returnToReserveStartedComponent;
+                            : returningToReserveComponent;
 
                     AddComponent(index, component);
                 } else {
@@ -40,17 +40,17 @@ public partial class GameEntity {
 //------------------------------------------------------------------------------
 public sealed partial class GameMatcher {
 
-    static Entitas.IMatcher<GameEntity> _matcherReturnToReserveStarted;
+    static Entitas.IMatcher<GameEntity> _matcherReturningToReserve;
 
-    public static Entitas.IMatcher<GameEntity> ReturnToReserveStarted {
+    public static Entitas.IMatcher<GameEntity> ReturningToReserve {
         get {
-            if (_matcherReturnToReserveStarted == null) {
-                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.ReturnToReserveStarted);
+            if (_matcherReturningToReserve == null) {
+                var matcher = (Entitas.Matcher<GameEntity>)Entitas.Matcher<GameEntity>.AllOf(GameComponentsLookup.ReturningToReserve);
                 matcher.componentNames = GameComponentsLookup.componentNames;
-                _matcherReturnToReserveStarted = matcher;
+                _matcherReturningToReserve = matcher;
             }
 
-            return _matcherReturnToReserveStarted;
+            return _matcherReturningToReserve;
         }
     }
 }
