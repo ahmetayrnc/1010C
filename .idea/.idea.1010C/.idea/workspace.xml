@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeBoardSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeBoardSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeReserveSlotsSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeReserveSlotsSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeTilesSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeTilesSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +29,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Input/InputMatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/IdService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,21 +40,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/CleanupInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/1010C/Mono/View/IView.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Components/ViewComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameViewComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Components/TileComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Components/GridPositionComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Components/BoardSizeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/Camera/CameraScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Mono/ScriptableObjects/CubeColors.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/Tile/TileComponent.cs" />
@@ -84,8 +97,14 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/IdComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/CleanupInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" />
       </list>
     </option>
   </component>
@@ -138,7 +157,7 @@
       <workItem from="1568974933235" duration="1499000" />
       <workItem from="1568977184781" duration="2099000" />
       <workItem from="1568980848936" duration="18915000" />
-      <workItem from="1569770914311" duration="926000" />
+      <workItem from="1569770914311" duration="3216000" />
     </task>
     <servers />
   </component>

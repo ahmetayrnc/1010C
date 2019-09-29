@@ -9,17 +9,20 @@
 public static class InputComponentsLookup {
 
     public const int TouchDown = 0;
-    public const int TouchUp = 1;
+    public const int TouchPosition = 1;
+    public const int TouchUp = 2;
 
-    public const int TotalComponents = 2;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
         "TouchDown",
+        "TouchPosition",
         "TouchUp"
     };
 
     public static readonly System.Type[] componentTypes = {
         typeof(_1010C.Scripts.Components.Input.TouchDownComponent),
+        typeof(_1010C.Scripts.Components.Input.TouchPositionComponent),
         typeof(_1010C.Scripts.Components.Input.TouchUpComponent)
     };
 }

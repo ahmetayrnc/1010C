@@ -20,6 +20,7 @@
                 <e p="TouchDownComponent.cs" t="Include" />
               </e>
               <e p="Piece" t="Include">
+                <e p="DragComponent.cs" t="Include" />
                 <e p="DragEndedComponent.cs" t="Include" />
                 <e p="DragStartedComponent.cs" t="Include" />
                 <e p="PieceInAirComponent.cs" t="Include" />
@@ -63,15 +64,33 @@
             </e>
             <e p="Systems" t="Include">
               <e p="AddViewSystem.cs" t="Include" />
-              <e p="InitializeBoardSystem.cs" t="Include" />
-              <e p="InitializeReserveSlotsSystem.cs" t="Include" />
-              <e p="InitializeTilesSystem.cs" t="Include" />
+              <e p="DragSystem.cs" t="Include" />
+              <e p="Initialize" t="Include">
+                <e p="InitializeBoardSystem.cs" t="Include" />
+                <e p="InitializeReserveSlotsSystem.cs" t="Include" />
+                <e p="InitializeTilesSystem.cs" t="Include" />
+              </e>
               <e p="Input" t="Include">
+                <e p="CleanupInputSystem.cs" t="Include" />
                 <e p="ProcessTouchDownSystem.cs" t="Include" />
                 <e p="ProcessTouchUpSystem.cs" t="Include" />
               </e>
               <e p="ReserveFillSystem.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
           </e>
         </e>
         <e p="Generated" t="Include">
@@ -114,6 +133,7 @@
             <e p="Components" t="Include">
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
+              <e p="GameDragComponent.cs" t="Include" />
               <e p="GameDragEndedComponent.cs" t="Include" />
               <e p="GameDragEndedListenerComponent.cs" t="Include" />
               <e p="GameDragStartedComponent.cs" t="Include" />
@@ -147,6 +167,7 @@
           <e p="Input" t="Include">
             <e p="Components" t="Include">
               <e p="InputTouchDownComponent.cs" t="Include" />
+              <e p="InputTouchPositionComponent.cs" t="Include" />
               <e p="InputTouchUpComponent.cs" t="Include" />
             </e>
             <e p="InputAttribute.cs" t="Include" />

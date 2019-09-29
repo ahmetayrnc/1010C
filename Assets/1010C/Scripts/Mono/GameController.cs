@@ -31,10 +31,13 @@ namespace _1010C.Scripts.Mono
                     .Add(new InitializeReserveSlotsSystem(contexts))
 
                     //input
-//                    .Add(new InputSystem(contexts))
                     .Add(new ProcessTouchDownSystem(contexts))
                     .Add(new ProcessTouchUpSystem(contexts))
-                    
+                    .Add(new CleanupInputSystem(contexts))
+
+                    //drag
+                    .Add(new DragSystem(contexts))
+
                     //
                     .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))

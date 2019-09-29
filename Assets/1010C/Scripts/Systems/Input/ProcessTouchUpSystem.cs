@@ -26,16 +26,21 @@ namespace _1010C.Scripts.Systems.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
-            var inputEntity = entities.SingleEntity();
-            var input = inputEntity.touchUp;
-
             if (!_contexts.game.hasPieceInAir) return;
 
             var piece = _contexts.game.GetEntityWithId(_contexts.game.pieceInAir.Id);
-
-            piece?.ReplacePieceState(PieceState.InReserve);
+            if (piece != null)
+            {
+                CleanupPiece(piece);
+            }
 
             _contexts.game.RemovePieceInAir();
+        }
+
+        private static void CleanupPiece(GameEntity piece)
+        {
+            piece.ReplacePieceState(PieceState.InReserve);
+            piece.isDrag = false;
         }
     }
 }

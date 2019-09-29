@@ -23,6 +23,9 @@ namespace _1010C.Scripts.Mono.Input
 
         private void EmitInput()
         {
+            var touchPos = _cam.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
+            _contexts.input.CreateEntity().AddTouchPosition(touchPos);
+
             var touchDown = UnityEngine.Input.GetMouseButtonDown(0);
             var touchUp = UnityEngine.Input.GetMouseButtonUp(0);
 

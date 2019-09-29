@@ -12,35 +12,37 @@ public static class GameComponentsLookup {
     public const int GridPosition = 1;
     public const int Id = 2;
     public const int IdCount = 3;
-    public const int DragEnded = 4;
-    public const int DragStarted = 5;
-    public const int PieceInAir = 6;
-    public const int PieceState = 7;
-    public const int Position = 8;
-    public const int Piece = 9;
-    public const int PieceInReserve = 10;
-    public const int ReserveSlot = 11;
-    public const int ReserveSlotPositions = 12;
-    public const int ReserveSlotState = 13;
-    public const int Tile = 14;
-    public const int TileState = 15;
-    public const int View = 16;
-    public const int AnyBoardSizeListener = 17;
-    public const int DragEndedListener = 18;
-    public const int DragStartedListener = 19;
-    public const int GridPositionListener = 20;
-    public const int PieceStateListener = 21;
-    public const int PositionListener = 22;
-    public const int ReserveSlotStateListener = 23;
-    public const int TileStateListener = 24;
+    public const int Drag = 4;
+    public const int DragEnded = 5;
+    public const int DragStarted = 6;
+    public const int PieceInAir = 7;
+    public const int PieceState = 8;
+    public const int Position = 9;
+    public const int Piece = 10;
+    public const int PieceInReserve = 11;
+    public const int ReserveSlot = 12;
+    public const int ReserveSlotPositions = 13;
+    public const int ReserveSlotState = 14;
+    public const int Tile = 15;
+    public const int TileState = 16;
+    public const int View = 17;
+    public const int AnyBoardSizeListener = 18;
+    public const int DragEndedListener = 19;
+    public const int DragStartedListener = 20;
+    public const int GridPositionListener = 21;
+    public const int PieceStateListener = 22;
+    public const int PositionListener = 23;
+    public const int ReserveSlotStateListener = 24;
+    public const int TileStateListener = 25;
 
-    public const int TotalComponents = 25;
+    public const int TotalComponents = 26;
 
     public static readonly string[] componentNames = {
         "BoardSize",
         "GridPosition",
         "Id",
         "IdCount",
+        "Drag",
         "DragEnded",
         "DragStarted",
         "PieceInAir",
@@ -69,6 +71,7 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
+        typeof(_1010C.Scripts.Components.Piece.DragComponent),
         typeof(_1010C.Scripts.Components.Piece.DragEndedComponent),
         typeof(_1010C.Scripts.Components.Piece.DragStartedComponent),
         typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
