@@ -16,6 +16,7 @@ public sealed class GameEventSystems : Feature {
         Add(new PieceStateEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
         Add(new ReserveSlotStateEventSystem(contexts)); // priority: 0
+        Add(new ReturnToReserveStartedEventSystem(contexts)); // priority: 0
         Add(new TileStateEventSystem(contexts)); // priority: 0
     }
 }

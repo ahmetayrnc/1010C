@@ -57,8 +57,9 @@ namespace _1010C.Scripts.Systems.Input
         {
             var piece = _contexts.game.GetEntityWithId(pieceId);
             piece.isDrag = true;
-            piece.isDragStarted = true;
-            piece.ReplacePieceState(PieceState.InAir);
+//            piece.
+//            piece.isDragStarted = true;
+//            piece.ReplacePieceState(PieceState.InAir);
             _contexts.game.SetPieceInAir(pieceId);
         }
     }

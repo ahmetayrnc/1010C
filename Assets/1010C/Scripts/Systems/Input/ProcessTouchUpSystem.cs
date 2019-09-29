@@ -39,8 +39,8 @@ namespace _1010C.Scripts.Systems.Input
 
         private static void CleanupPiece(GameEntity piece)
         {
-            piece.ReplacePieceState(PieceState.InReserve);
             piece.isDrag = false;
+            piece.isReturnToReserveStarted = true;
         }
     }
 }

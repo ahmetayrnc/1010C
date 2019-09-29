@@ -53,7 +53,8 @@ namespace _1010C.Scripts.Systems
             piece.AddId(IdService.GetNewId());
             piece.AddPosition(reserveSlot.position.Value);
             piece.AddPieceState(PieceState.InReserve);
-            
+            piece.AddReserveSlotForPiece(reserveSlot.id.Value);
+
             reserveSlot.AddPieceInReserve(piece.id.Value);
         }
     }

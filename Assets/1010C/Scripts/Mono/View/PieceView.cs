@@ -1,18 +1,18 @@
 ﻿using _1010C.Scripts.Components.Piece;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class PieceView : View, IPositionListener, IPieceStateListener, IDragStartedListener
+    public class PieceView : View, IPositionListener, IReturnToReserveStartedListener
     {
         public SortingGroup sortingGroup;
 
         protected override void AddListeners(GameEntity entity)
         {
             entity.AddPositionListener(this);
-            entity.AddPieceStateListener(this);
-            entity.AddDragStartedListener(this);
+            entity.AddReturnToReserveStartedListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
@@ -25,15 +25,17 @@ namespace _1010C.Scripts.Mono.View
             transform.position = value;
         }
 
-        public void OnPieceState(GameEntity entity, PieceState value)
+        public void OnReturnToReserveStarted(GameEntity entity)
         {
-            Debug.Log($"piece with id: {entity.id.Value} is in {value}");
+            var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
+            transform.DOMove(reserveSlot.position.Value, 1f).OnComplete(() => OnReturnToReserveEnded(entity));
+            Debug.Log("The Piece should return to its reserve slot here");
+            Debug.Log("The Piece should shrink to its reserve size here");
         }
 
-        public void OnDragStarted(GameEntity entity)
+        private static void OnReturnToReserveEnded(GameEntity entity)
         {
-            //make the piece bigger and increase the gaps in between
-            Debug.Log("OnDragStarted");
+            entity.isReturnToReserveStarted = false;
         }
     }
 }

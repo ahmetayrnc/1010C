@@ -25,6 +25,8 @@
                 <e p="DragStartedComponent.cs" t="Include" />
                 <e p="PieceInAirComponent.cs" t="Include" />
                 <e p="PieceStateComponent.cs" t="Include" />
+                <e p="ReserveSlotForPieceComponent.cs" t="Include" />
+                <e p="ReturnToReserveStartedComponent.cs" t="Include" />
               </e>
               <e p="PositionComponent.cs" t="Include" />
               <e p="Reserve" t="Include">
@@ -104,6 +106,7 @@
               <e p="PieceStateListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
               <e p="ReserveSlotStateListenerComponent.cs" t="Include" />
+              <e p="ReturnToReserveStartedListenerComponent.cs" t="Include" />
               <e p="TileStateListenerComponent.cs" t="Include" />
             </e>
             <e p="GameEventSystems.cs" t="Include" />
@@ -115,6 +118,7 @@
               <e p="IPieceStateListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
               <e p="IReserveSlotStateListener.cs" t="Include" />
+              <e p="IReturnToReserveStartedListener.cs" t="Include" />
               <e p="ITileStateListener.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
@@ -125,6 +129,7 @@
               <e p="PieceStateEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
               <e p="ReserveSlotStateEventSystem.cs" t="Include" />
+              <e p="ReturnToReserveStartedEventSystem.cs" t="Include" />
               <e p="TileStateEventSystem.cs" t="Include" />
             </e>
           </e>
@@ -150,9 +155,12 @@
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />
+              <e p="GameReserveSlotForPieceComponent.cs" t="Include" />
               <e p="GameReserveSlotPositionsComponent.cs" t="Include" />
               <e p="GameReserveSlotStateComponent.cs" t="Include" />
               <e p="GameReserveSlotStateListenerComponent.cs" t="Include" />
+              <e p="GameReturnToReserveStartedComponent.cs" t="Include" />
+              <e p="GameReturnToReserveStartedListenerComponent.cs" t="Include" />
               <e p="GameTileComponent.cs" t="Include" />
               <e p="GameTileStateComponent.cs" t="Include" />
               <e p="GameTileStateListenerComponent.cs" t="Include" />

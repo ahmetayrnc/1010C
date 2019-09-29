@@ -1,4 +1,5 @@
 ﻿using _1010C.Scripts.Components.Reserve;
+using _1010C.Scripts.Services;
 using Entitas;
 using UnityEngine;
 
@@ -39,6 +40,7 @@ namespace _1010C.Scripts.Systems
             entity.isReserveSlot = true;
             entity.AddPosition(pos);
             entity.AddReserveSlotState(ReserveSlotState.Empty);
+            entity.AddId(IdService.GetNewId());
         }
     }
 }
