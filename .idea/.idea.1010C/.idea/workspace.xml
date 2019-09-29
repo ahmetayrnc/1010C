@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="" />
+    <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,20 +15,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/IdService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/IdComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/IdComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -80,8 +84,8 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/IdComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" />
       </list>
     </option>
   </component>
@@ -134,6 +138,7 @@
       <workItem from="1568974933235" duration="1499000" />
       <workItem from="1568977184781" duration="2099000" />
       <workItem from="1568980848936" duration="18915000" />
+      <workItem from="1569770914311" duration="926000" />
     </task>
     <servers />
   </component>

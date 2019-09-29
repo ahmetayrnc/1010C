@@ -11,6 +11,8 @@ namespace _1010C.Scripts.Systems.Input
         private readonly Contexts _contexts;
         private readonly IGroup<GameEntity> _reserveSlots;
 
+        private const float ReserveSlotRadius = 1.5f;
+
         public ProcessTouchDownSystem(Contexts contexts) : base(contexts.input)
         {
             _contexts = contexts;
@@ -36,11 +38,11 @@ namespace _1010C.Scripts.Systems.Input
             {
                 var reserveSlotPosition = reserveSlot.position.Value;
 
-                if (!(input.Value.x >= reserveSlotPosition.x - 1.5f) ||
-                    !(input.Value.x <= reserveSlotPosition.x + 1.5f)) continue;
+                if (!(input.Value.x >= reserveSlotPosition.x - ReserveSlotRadius) ||
+                    !(input.Value.x <= reserveSlotPosition.x + ReserveSlotRadius)) continue;
 
-                if (!(input.Value.y >= reserveSlotPosition.y - 1.5f) ||
-                    !(input.Value.y <= reserveSlotPosition.y + 1.5f)) continue;
+                if (!(input.Value.y >= reserveSlotPosition.y - ReserveSlotRadius) ||
+                    !(input.Value.y <= reserveSlotPosition.y + ReserveSlotRadius)) continue;
 
                 if (reserveSlot.reserveSlotState.Value == ReserveSlotState.Empty) continue;
                 if (!reserveSlot.hasPieceInReserve) continue;
