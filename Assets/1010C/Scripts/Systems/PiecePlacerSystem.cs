@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using _1010C.Scripts.Components.Reserve;
 using _1010C.Scripts.Components.Tile;
 using Entitas;
 using UnityEngine;
@@ -50,14 +49,11 @@ namespace _1010C.Scripts.Systems
                 tiles[tile.gridPosition.Value.x, tile.gridPosition.Value.y] = tile;
             }
 
-            //calculate the grid position from float position
-            var pos = piece.position.Value;
-//            var gridX = (int) (pos.x + 0.5f);
-//            var gridY = (int) (pos.y + 0.5f);
-
             //check if the piece can be placed
+            var pos = piece.position.Value;
             foreach (var cubePos in piece.pieceCubePositions.Value)
             {
+                //calculate the grid position from float position
                 var cubeX = Mathf.RoundToInt(pos.x + cubePos.x);
                 var cubeY = Mathf.RoundToInt(pos.y + cubePos.y);
 

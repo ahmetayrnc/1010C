@@ -19,7 +19,7 @@ namespace _1010C.Scripts.Mono.View
         private const float BoardScale = 0.9f;
         private const float ReturnToReserveDuration = 0.5f;
         private const float LeaveFromReserveDuration = 0.24f;
-        private const float CubeSeparationAmount = 0.1f;
+        private const float CubeSeparationAmount = 0.1f; //Move this to piece type
 
         protected override void AddListeners(GameEntity entity)
         {

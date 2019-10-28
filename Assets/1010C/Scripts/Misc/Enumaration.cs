@@ -7,10 +7,6 @@ namespace _1010C.Scripts.Misc
 {
     public abstract class Enumeration : IComparable
     {
-        protected Enumeration()
-        {
-        }
-
         protected Enumeration(int value, string name)
         {
             Value = value;
@@ -25,7 +21,7 @@ namespace _1010C.Scripts.Misc
             return Name;
         }
 
-        private static IEnumerable<T> GetAll<T>() where T : Enumeration
+        protected static IEnumerable<T> GetAll<T>() where T : Enumeration
         {
             var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
 

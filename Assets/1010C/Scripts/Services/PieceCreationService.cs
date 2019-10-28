@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _1010C.Scripts.PieceRecipes;
+using UnityEngine;
 
 namespace _1010C.Scripts.Services
 {
@@ -11,20 +12,7 @@ namespace _1010C.Scripts.Services
             piece.AddId(IdService.GetNewId());
             piece.AddPosition(reserveSlot.position.Value);
             piece.AddReserveSlotForPiece(reserveSlot.id.Value);
-            piece.AddPieceCubePositions(new[]
-            {
-//                new Vector2(-0.5f, 0),
-//                new Vector2(+0.5f, 0),
-                new Vector2(-1, -1),
-                new Vector2(0, -1),
-                new Vector2(1, -1),
-                new Vector2(-1, 0),
-                new Vector2(0, 0),
-                new Vector2(1, 0),
-                new Vector2(-1, 1),
-                new Vector2(0, 1),
-                new Vector2(1, 1),
-            });
+            piece.AddPieceCubePositions(PieceType.GetNextPiece().GetPiecePositions());
 
             reserveSlot.AddPieceInReserve(piece.id.Value);
         }
