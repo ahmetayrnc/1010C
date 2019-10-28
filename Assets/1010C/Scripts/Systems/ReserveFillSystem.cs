@@ -42,20 +42,8 @@ namespace _1010C.Scripts.Systems
             foreach (var reserveSlot in entities)
             {
                 reserveSlot.ReplaceReserveSlotState(ReserveSlotState.Full);
-                CreateReservePiece(reserveSlot);
+                PieceCreationService.CreateReservePiece(reserveSlot);
             }
-        }
-
-        private void CreateReservePiece(GameEntity reserveSlot)
-        {
-            var piece = _contexts.game.CreateEntity();
-            piece.isPiece = true;
-            piece.AddId(IdService.GetNewId());
-            piece.AddPosition(reserveSlot.position.Value);
-            piece.AddPieceState(PieceState.InReserve);
-            piece.AddReserveSlotForPiece(reserveSlot.id.Value);
-
-            reserveSlot.AddPieceInReserve(piece.id.Value);
         }
     }
 }

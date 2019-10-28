@@ -21,8 +21,8 @@
               </e>
               <e p="Piece" t="Include">
                 <e p="DragComponent.cs" t="Include" />
+                <e p="PieceCubePositions.cs" t="Include" />
                 <e p="PieceInAirComponent.cs" t="Include" />
-                <e p="PieceStateComponent.cs" t="Include" />
                 <e p="ReserveSlotForPieceComponent.cs" t="Include" />
               </e>
               <e p="PositionComponent.cs" t="Include" />
@@ -63,6 +63,7 @@
             </e>
             <e p="Services" t="Include">
               <e p="IdService.cs" t="Include" />
+              <e p="PieceCreationService.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="AddViewSystem.cs" t="Include" />
@@ -104,7 +105,6 @@
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
-              <e p="PieceStateListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
               <e p="ReserveSlotStateListenerComponent.cs" t="Include" />
               <e p="TileStateListenerComponent.cs" t="Include" />
@@ -115,7 +115,6 @@
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
-              <e p="IPieceStateListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
               <e p="IReserveSlotStateListener.cs" t="Include" />
               <e p="ITileStateListener.cs" t="Include" />
@@ -125,7 +124,6 @@
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
-              <e p="PieceStateEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
               <e p="ReserveSlotStateEventSystem.cs" t="Include" />
               <e p="TileStateEventSystem.cs" t="Include" />
@@ -144,10 +142,9 @@
               <e p="GameIdComponent.cs" t="Include" />
               <e p="GameIdCountComponent.cs" t="Include" />
               <e p="GamePieceComponent.cs" t="Include" />
+              <e p="GamePieceCubePositionsComponent.cs" t="Include" />
               <e p="GamePieceInAirComponent.cs" t="Include" />
               <e p="GamePieceInReserveComponent.cs" t="Include" />
-              <e p="GamePieceStateComponent.cs" t="Include" />
-              <e p="GamePieceStateListenerComponent.cs" t="Include" />
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />

@@ -24,12 +24,16 @@ namespace _1010C.Scripts.Systems
         {
             foreach (var entity in entities)
             {
-                var pos = entity.position.Value;
-                var gridX = (int) (pos.x + 0.5f);
-                var gridY = (int) (pos.y + 0.5f);
-
-                Debug.Log($"({gridX}, {gridY})");
+                var place = SuitableForPlacement(entity);
             }
+        }
+
+        private bool SuitableForPlacement(GameEntity piece)
+        {
+            var pos = piece.position.Value;
+            var gridX = (int) (pos.x + 0.5f);
+            var gridY = (int) (pos.y + 0.5f);
+            return true;
         }
     }
 }

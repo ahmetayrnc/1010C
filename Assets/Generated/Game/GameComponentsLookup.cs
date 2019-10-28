@@ -13,8 +13,8 @@ public static class GameComponentsLookup {
     public const int Id = 2;
     public const int IdCount = 3;
     public const int Drag = 4;
-    public const int PieceInAir = 5;
-    public const int PieceState = 6;
+    public const int PieceCubePositions = 5;
+    public const int PieceInAir = 6;
     public const int ReserveSlotForPiece = 7;
     public const int Position = 8;
     public const int Piece = 9;
@@ -29,12 +29,11 @@ public static class GameComponentsLookup {
     public const int DragListener = 18;
     public const int DragRemovedListener = 19;
     public const int GridPositionListener = 20;
-    public const int PieceStateListener = 21;
-    public const int PositionListener = 22;
-    public const int ReserveSlotStateListener = 23;
-    public const int TileStateListener = 24;
+    public const int PositionListener = 21;
+    public const int ReserveSlotStateListener = 22;
+    public const int TileStateListener = 23;
 
-    public const int TotalComponents = 25;
+    public const int TotalComponents = 24;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -42,8 +41,8 @@ public static class GameComponentsLookup {
         "Id",
         "IdCount",
         "Drag",
+        "PieceCubePositions",
         "PieceInAir",
-        "PieceState",
         "ReserveSlotForPiece",
         "Position",
         "Piece",
@@ -58,7 +57,6 @@ public static class GameComponentsLookup {
         "DragListener",
         "DragRemovedListener",
         "GridPositionListener",
-        "PieceStateListener",
         "PositionListener",
         "ReserveSlotStateListener",
         "TileStateListener"
@@ -70,8 +68,8 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
         typeof(_1010C.Scripts.Components.Piece.DragComponent),
+        typeof(_1010C.Scripts.Components.Piece.PieceCubePositions),
         typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
-        typeof(_1010C.Scripts.Components.Piece.PieceStateComponent),
         typeof(_1010C.Scripts.Components.Piece.ReserveSlotForPieceComponent),
         typeof(_1010C.Scripts.Components.PositionComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceComponent),
@@ -86,7 +84,6 @@ public static class GameComponentsLookup {
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
         typeof(GridPositionListenerComponent),
-        typeof(PieceStateListenerComponent),
         typeof(PositionListenerComponent),
         typeof(ReserveSlotStateListenerComponent),
         typeof(TileStateListenerComponent)
