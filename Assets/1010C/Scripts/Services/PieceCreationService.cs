@@ -1,5 +1,4 @@
-﻿using _1010C.Scripts.Components.Piece;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace _1010C.Scripts.Services
 {

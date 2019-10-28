@@ -41,6 +41,7 @@
             </e>
             <e p="Misc" t="Include">
               <e p="EnumarableExtensions.cs" t="Include" />
+              <e p="Enumaration.cs" t="Include" />
             </e>
             <e p="Mono" t="Include">
               <e p="Camera" t="Include">
@@ -60,6 +61,9 @@
                 <e p="View.cs" t="Include" />
                 <e p="ViewFactory.cs" t="Include" />
               </e>
+            </e>
+            <e p="PieceRecipes" t="Include">
+              <e p="PieceType.cs" t="Include" />
             </e>
             <e p="Services" t="Include">
               <e p="IdService.cs" t="Include" />
