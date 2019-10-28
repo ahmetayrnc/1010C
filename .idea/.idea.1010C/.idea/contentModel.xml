@@ -34,6 +34,9 @@
                 <e p="PieceInReserveComponent.cs" t="Include" />
                 <e p="ReserveSlotComponent.cs" t="Include" />
               </e>
+              <e p="Score" t="Include">
+                <e p="ScoreComponent.cs" t="Include" />
+              </e>
               <e p="Tile" t="Include">
                 <e p="TileComponent.cs" t="Include" />
                 <e p="TileStateComponent.cs" t="Include" />

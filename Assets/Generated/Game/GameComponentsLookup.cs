@@ -23,18 +23,20 @@ public static class GameComponentsLookup {
     public const int Position = 12;
     public const int PieceInReserve = 13;
     public const int ReserveSlot = 14;
-    public const int Tile = 15;
-    public const int TileState = 16;
-    public const int View = 17;
-    public const int AnyBoardSizeListener = 18;
-    public const int DestroyedListener = 19;
-    public const int DragListener = 20;
-    public const int DragRemovedListener = 21;
-    public const int GridPositionListener = 22;
-    public const int PositionListener = 23;
-    public const int TileStateListener = 24;
+    public const int Score = 15;
+    public const int Tile = 16;
+    public const int TileState = 17;
+    public const int View = 18;
+    public const int AnyBoardSizeListener = 19;
+    public const int AnyScoreListener = 20;
+    public const int DestroyedListener = 21;
+    public const int DragListener = 22;
+    public const int DragRemovedListener = 23;
+    public const int GridPositionListener = 24;
+    public const int PositionListener = 25;
+    public const int TileStateListener = 26;
 
-    public const int TotalComponents = 25;
+    public const int TotalComponents = 27;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -52,10 +54,12 @@ public static class GameComponentsLookup {
         "Position",
         "PieceInReserve",
         "ReserveSlot",
+        "Score",
         "Tile",
         "TileState",
         "View",
         "AnyBoardSizeListener",
+        "AnyScoreListener",
         "DestroyedListener",
         "DragListener",
         "DragRemovedListener",
@@ -80,10 +84,12 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.PositionComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
         typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
+        typeof(_1010C.Scripts.Components.Score.ScoreComponent),
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
         typeof(_1010C.Scripts.Components.Tile.TileStateComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
+        typeof(AnyScoreListenerComponent),
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
