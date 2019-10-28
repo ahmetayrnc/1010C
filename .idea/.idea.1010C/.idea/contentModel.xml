@@ -68,6 +68,11 @@
             </e>
             <e p="PieceRecipes" t="Include">
               <e p="PieceType.cs" t="Include" />
+              <e p="PieceType.OneType.cs" t="Include" />
+              <e p="PieceType.SmallLType.cs" t="Include" />
+              <e p="PieceType.SmallSquareType.cs" t="Include" />
+              <e p="PieceType.ThreePieceType.cs" t="Include" />
+              <e p="PieceType.TwoPieceType.cs" t="Include" />
             </e>
             <e p="Services" t="Include">
               <e p="IdService.cs" t="Include" />
@@ -112,6 +117,7 @@
           <e p="Events" t="Include">
             <e p="Components" t="Include">
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
+              <e p="AnyScoreListenerComponent.cs" t="Include" />
               <e p="DestroyedListenerComponent.cs" t="Include" />
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
@@ -122,6 +128,7 @@
             <e p="GameEventSystems.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IAnyBoardSizeListener.cs" t="Include" />
+              <e p="IAnyScoreListener.cs" t="Include" />
               <e p="IDestroyedListener.cs" t="Include" />
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
@@ -131,6 +138,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
+              <e p="AnyScoreEventSystem.cs" t="Include" />
               <e p="DestroyedEventSystem.cs" t="Include" />
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
@@ -143,6 +151,7 @@
           <e p="Game" t="Include">
             <e p="Components" t="Include">
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
+              <e p="GameAnyScoreListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameColorComponent.cs" t="Include" />
               <e p="GameDestroyedComponent.cs" t="Include" />
@@ -163,6 +172,7 @@
               <e p="GameReserveSlotComponent.cs" t="Include" />
               <e p="GameReserveSlotForPieceComponent.cs" t="Include" />
               <e p="GameReserveSlotPositionsComponent.cs" t="Include" />
+              <e p="GameScoreComponent.cs" t="Include" />
               <e p="GameTileComponent.cs" t="Include" />
               <e p="GameTileStateComponent.cs" t="Include" />
               <e p="GameTileStateListenerComponent.cs" t="Include" />

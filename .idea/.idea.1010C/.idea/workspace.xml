@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Prefabs/TileView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Prefabs/TileView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/IdService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceInReserveComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/BoardSizeComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ReserveSlotForPieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,13 +65,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Misc/EnumarableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Misc/Enumaration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,12 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/LeaveFromReserveStartedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragEndedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragStartedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/LeavingFromReserveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ReturningToReserveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDragEndedComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDragStartedComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameLeavingFromReserveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReturningToReserveComponent.cs" />
@@ -115,16 +124,22 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/CubeRemoverSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OnePieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
       </list>
     </option>
   </component>
@@ -182,7 +197,8 @@
       <workItem from="1568980848936" duration="18915000" />
       <workItem from="1569770914311" duration="6072000" />
       <workItem from="1572095240841" duration="254000" />
-      <workItem from="1572195491396" duration="27407000" />
+      <workItem from="1572195491396" duration="27471000" />
+      <workItem from="1572295582503" duration="2558000" />
     </task>
     <servers />
   </component>

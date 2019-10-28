@@ -15,7 +15,7 @@ namespace _1010C.Scripts.Mono.View
         public CubeView[] cubes;
 
         private const float ReserveScale = 0.65f;
-        private const float BoardScale = 0.9f;
+        private const float BoardScale = 0.86f;
         private const float ReturnToReserveDuration = 0.5f;
         private const float LeaveFromReserveDuration = 0.24f;
 
@@ -66,15 +66,18 @@ namespace _1010C.Scripts.Mono.View
         public void OnDrag(GameEntity entity)
         {
             MoveCubes(MovementType.Separate);
+            scaleContainer.DOKill();
             scaleContainer.DOScale(BoardScale, LeaveFromReserveDuration);
         }
 
         public void OnDragRemoved(GameEntity entity)
         {
             MoveCubes(MovementType.Join);
+            scaleContainer.DOKill();
             scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
 
             var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
+            transform.DOKill();
             transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration).OnComplete(() =>
             {
                 entity.ReplacePosition(reserveSlot.position.Value);
@@ -109,6 +112,7 @@ namespace _1010C.Scripts.Mono.View
                 var newLocalY = CalculateNewValueFromDif(difY, cubeLocalPosition.y, type);
                 var newLocalX = CalculateNewValueFromDif(difX, cubeLocalPosition.x, type);
 
+                cubeTransform.DOKill();
                 cubeTransform.DOLocalMoveX(newLocalX, LeaveFromReserveDuration);
                 cubeTransform.DOLocalMoveY(newLocalY, LeaveFromReserveDuration);
             }
