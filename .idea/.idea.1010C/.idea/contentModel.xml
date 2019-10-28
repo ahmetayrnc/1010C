@@ -72,6 +72,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="AddViewSystem.cs" t="Include" />
+              <e p="CubeRemoverSystem.cs" t="Include" />
               <e p="DestroySystem.cs" t="Include" />
               <e p="DragSystem.cs" t="Include" />
               <e p="Initialize" t="Include">

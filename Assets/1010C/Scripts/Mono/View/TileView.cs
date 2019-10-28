@@ -31,6 +31,11 @@ namespace _1010C.Scripts.Mono.View
             {
                 spriteRenderer.color = pieceColors.PieceColorToColor(entity.color.Value);
             }
+
+            if (value == TileState.Empty)
+            {
+                spriteRenderer.color = Color.gray;
+            }
         }
     }
 }

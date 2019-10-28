@@ -42,11 +42,14 @@ namespace _1010C.Scripts.Mono
                     //placer
                     .Add(new PiecePlacerSystem(contexts))
 
+                    //remover
+                    .Add(new CubeRemoverSystem(contexts))
+
                     //
                     .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))
-                
+
                     //
                     .Add(new DestroySystem(contexts))
                 ;
