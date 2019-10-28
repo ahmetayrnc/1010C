@@ -2,12 +2,13 @@
 using _1010C.Scripts.Misc;
 using _1010C.Scripts.Mono.ScriptableObjects;
 using DG.Tweening;
+using Entitas.Unity;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class PieceView : View, IPositionListener, IDragListener, IDragRemovedListener
+    public class PieceView : View, IPositionListener, IDragListener, IDragRemovedListener, IDestroyedListener
     {
         public PieceColors pieceColors;
         public SortingGroup sortingGroup;
@@ -25,6 +26,7 @@ namespace _1010C.Scripts.Mono.View
             entity.AddPositionListener(this);
             entity.AddDragListener(this);
             entity.AddDragRemovedListener(this);
+            entity.AddDestroyedListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
@@ -35,19 +37,6 @@ namespace _1010C.Scripts.Mono.View
             {
                 cube.SetColor(color);
             }
-
-//            var totalX = 0f;
-//            var totalY = 0f;
-//            foreach (var cube in cubes)
-//            {
-//                var position = cube.transform.localPosition;
-//                totalX += position.x;
-//                totalY += position.y;
-//            }
-//
-//            var centerX = totalX / cubes.Length;
-//            var centerY = totalY / cubes.Length;
-//            Debug.Log($"({centerX}, {centerY})");
         }
 
         public void OnPosition(GameEntity entity, Vector2 value)
@@ -68,6 +57,13 @@ namespace _1010C.Scripts.Mono.View
             scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
             transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration);
             MoveCubes(MovementType.Join);
+        }
+
+        public void OnDestroyed(GameEntity entity)
+        {
+            GameObject go;
+            (go = gameObject).Unlink();
+            Destroy(go);
         }
 
         private enum MovementType

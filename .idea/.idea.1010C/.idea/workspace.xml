@@ -2,29 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceCubePositions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceCubePositions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceCubePositionsComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceCubePositionsComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/DestroyedListenerComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/DestroyedListenerComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IDestroyedListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IDestroyedListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/DestroyedEventSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/DestroyedEventSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDestroyedComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDestroyedComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDestroyedListenerComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDestroyedListenerComponent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/PieceStateListenerComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/PieceStateListenerComponent.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IPieceStateListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IPieceStateListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/PieceStateEventSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/PieceStateEventSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceStateComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceStateComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceStateListenerComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceStateListenerComponent.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,19 +69,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/CleanupInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/1010C/Components/Reserve/PieceInReserveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Services/IdSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Components/IdCountComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeBoardSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Services/IdService.cs" />
@@ -119,13 +116,10 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Misc/EnumarableExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeBoardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceCubePositions.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceStateComponent.cs" />
@@ -134,6 +128,11 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/PieceStateEventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" />
       </list>
     </option>
   </component>
@@ -191,7 +190,7 @@
       <workItem from="1568980848936" duration="18915000" />
       <workItem from="1569770914311" duration="6072000" />
       <workItem from="1572095240841" duration="254000" />
-      <workItem from="1572195491396" duration="7799000" />
+      <workItem from="1572195491396" duration="9818000" />
     </task>
     <servers />
   </component>

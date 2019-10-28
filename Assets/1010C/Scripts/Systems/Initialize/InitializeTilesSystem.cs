@@ -1,4 +1,5 @@
-﻿using Entitas;
+﻿using _1010C.Scripts.Components.Tile;
+using Entitas;
 using UnityEngine;
 
 namespace _1010C.Scripts.Systems.Initialize
@@ -28,8 +29,9 @@ namespace _1010C.Scripts.Systems.Initialize
         private void CreateTile(int x, int y)
         {
             var tileEntity = _contexts.game.CreateEntity();
-            
+
             tileEntity.isTile = true;
+            tileEntity.AddTileState(TileState.Empty);
             tileEntity.AddGridPosition(new Vector2Int(x, y));
         }
     }

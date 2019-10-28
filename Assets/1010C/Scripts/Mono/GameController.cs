@@ -46,6 +46,9 @@ namespace _1010C.Scripts.Mono
                     .Add(new ReserveFillSystem(contexts))
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))
+                
+                    //
+                    .Add(new DestroySystem(contexts))
                 ;
         }
 

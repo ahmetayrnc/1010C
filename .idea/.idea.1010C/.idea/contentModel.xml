@@ -13,6 +13,7 @@
               <e p="Board" t="Include">
                 <e p="BoardSizeComponent.cs" t="Include" />
               </e>
+              <e p="DestroyedComponent.cs" t="Include" />
               <e p="GridPositionComponent.cs" t="Include" />
               <e p="IdComponent.cs" t="Include" />
               <e p="IdCountComponent.cs" t="Include" />
@@ -67,6 +68,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="AddViewSystem.cs" t="Include" />
+              <e p="DestroySystem.cs" t="Include" />
               <e p="DragSystem.cs" t="Include" />
               <e p="Initialize" t="Include">
                 <e p="InitializeBoardSystem.cs" t="Include" />
@@ -102,6 +104,7 @@
           <e p="Events" t="Include">
             <e p="Components" t="Include">
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
+              <e p="DestroyedListenerComponent.cs" t="Include" />
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
@@ -112,6 +115,7 @@
             <e p="GameEventSystems.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IAnyBoardSizeListener.cs" t="Include" />
+              <e p="IDestroyedListener.cs" t="Include" />
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
@@ -121,6 +125,7 @@
             </e>
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
+              <e p="DestroyedEventSystem.cs" t="Include" />
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
@@ -134,6 +139,8 @@
             <e p="Components" t="Include">
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
+              <e p="GameDestroyedComponent.cs" t="Include" />
+              <e p="GameDestroyedListenerComponent.cs" t="Include" />
               <e p="GameDragComponent.cs" t="Include" />
               <e p="GameDragListenerComponent.cs" t="Include" />
               <e p="GameDragRemovedListenerComponent.cs" t="Include" />
