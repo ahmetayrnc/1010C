@@ -15,7 +15,6 @@ public sealed class GameEventSystems : Feature {
         Add(new DragRemovedEventSystem(contexts)); // priority: 0
         Add(new GridPositionEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
-        Add(new ReserveSlotStateEventSystem(contexts)); // priority: 0
         Add(new TileStateEventSystem(contexts)); // priority: 0
     }
 }

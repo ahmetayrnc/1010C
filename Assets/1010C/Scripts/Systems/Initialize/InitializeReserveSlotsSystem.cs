@@ -16,8 +16,6 @@ namespace _1010C.Scripts.Systems.Initialize
 
         public void Initialize()
         {
-            var boardSize = _contexts.game.boardSize;
-
             const int reserveSlotY = -2;
             var positions = new[]
             {
@@ -36,11 +34,12 @@ namespace _1010C.Scripts.Systems.Initialize
 
         private void CreateReserveSlot(Vector2 pos)
         {
-            var entity = _contexts.game.CreateEntity();
-            entity.isReserveSlot = true;
-            entity.AddPosition(pos);
-            entity.AddReserveSlotState(ReserveSlotState.Empty);
-            entity.AddId(IdService.GetNewId());
+            var reserveSlot = _contexts.game.CreateEntity();
+            reserveSlot.isReserveSlot = true;
+            reserveSlot.AddPosition(pos);
+            reserveSlot.AddId(IdService.GetNewId());
+
+            PieceCreationService.CreateReservePiece(reserveSlot);
         }
     }
 }

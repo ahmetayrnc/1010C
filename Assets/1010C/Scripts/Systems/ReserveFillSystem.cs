@@ -3,6 +3,7 @@ using _1010C.Scripts.Components.Piece;
 using _1010C.Scripts.Components.Reserve;
 using _1010C.Scripts.Services;
 using Entitas;
+using UnityEngine;
 
 namespace _1010C.Scripts.Systems
 {
@@ -17,20 +18,26 @@ namespace _1010C.Scripts.Systems
 
         protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
         {
-            return context.CreateCollector(GameMatcher.AnyOf(GameMatcher.ReserveSlotState));
+            return context.CreateCollector(GameMatcher.PieceInReserve.Removed());
         }
 
         protected override bool Filter(GameEntity entity)
         {
-            return entity.isReserveSlot && entity.hasReserveSlotState;
+            return entity.isReserveSlot;
         }
 
         protected override void Execute(List<GameEntity> entities)
         {
+            var reserveSlots = _contexts.game.GetGroup(GameMatcher.ReserveSlot).GetEntities();
+            TryFillReserve(reserveSlots);
+        }
+
+        private static void TryFillReserve(GameEntity[] entities)
+        {
             var hasReservePiece = false;
             foreach (var reserveSlot in entities)
             {
-                if (reserveSlot.reserveSlotState.Value == ReserveSlotState.Full)
+                if (reserveSlot.hasPieceInReserve)
                 {
                     hasReservePiece = true;
                 }
@@ -41,7 +48,6 @@ namespace _1010C.Scripts.Systems
             //fill the reserve
             foreach (var reserveSlot in entities)
             {
-                reserveSlot.ReplaceReserveSlotState(ReserveSlotState.Full);
                 PieceCreationService.CreateReservePiece(reserveSlot);
             }
         }

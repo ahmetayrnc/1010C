@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _1010C.Scripts.Components.Reserve;
 using _1010C.Scripts.Components.Tile;
 using Entitas;
 using UnityEngine;
@@ -29,19 +30,9 @@ namespace _1010C.Scripts.Systems
             foreach (var piece in entities)
             {
                 //check if we can place the piece
-                if (!SuitableForPlacement(piece, out var tilesToBePlacedOn))
-                {
-                    continue;
-                }
+                if (!SuitableForPlacement(piece, out var tilesToBePlacedOn)) continue;
 
-                //Destroy the piece here
-                piece.isDestroyed = true;
-
-                //Make the tiles occupied
-                foreach (var tile in tilesToBePlacedOn)
-                {
-                    tile.ReplaceTileState(TileState.Full);
-                }
+                PlacePiece(piece, tilesToBePlacedOn);
             }
         }
 
@@ -79,6 +70,22 @@ namespace _1010C.Scripts.Systems
             }
 
             return true;
+        }
+
+        private void PlacePiece(GameEntity piece, List<GameEntity> tilesToBePlacedOn)
+        {
+            //Empty the reserveSlot
+            var reserveSlot = _contexts.game.GetEntityWithId(piece.reserveSlotForPiece.Id);
+            reserveSlot.RemovePieceInReserve();
+
+            //Make the tiles occupied
+            foreach (var tile in tilesToBePlacedOn)
+            {
+                tile.ReplaceTileState(TileState.Full);
+            }
+
+            //Destroy the piece
+            piece.isDestroyed = true;
         }
     }
 }

@@ -44,7 +44,6 @@ namespace _1010C.Scripts.Systems.Input
                 if (!(input.Value.y >= reserveSlotPosition.y - ReserveSlotRadius) ||
                     !(input.Value.y <= reserveSlotPosition.y + ReserveSlotRadius)) continue;
 
-                if (reserveSlot.reserveSlotState.Value == ReserveSlotState.Empty) continue;
                 if (!reserveSlot.hasPieceInReserve) continue;
 
                 var pieceId = reserveSlot.pieceInReserve.Id;
