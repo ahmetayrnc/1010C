@@ -1,44 +1,53 @@
-﻿using _1010C.Scripts.Components.Piece;
+﻿using System;
+using _1010C.Scripts.Misc;
+using _1010C.Scripts.Mono.ScriptableObjects;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class PieceView : View, IPositionListener, IReturningToReserveListener, ILeavingFromReserveListener
+    public class PieceView : View, IPositionListener, IDragListener, IDragRemovedListener
     {
+        public PieceColors pieceColors;
         public SortingGroup sortingGroup;
         public Transform scaleContainer;
-        public Transform relativeContainer;
-        public Transform[] cubes;
+        public CubeView[] cubes;
 
         private const float ReserveScale = 0.65f;
-        private const float BoardScale = 0.95f;
+        private const float BoardScale = 0.9f;
         private const float ReturnToReserveDuration = 0.5f;
         private const float LeaveFromReserveDuration = 0.24f;
+        private const float CubeSeparationAmount = 0.1f;
 
         protected override void AddListeners(GameEntity entity)
         {
             entity.AddPositionListener(this);
-            entity.AddReturningToReserveListener(this);
-            entity.AddLeavingFromReserveListener(this);
+            entity.AddDragListener(this);
+            entity.AddDragRemovedListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
         {
             sortingGroup.sortingLayerName = PieceLayer;
-            var totalX = 0f;
-            var totalY = 0f;
+            var color = pieceColors.colors.PickRandom();
             foreach (var cube in cubes)
             {
-                var position = cube.transform.localPosition;
-                totalX += position.x;
-                totalY += position.y;
+                cube.SetColor(color);
             }
 
-            var centerX = totalX / cubes.Length;
-            var centerY = totalY / cubes.Length;
-            Debug.Log($"({centerX}, {centerY})");
+//            var totalX = 0f;
+//            var totalY = 0f;
+//            foreach (var cube in cubes)
+//            {
+//                var position = cube.transform.localPosition;
+//                totalX += position.x;
+//                totalY += position.y;
+//            }
+//
+//            var centerX = totalX / cubes.Length;
+//            var centerY = totalY / cubes.Length;
+//            Debug.Log($"({centerX}, {centerY})");
         }
 
         public void OnPosition(GameEntity entity, Vector2 value)
@@ -46,29 +55,58 @@ namespace _1010C.Scripts.Mono.View
             transform.position = value;
         }
 
-        public void OnReturningToReserve(GameEntity entity)
+        public void OnDrag(GameEntity entity)
+        {
+            MoveCubes(MovementType.Separate);
+            scaleContainer.DOScale(BoardScale, LeaveFromReserveDuration);
+        }
+
+        public void OnDragRemoved(GameEntity entity)
         {
             var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
 
             scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
-            transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration)
-                .OnComplete(() => OnReturnToReserveEnded(entity));
+            transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration);
+            MoveCubes(MovementType.Join);
         }
 
-        private static void OnReturnToReserveEnded(GameEntity entity)
+        private enum MovementType
         {
-            entity.isReturningToReserve = false;
+            Separate,
+            Join
         }
 
-        public void OnLeavingFromReserve(GameEntity entity)
+        private void MoveCubes(MovementType type)
         {
-            scaleContainer.DOScale(BoardScale, LeaveFromReserveDuration)
-                .OnComplete(() => OnLeaveFromReserveEnded(entity));
+            foreach (var cube in cubes)
+            {
+                var cubeTransform = cube.transform;
+                var cubeLocalPosition = cubeTransform.localPosition;
+                var cubePosition = cubeTransform.position;
+                var centerPosition = transform.position;
+
+                var difY = cubePosition.y - centerPosition.y;
+                var difX = cubePosition.x - centerPosition.x;
+
+                var newLocalY = CalculateNewValueFromDif(difY, cubeLocalPosition.y, type);
+                var newLocalX = CalculateNewValueFromDif(difX, cubeLocalPosition.x, type);
+
+                cubeTransform.DOLocalMoveX(newLocalX, LeaveFromReserveDuration);
+                cubeTransform.DOLocalMoveY(newLocalY, LeaveFromReserveDuration);
+            }
         }
 
-        private static void OnLeaveFromReserveEnded(GameEntity entity)
+        private static float CalculateNewValueFromDif(float dif, float oldValue, MovementType type)
         {
-            entity.isLeavingFromReserve = false;
+            if (!(Math.Abs(dif) >= 0.001f)) return oldValue;
+
+            if (dif > 0) dif = 1;
+            if (dif < 0) dif = -1;
+
+            var multiplier = type == MovementType.Separate ? +1 : -1;
+            oldValue += dif * CubeSeparationAmount * multiplier;
+
+            return oldValue;
         }
     }
 }

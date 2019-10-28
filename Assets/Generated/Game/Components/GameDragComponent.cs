@@ -10,10 +10,10 @@ public partial class GameEntity {
 
     static readonly _1010C.Scripts.Components.Piece.DragComponent dragComponent = new _1010C.Scripts.Components.Piece.DragComponent();
 
-    public bool isDrag {
+    public bool flagDrag {
         get { return HasComponent(GameComponentsLookup.Drag); }
         set {
-            if (value != isDrag) {
+            if (value != flagDrag) {
                 var index = GameComponentsLookup.Drag;
                 if (value) {
                     var componentPool = GetComponentPool(index);

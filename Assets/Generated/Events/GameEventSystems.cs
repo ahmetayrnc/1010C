@@ -10,14 +10,12 @@ public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
         Add(new AnyBoardSizeEventSystem(contexts)); // priority: 0
-        Add(new DragEndedEventSystem(contexts)); // priority: 0
-        Add(new DragStartedEventSystem(contexts)); // priority: 0
+        Add(new DragEventSystem(contexts)); // priority: 0
+        Add(new DragRemovedEventSystem(contexts)); // priority: 0
         Add(new GridPositionEventSystem(contexts)); // priority: 0
-        Add(new LeavingFromReserveEventSystem(contexts)); // priority: 0
         Add(new PieceStateEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
         Add(new ReserveSlotStateEventSystem(contexts)); // priority: 0
-        Add(new ReturningToReserveEventSystem(contexts)); // priority: 0
         Add(new TileStateEventSystem(contexts)); // priority: 0
     }
 }

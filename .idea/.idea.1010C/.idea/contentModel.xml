@@ -21,13 +21,9 @@
               </e>
               <e p="Piece" t="Include">
                 <e p="DragComponent.cs" t="Include" />
-                <e p="DragEndedComponent.cs" t="Include" />
-                <e p="DragStartedComponent.cs" t="Include" />
-                <e p="LeavingFromReserveComponent.cs" t="Include" />
                 <e p="PieceInAirComponent.cs" t="Include" />
                 <e p="PieceStateComponent.cs" t="Include" />
                 <e p="ReserveSlotForPieceComponent.cs" t="Include" />
-                <e p="ReturningToReserveComponent.cs" t="Include" />
               </e>
               <e p="PositionComponent.cs" t="Include" />
               <e p="Reserve" t="Include">
@@ -43,6 +39,9 @@
               </e>
               <e p="ViewComponent.cs" t="Include" />
             </e>
+            <e p="Misc" t="Include">
+              <e p="EnumarableExtensions.cs" t="Include" />
+            </e>
             <e p="Mono" t="Include">
               <e p="Camera" t="Include">
                 <e p="CameraScaler.cs" t="Include" />
@@ -52,7 +51,7 @@
                 <e p="InputEmitter.cs" t="Include" />
               </e>
               <e p="ScriptableObjects" t="Include">
-                <e p="CubeColors.cs" t="Include" />
+                <e p="PieceColors.cs" t="Include" />
               </e>
               <e p="View" t="Include">
                 <e p="CubeView.cs" t="Include" />
@@ -101,39 +100,33 @@
           <e p="Events" t="Include">
             <e p="Components" t="Include">
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
-              <e p="DragEndedListenerComponent.cs" t="Include" />
-              <e p="DragStartedListenerComponent.cs" t="Include" />
+              <e p="DragListenerComponent.cs" t="Include" />
+              <e p="DragRemovedListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
-              <e p="LeavingFromReserveListenerComponent.cs" t="Include" />
               <e p="PieceStateListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
               <e p="ReserveSlotStateListenerComponent.cs" t="Include" />
-              <e p="ReturningToReserveListenerComponent.cs" t="Include" />
               <e p="TileStateListenerComponent.cs" t="Include" />
             </e>
             <e p="GameEventSystems.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IAnyBoardSizeListener.cs" t="Include" />
-              <e p="IDragEndedListener.cs" t="Include" />
-              <e p="IDragStartedListener.cs" t="Include" />
+              <e p="IDragListener.cs" t="Include" />
+              <e p="IDragRemovedListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
-              <e p="ILeavingFromReserveListener.cs" t="Include" />
               <e p="IPieceStateListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
               <e p="IReserveSlotStateListener.cs" t="Include" />
-              <e p="IReturningToReserveListener.cs" t="Include" />
               <e p="ITileStateListener.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
-              <e p="DragEndedEventSystem.cs" t="Include" />
-              <e p="DragStartedEventSystem.cs" t="Include" />
+              <e p="DragEventSystem.cs" t="Include" />
+              <e p="DragRemovedEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
-              <e p="LeavingFromReserveEventSystem.cs" t="Include" />
               <e p="PieceStateEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
               <e p="ReserveSlotStateEventSystem.cs" t="Include" />
-              <e p="ReturningToReserveEventSystem.cs" t="Include" />
               <e p="TileStateEventSystem.cs" t="Include" />
             </e>
           </e>
@@ -143,16 +136,12 @@
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameDragComponent.cs" t="Include" />
-              <e p="GameDragEndedComponent.cs" t="Include" />
-              <e p="GameDragEndedListenerComponent.cs" t="Include" />
-              <e p="GameDragStartedComponent.cs" t="Include" />
-              <e p="GameDragStartedListenerComponent.cs" t="Include" />
+              <e p="GameDragListenerComponent.cs" t="Include" />
+              <e p="GameDragRemovedListenerComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
               <e p="GameGridPositionListenerComponent.cs" t="Include" />
               <e p="GameIdComponent.cs" t="Include" />
               <e p="GameIdCountComponent.cs" t="Include" />
-              <e p="GameLeavingFromReserveComponent.cs" t="Include" />
-              <e p="GameLeavingFromReserveListenerComponent.cs" t="Include" />
               <e p="GamePieceComponent.cs" t="Include" />
               <e p="GamePieceInAirComponent.cs" t="Include" />
               <e p="GamePieceInReserveComponent.cs" t="Include" />
@@ -165,8 +154,6 @@
               <e p="GameReserveSlotPositionsComponent.cs" t="Include" />
               <e p="GameReserveSlotStateComponent.cs" t="Include" />
               <e p="GameReserveSlotStateListenerComponent.cs" t="Include" />
-              <e p="GameReturningToReserveComponent.cs" t="Include" />
-              <e p="GameReturningToReserveListenerComponent.cs" t="Include" />
               <e p="GameTileComponent.cs" t="Include" />
               <e p="GameTileStateComponent.cs" t="Include" />
               <e p="GameTileStateListenerComponent.cs" t="Include" />

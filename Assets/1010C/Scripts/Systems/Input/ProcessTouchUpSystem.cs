@@ -39,8 +39,7 @@ namespace _1010C.Scripts.Systems.Input
 
         private static void CleanupPiece(GameEntity piece)
         {
-            piece.isDrag = false;
-            piece.isReturningToReserve = true;
+            piece.flagDrag = false;
         }
     }
 }

@@ -58,8 +58,7 @@ namespace _1010C.Scripts.Systems.Input
             _contexts.game.SetPieceInAir(pieceId);
 
             var piece = _contexts.game.GetEntityWithId(pieceId);
-            piece.isDrag = true;
-            piece.isLeavingFromReserve = true;
+            piece.flagDrag = true;
         }
     }
 }
