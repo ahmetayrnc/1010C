@@ -1,4 +1,5 @@
 ﻿using _1010C.Scripts.Systems;
+using _1010C.Scripts.Systems.Initialize;
 using _1010C.Scripts.Systems.Input;
 using UnityEngine;
 
@@ -37,6 +38,9 @@ namespace _1010C.Scripts.Mono
 
                     //drag
                     .Add(new DragSystem(contexts))
+
+                    //placer
+                    .Add(new PiecePlacerSystem(contexts))
 
                     //
                     .Add(new ReserveFillSystem(contexts))

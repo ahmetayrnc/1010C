@@ -20,7 +20,6 @@ namespace _1010C.Scripts.Mono.Camera
         {
             _camera = GetComponent<UnityEngine.Camera>();
             AttachToBoard();
-//            SubscribeToUiResetEvent();
             _transform = transform;
         }
 
@@ -36,7 +35,7 @@ namespace _1010C.Scripts.Mono.Camera
             var unitsPerPixelAccToHeight = _sceneHeight / Screen.height;
             var desiredHalfHeightAccToHeight = 0.5f * unitsPerPixelAccToHeight * Screen.height;
 
-            newPos.x = (_sceneWidth - widthPadding) / 2f;
+            newPos.x = (_sceneWidth - widthPadding) / 2f - 0.5f;
             newPos.y = (_sceneHeight - heightPadding) / 2f;
             _transform.position = newPos;
 
@@ -52,11 +51,6 @@ namespace _1010C.Scripts.Mono.Camera
         {
             AttachToBoard();
         }
-
-//        private void SubscribeToUiResetEvent()
-//        {
-////        GameController.Instance.ResetEvent += Reset;
-//        }
 
         public void OnAnyBoardSize(GameEntity entity, Vector2Int value)
         {

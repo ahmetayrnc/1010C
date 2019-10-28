@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using UnityEngine;
 
-namespace _1010C.Scripts.Systems
+namespace _1010C.Scripts.Systems.Initialize
 {
     public class InitializeBoardSystem : IInitializeSystem
     {

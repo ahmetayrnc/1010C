@@ -77,6 +77,7 @@
                 <e p="ProcessTouchDownSystem.cs" t="Include" />
                 <e p="ProcessTouchUpSystem.cs" t="Include" />
               </e>
+              <e p="PiecePlacerSystem.cs" t="Include" />
               <e p="ReserveFillSystem.cs" t="Include" />
             </e>
           </e>

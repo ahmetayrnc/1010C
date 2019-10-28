@@ -3,7 +3,7 @@ using _1010C.Scripts.Services;
 using Entitas;
 using UnityEngine;
 
-namespace _1010C.Scripts.Systems
+namespace _1010C.Scripts.Systems.Initialize
 {
     public class InitializeReserveSlotsSystem : IInitializeSystem
     {
@@ -21,9 +21,9 @@ namespace _1010C.Scripts.Systems
             const int reserveSlotY = -2;
             var positions = new[]
             {
-                new Vector2(1.5f, reserveSlotY),
-                new Vector2(5f, reserveSlotY),
-                new Vector2(8.5f, reserveSlotY),
+                new Vector2(1f, reserveSlotY),
+                new Vector2(4.5f, reserveSlotY),
+                new Vector2(8f, reserveSlotY),
             };
 
             _contexts.game.SetReserveSlotPositions(positions);

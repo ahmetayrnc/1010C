@@ -29,16 +29,10 @@ namespace _1010C.Scripts.Systems.Input
             if (!_contexts.game.hasPieceInAir) return;
 
             var piece = _contexts.game.GetEntityWithId(_contexts.game.pieceInAir.Id);
-            if (piece != null)
-            {
-                CleanupPiece(piece);
-            }
-
             _contexts.game.RemovePieceInAir();
-        }
 
-        private static void CleanupPiece(GameEntity piece)
-        {
+            if (piece == null) return;
+
             piece.flagDrag = false;
         }
     }

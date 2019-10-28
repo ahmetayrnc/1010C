@@ -17,10 +17,10 @@ namespace _1010C.Scripts.Systems
 
         public void Execute()
         {
-            foreach (var drag in _dragGroup)
+            foreach (var piece in _dragGroup)
             {
                 var touchPos = _contexts.input.GetGroup(InputMatcher.TouchPosition).GetSingleEntity().touchPosition;
-                drag.ReplacePosition(touchPos.Value);
+                piece.ReplacePosition(touchPos.Value);
             }
         }
     }
