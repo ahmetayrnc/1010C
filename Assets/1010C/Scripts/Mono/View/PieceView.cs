@@ -33,9 +33,27 @@ namespace _1010C.Scripts.Mono.View
         {
             sortingGroup.sortingLayerName = PieceLayer;
             var color = pieceColors.colors.PickRandom();
-            foreach (var cube in cubes)
+
+            var cubePositions = entity.pieceCubePositions.Value;
+            var index = 0;
+            for (var i = 0; i < cubePositions.Length; i++)
             {
+                var pos = cubePositions[i];
+                var cube = cubes[i];
+                var newPos = transform.position;
+                newPos.x += pos.x;
+                newPos.y += pos.y;
+
+                cube.SetActive(true);
+                cube.transform.localPosition = newPos;
                 cube.SetColor(color);
+
+                index++;
+            }
+
+            for (var i = index; i < cubes.Length; i++)
+            {
+                cubes[i].SetActive(false);
             }
         }
 

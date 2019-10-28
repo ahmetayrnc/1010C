@@ -11,14 +11,14 @@ public partial class GameEntity {
     public _1010C.Scripts.Components.Piece.PieceCubePositions pieceCubePositions { get { return (_1010C.Scripts.Components.Piece.PieceCubePositions)GetComponent(GameComponentsLookup.PieceCubePositions); } }
     public bool hasPieceCubePositions { get { return HasComponent(GameComponentsLookup.PieceCubePositions); } }
 
-    public void AddPieceCubePositions(UnityEngine.Vector2Int[] newValue) {
+    public void AddPieceCubePositions(UnityEngine.Vector2[] newValue) {
         var index = GameComponentsLookup.PieceCubePositions;
         var component = (_1010C.Scripts.Components.Piece.PieceCubePositions)CreateComponent(index, typeof(_1010C.Scripts.Components.Piece.PieceCubePositions));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
-    public void ReplacePieceCubePositions(UnityEngine.Vector2Int[] newValue) {
+    public void ReplacePieceCubePositions(UnityEngine.Vector2[] newValue) {
         var index = GameComponentsLookup.PieceCubePositions;
         var component = (_1010C.Scripts.Components.Piece.PieceCubePositions)CreateComponent(index, typeof(_1010C.Scripts.Components.Piece.PieceCubePositions));
         component.Value = newValue;

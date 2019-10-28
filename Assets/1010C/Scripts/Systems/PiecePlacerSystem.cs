@@ -52,14 +52,14 @@ namespace _1010C.Scripts.Systems
 
             //calculate the grid position from float position
             var pos = piece.position.Value;
-            var gridX = (int) (pos.x + 0.5f);
-            var gridY = (int) (pos.y + 0.5f);
+//            var gridX = (int) (pos.x + 0.5f);
+//            var gridY = (int) (pos.y + 0.5f);
 
             //check if the piece can be placed
             foreach (var cubePos in piece.pieceCubePositions.Value)
             {
-                var cubeX = gridX + cubePos.x;
-                var cubeY = gridY + cubePos.y;
+                var cubeX = Mathf.RoundToInt(pos.x + cubePos.x);
+                var cubeY = Mathf.RoundToInt(pos.y + cubePos.y);
 
                 if (cubeX < 0 || cubeX >= boardSize.x) return false;
                 if (cubeY < 0 || cubeY >= boardSize.y) return false;

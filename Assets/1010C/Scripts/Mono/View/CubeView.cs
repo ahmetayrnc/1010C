@@ -20,5 +20,10 @@ namespace _1010C.Scripts.Mono.View
         {
             spriteRenderer.color = color;
         }
+
+        public void SetActive(bool active)
+        {
+            gameObject.SetActive(active);
+        }
     }
 }

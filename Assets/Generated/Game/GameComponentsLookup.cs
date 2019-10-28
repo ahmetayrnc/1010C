@@ -6,26 +6,22 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-using _1010C.Scripts.Components.Board;
-using _1010C.Scripts.Components.Piece;
-
 public static class GameComponentsLookup {
 
     public const int BoardSize = 0;
-    public const int Destroyed = 1;
-    public const int GridPosition = 2;
-    public const int Id = 3;
-    public const int IdCount = 4;
-    public const int Drag = 5;
-    public const int PieceCubePositions = 6;
-    public const int PieceInAir = 7;
-    public const int ReserveSlotForPiece = 8;
-    public const int Position = 9;
-    public const int Piece = 10;
-    public const int PieceInReserve = 11;
-    public const int ReserveSlot = 12;
-    public const int ReserveSlotPositions = 13;
+    public const int ReserveSlotPositions = 1;
+    public const int Destroyed = 2;
+    public const int GridPosition = 3;
+    public const int Id = 4;
+    public const int IdCount = 5;
+    public const int Drag = 6;
+    public const int Piece = 7;
+    public const int PieceCubePositions = 8;
+    public const int PieceInAir = 9;
+    public const int ReserveSlotForPiece = 10;
+    public const int Position = 11;
+    public const int PieceInReserve = 12;
+    public const int ReserveSlot = 13;
     public const int Tile = 14;
     public const int TileState = 15;
     public const int View = 16;
@@ -41,19 +37,19 @@ public static class GameComponentsLookup {
 
     public static readonly string[] componentNames = {
         "BoardSize",
+        "ReserveSlotPositions",
         "Destroyed",
         "GridPosition",
         "Id",
         "IdCount",
         "Drag",
+        "Piece",
         "PieceCubePositions",
         "PieceInAir",
         "ReserveSlotForPiece",
         "Position",
-        "Piece",
         "PieceInReserve",
         "ReserveSlot",
-        "ReserveSlotPositions",
         "Tile",
         "TileState",
         "View",
@@ -68,19 +64,19 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(_1010C.Scripts.Components.Board.BoardSizeComponent),
+        typeof(_1010C.Scripts.Components.Board.ReserveSlotPositionsComponent),
         typeof(_1010C.Scripts.Components.DestroyedComponent),
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
         typeof(_1010C.Scripts.Components.Piece.DragComponent),
+        typeof(_1010C.Scripts.Components.Piece.PieceComponent),
         typeof(_1010C.Scripts.Components.Piece.PieceCubePositions),
         typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
         typeof(_1010C.Scripts.Components.Piece.ReserveSlotForPieceComponent),
         typeof(_1010C.Scripts.Components.PositionComponent),
-        typeof(PieceComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
         typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
-        typeof(ReserveSlotPositionsComponent),
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
         typeof(_1010C.Scripts.Components.Tile.TileStateComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),

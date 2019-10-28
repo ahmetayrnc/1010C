@@ -14,15 +14,17 @@ namespace _1010C.Scripts.Services
             piece.AddReserveSlotForPiece(reserveSlot.id.Value);
             piece.AddPieceCubePositions(new[]
             {
-                new Vector2Int(-1, -1),
-                new Vector2Int(0, -1),
-                new Vector2Int(1, -1),
-                new Vector2Int(-1, 0),
-                new Vector2Int(0, 0),
-                new Vector2Int(1, 0),
-                new Vector2Int(-1, 1),
-                new Vector2Int(0, 1),
-                new Vector2Int(1, 1),
+//                new Vector2(-0.5f, 0),
+//                new Vector2(+0.5f, 0),
+                new Vector2(-1, -1),
+                new Vector2(0, -1),
+                new Vector2(1, -1),
+                new Vector2(-1, 0),
+                new Vector2(0, 0),
+                new Vector2(1, 0),
+                new Vector2(-1, 1),
+                new Vector2(0, 1),
+                new Vector2(1, 1),
             });
 
             reserveSlot.AddPieceInReserve(piece.id.Value);
