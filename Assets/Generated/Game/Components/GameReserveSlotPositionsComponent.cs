@@ -6,10 +6,13 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Board;
+
 public partial class GameContext {
 
     public GameEntity reserveSlotPositionsEntity { get { return GetGroup(GameMatcher.ReserveSlotPositions).GetSingleEntity(); } }
-    public _1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent reserveSlotPositions { get { return reserveSlotPositionsEntity.reserveSlotPositions; } }
+    public ReserveSlotPositionsComponent reserveSlotPositions { get { return reserveSlotPositionsEntity.reserveSlotPositions; } }
     public bool hasReserveSlotPositions { get { return reserveSlotPositionsEntity != null; } }
 
     public GameEntity SetReserveSlotPositions(UnityEngine.Vector2[] newValue) {
@@ -46,19 +49,19 @@ public partial class GameContext {
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public _1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent reserveSlotPositions { get { return (_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent)GetComponent(GameComponentsLookup.ReserveSlotPositions); } }
+    public ReserveSlotPositionsComponent reserveSlotPositions { get { return (ReserveSlotPositionsComponent)GetComponent(GameComponentsLookup.ReserveSlotPositions); } }
     public bool hasReserveSlotPositions { get { return HasComponent(GameComponentsLookup.ReserveSlotPositions); } }
 
     public void AddReserveSlotPositions(UnityEngine.Vector2[] newValue) {
         var index = GameComponentsLookup.ReserveSlotPositions;
-        var component = (_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent));
+        var component = (ReserveSlotPositionsComponent)CreateComponent(index, typeof(ReserveSlotPositionsComponent));
         component.Value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceReserveSlotPositions(UnityEngine.Vector2[] newValue) {
         var index = GameComponentsLookup.ReserveSlotPositions;
-        var component = (_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent)CreateComponent(index, typeof(_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent));
+        var component = (ReserveSlotPositionsComponent)CreateComponent(index, typeof(ReserveSlotPositionsComponent));
         component.Value = newValue;
         ReplaceComponent(index, component);
     }

@@ -6,6 +6,10 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using _1010C.Scripts.Components.Board;
+using _1010C.Scripts.Components.Piece;
+
 public static class GameComponentsLookup {
 
     public const int BoardSize = 0;
@@ -73,10 +77,10 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
         typeof(_1010C.Scripts.Components.Piece.ReserveSlotForPieceComponent),
         typeof(_1010C.Scripts.Components.PositionComponent),
-        typeof(_1010C.Scripts.Components.Reserve.PieceComponent),
+        typeof(PieceComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
         typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
-        typeof(_1010C.Scripts.Components.Reserve.ReserveSlotPositionsComponent),
+        typeof(ReserveSlotPositionsComponent),
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
         typeof(_1010C.Scripts.Components.Tile.TileStateComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),
