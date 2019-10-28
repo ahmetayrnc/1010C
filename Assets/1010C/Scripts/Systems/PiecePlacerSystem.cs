@@ -28,15 +28,16 @@ namespace _1010C.Scripts.Systems
         {
             foreach (var piece in entities)
             {
+                //check if we can place the piece
                 if (!SuitableForPlacement(piece, out var tilesToBePlacedOn))
                 {
-                    Debug.Log("Can't be placed");
                     continue;
                 }
 
                 //Destroy the piece here
                 piece.isDestroyed = true;
 
+                //Make the tiles occupied
                 foreach (var tile in tilesToBePlacedOn)
                 {
                     tile.ReplaceTileState(TileState.Full);

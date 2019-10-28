@@ -52,11 +52,14 @@ namespace _1010C.Scripts.Mono.View
 
         public void OnDragRemoved(GameEntity entity)
         {
-            var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
-
-            scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
-            transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration);
             MoveCubes(MovementType.Join);
+            scaleContainer.DOScale(ReserveScale, ReturnToReserveDuration);
+
+            var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
+            transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration).OnComplete(() =>
+            {
+                entity.ReplacePosition(reserveSlot.position.Value);
+            });
         }
 
         public void OnDestroyed(GameEntity entity)

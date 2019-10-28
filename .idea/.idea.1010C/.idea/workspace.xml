@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,9 +113,9 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
       </list>
     </option>
   </component>
@@ -173,7 +173,7 @@
       <workItem from="1568980848936" duration="18915000" />
       <workItem from="1569770914311" duration="6072000" />
       <workItem from="1572095240841" duration="254000" />
-      <workItem from="1572195491396" duration="10184000" />
+      <workItem from="1572195491396" duration="10898000" />
     </task>
     <servers />
   </component>
