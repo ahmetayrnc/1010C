@@ -61,8 +61,8 @@ namespace _1010C.Scripts.Systems
                 var cubeX = gridX + cubePos.x;
                 var cubeY = gridY + cubePos.y;
 
-                if (cubeX < 0 || cubeX > boardSize.x) return false;
-                if (cubeY < 0 || cubeY > boardSize.y) return false;
+                if (cubeX < 0 || cubeX >= boardSize.x) return false;
+                if (cubeY < 0 || cubeY >= boardSize.y) return false;
 
                 if (tiles[cubeX, cubeY].tileState.Value == TileState.Full) return false;
 

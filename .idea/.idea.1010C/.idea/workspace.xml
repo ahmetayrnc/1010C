@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="" />
+    <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/PieceComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/PieceComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotPositionsComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotPositionsComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotStateComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotStateComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ReserveSlotForPieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/PieceInReserveComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Input/InputMatcher.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +57,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Misc/EnumarableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/1010C/Systems/InitializeReserveSlotsSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/GridPositionComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/InitializeReserveSlotsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/PieceInAirComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" />
@@ -115,6 +124,8 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/ReserveSlotStateEventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +183,7 @@
       <workItem from="1568980848936" duration="18915000" />
       <workItem from="1569770914311" duration="6072000" />
       <workItem from="1572095240841" duration="254000" />
-      <workItem from="1572195491396" duration="12711000" />
+      <workItem from="1572195491396" duration="12965000" />
     </task>
     <servers />
   </component>
