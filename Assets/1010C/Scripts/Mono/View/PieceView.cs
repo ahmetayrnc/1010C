@@ -63,7 +63,7 @@ namespace _1010C.Scripts.Mono.View
         {
             GameObject go;
             (go = gameObject).Unlink();
-            Destroy(go);
+            ViewFactory.DestroyPiece(go);
         }
 
         private enum MovementType

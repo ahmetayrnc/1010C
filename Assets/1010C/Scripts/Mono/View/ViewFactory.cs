@@ -27,27 +27,37 @@ namespace _1010C.Scripts.Mono.View
         {
             return Instance.SpawnCubeInternal();
         }
-        
+
         public static GameObject SpawnTile()
         {
             return Instance.SpawnTileInternal();
         }
-        
+
         public static GameObject SpawnPiece()
         {
             return Instance.SpawnPieceInternal();
+        }
+
+        public static void DestroyPiece(GameObject piece)
+        {
+            DestroyPieceInternal(piece);
+        }
+
+        private static void DestroyPieceInternal(GameObject piece)
+        {
+            Destroy(piece);
         }
 
         private GameObject SpawnCubeInternal()
         {
             return Instantiate(cubeView, transform);
         }
-        
+
         private GameObject SpawnTileInternal()
         {
             return Instantiate(tileView, transform);
         }
-        
+
         private GameObject SpawnPieceInternal()
         {
             return Instantiate(pieceView, transform);

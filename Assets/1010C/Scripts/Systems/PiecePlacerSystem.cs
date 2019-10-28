@@ -26,14 +26,17 @@ namespace _1010C.Scripts.Systems
 
         protected override void Execute(List<GameEntity> entities)
         {
-            foreach (var entity in entities)
+            foreach (var piece in entities)
             {
-                if (!SuitableForPlacement(entity, out var tilesToBePlacedOn))
+                if (!SuitableForPlacement(piece, out var tilesToBePlacedOn))
                 {
                     Debug.Log("Can't be placed");
+                    continue;
                 }
 
                 //Destroy the piece here
+                piece.isDestroyed = true;
+
                 foreach (var tile in tilesToBePlacedOn)
                 {
                     tile.ReplaceTileState(TileState.Full);
