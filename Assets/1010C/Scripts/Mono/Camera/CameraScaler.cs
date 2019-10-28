@@ -36,7 +36,7 @@ namespace _1010C.Scripts.Mono.Camera
             var desiredHalfHeightAccToHeight = 0.5f * unitsPerPixelAccToHeight * Screen.height;
 
             newPos.x = (_sceneWidth - widthPadding) / 2f - 0.5f;
-            newPos.y = (_sceneHeight - heightPadding) / 2f;
+            newPos.y = (_sceneHeight - heightPadding) / 2f - 0.5f;
             _transform.position = newPos;
 
             _camera.orthographicSize = Mathf.Max(desiredHalfHeightAccToHeight, desiredHalfHeightAccToWidth);

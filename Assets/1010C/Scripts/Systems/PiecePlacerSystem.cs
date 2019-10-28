@@ -51,7 +51,7 @@ namespace _1010C.Scripts.Systems
 
             //check if the piece can be placed
             var pos = piece.position.Value;
-            foreach (var cubePos in piece.pieceCubePositions.Value)
+            foreach (var cubePos in piece.pieceType.Value.GetPiecePositions())
             {
                 //calculate the grid position from float position
                 var cubeX = Mathf.RoundToInt(pos.x + cubePos.x);
@@ -78,6 +78,7 @@ namespace _1010C.Scripts.Systems
             foreach (var tile in tilesToBePlacedOn)
             {
                 tile.ReplaceTileState(TileState.Full);
+                tile.AddColor(piece.color.Value);
             }
 
             //Destroy the piece

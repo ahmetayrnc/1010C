@@ -7,18 +7,19 @@ namespace _1010C.Scripts.PieceRecipes
 {
     public abstract partial class PieceType : Enumeration
     {
+        public static readonly PieceType onePiece = new OnePieceType();
+        public static readonly PieceType twoPieceVertical = TwoPieceType.mTwoPieceVertical;
+        public static readonly PieceType twoPieceHorizontal = TwoPieceType.mTwoPieceHorizontal;
+        public static readonly PieceType threePieceVertical = ThreePieceType.mThreePieceVertical;
+        public static readonly PieceType threePieceHorizontal = ThreePieceType.mThreePieceHorizontal;
+
         private PieceType(int id, string name)
             : base(id, name)
         {
         }
 
         public abstract Vector2[] GetPiecePositions();
-
-        public static readonly PieceType onePiece = new OnePieceType();
-        public static readonly PieceType twoPieceVertical = TwoPieceType.mTwoPieceVertical;
-        public static readonly PieceType twoPieceHorizontal = TwoPieceType.mTwoPieceHorizontal;
-        public static readonly PieceType threePieceVertical = ThreePieceType.mThreePieceVertical;
-        public static readonly PieceType threePieceHorizontal = ThreePieceType.mThreePieceHorizontal;
+        public abstract float GetCubeSeparationAmount();
 
         public static PieceType GetNextPiece()
         {
@@ -35,6 +36,11 @@ namespace _1010C.Scripts.PieceRecipes
             {
                 return new[] {Vector2.zero};
             }
+
+            public override float GetCubeSeparationAmount()
+            {
+                return 0.1f;
+            }
         }
 
         private abstract class TwoPieceType : PieceType
@@ -44,6 +50,11 @@ namespace _1010C.Scripts.PieceRecipes
 
             private TwoPieceType(int value, string name) : base(value, name)
             {
+            }
+
+            public override float GetCubeSeparationAmount()
+            {
+                return 0.015f;
             }
 
             private class TwoPieceVertical : TwoPieceType
@@ -86,6 +97,11 @@ namespace _1010C.Scripts.PieceRecipes
 
             private ThreePieceType(int value, string name) : base(value, name)
             {
+            }
+
+            public override float GetCubeSeparationAmount()
+            {
+                return 0.1f;
             }
 
             private class ThreePieceVertical : ThreePieceType

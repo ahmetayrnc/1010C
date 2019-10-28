@@ -22,10 +22,11 @@
                 <e p="TouchDownComponent.cs" t="Include" />
               </e>
               <e p="Piece" t="Include">
+                <e p="ColorComponent.cs" t="Include" />
                 <e p="DragComponent.cs" t="Include" />
                 <e p="PieceComponent.cs" t="Include" />
-                <e p="PieceCubePositions.cs" t="Include" />
                 <e p="PieceInAirComponent.cs" t="Include" />
+                <e p="PieceTypeComponent.cs" t="Include" />
                 <e p="ReserveSlotForPieceComponent.cs" t="Include" />
               </e>
               <e p="PositionComponent.cs" t="Include" />
@@ -139,6 +140,7 @@
             <e p="Components" t="Include">
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
+              <e p="GameColorComponent.cs" t="Include" />
               <e p="GameDestroyedComponent.cs" t="Include" />
               <e p="GameDestroyedListenerComponent.cs" t="Include" />
               <e p="GameDragComponent.cs" t="Include" />
@@ -149,9 +151,9 @@
               <e p="GameIdComponent.cs" t="Include" />
               <e p="GameIdCountComponent.cs" t="Include" />
               <e p="GamePieceComponent.cs" t="Include" />
-              <e p="GamePieceCubePositionsComponent.cs" t="Include" />
               <e p="GamePieceInAirComponent.cs" t="Include" />
               <e p="GamePieceInReserveComponent.cs" t="Include" />
+              <e p="GamePieceTypeComponent.cs" t="Include" />
               <e p="GamePositionComponent.cs" t="Include" />
               <e p="GamePositionListenerComponent.cs" t="Include" />
               <e p="GameReserveSlotComponent.cs" t="Include" />

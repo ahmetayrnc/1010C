@@ -14,26 +14,27 @@ public static class GameComponentsLookup {
     public const int GridPosition = 3;
     public const int Id = 4;
     public const int IdCount = 5;
-    public const int Drag = 6;
-    public const int Piece = 7;
-    public const int PieceCubePositions = 8;
+    public const int Color = 6;
+    public const int Drag = 7;
+    public const int Piece = 8;
     public const int PieceInAir = 9;
-    public const int ReserveSlotForPiece = 10;
-    public const int Position = 11;
-    public const int PieceInReserve = 12;
-    public const int ReserveSlot = 13;
-    public const int Tile = 14;
-    public const int TileState = 15;
-    public const int View = 16;
-    public const int AnyBoardSizeListener = 17;
-    public const int DestroyedListener = 18;
-    public const int DragListener = 19;
-    public const int DragRemovedListener = 20;
-    public const int GridPositionListener = 21;
-    public const int PositionListener = 22;
-    public const int TileStateListener = 23;
+    public const int PieceType = 10;
+    public const int ReserveSlotForPiece = 11;
+    public const int Position = 12;
+    public const int PieceInReserve = 13;
+    public const int ReserveSlot = 14;
+    public const int Tile = 15;
+    public const int TileState = 16;
+    public const int View = 17;
+    public const int AnyBoardSizeListener = 18;
+    public const int DestroyedListener = 19;
+    public const int DragListener = 20;
+    public const int DragRemovedListener = 21;
+    public const int GridPositionListener = 22;
+    public const int PositionListener = 23;
+    public const int TileStateListener = 24;
 
-    public const int TotalComponents = 24;
+    public const int TotalComponents = 25;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -42,10 +43,11 @@ public static class GameComponentsLookup {
         "GridPosition",
         "Id",
         "IdCount",
+        "Color",
         "Drag",
         "Piece",
-        "PieceCubePositions",
         "PieceInAir",
+        "PieceType",
         "ReserveSlotForPiece",
         "Position",
         "PieceInReserve",
@@ -69,10 +71,11 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
+        typeof(_1010C.Scripts.Components.Piece.ColorComponent),
         typeof(_1010C.Scripts.Components.Piece.DragComponent),
         typeof(_1010C.Scripts.Components.Piece.PieceComponent),
-        typeof(_1010C.Scripts.Components.Piece.PieceCubePositions),
         typeof(_1010C.Scripts.Components.Piece.PieceInAirComponent),
+        typeof(_1010C.Scripts.Components.Piece.PieceTypeComponent),
         typeof(_1010C.Scripts.Components.Piece.ReserveSlotForPieceComponent),
         typeof(_1010C.Scripts.Components.PositionComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),

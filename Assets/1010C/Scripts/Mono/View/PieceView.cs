@@ -1,5 +1,4 @@
 ﻿using System;
-using _1010C.Scripts.Misc;
 using _1010C.Scripts.Mono.ScriptableObjects;
 using DG.Tweening;
 using Entitas.Unity;
@@ -19,7 +18,8 @@ namespace _1010C.Scripts.Mono.View
         private const float BoardScale = 0.9f;
         private const float ReturnToReserveDuration = 0.5f;
         private const float LeaveFromReserveDuration = 0.24f;
-        private const float CubeSeparationAmount = 0.1f; //Move this to piece type
+
+        private static float _cubeSeparationAmount;
 
         protected override void AddListeners(GameEntity entity)
         {
@@ -32,9 +32,10 @@ namespace _1010C.Scripts.Mono.View
         protected override void InitializeView(GameEntity entity)
         {
             sortingGroup.sortingLayerName = PieceLayer;
-            var color = pieceColors.colors.PickRandom();
+            var color = entity.color.Value;
+            _cubeSeparationAmount = entity.pieceType.Value.GetCubeSeparationAmount();
 
-            var cubePositions = entity.pieceCubePositions.Value;
+            var cubePositions = entity.pieceType.Value.GetPiecePositions();
             var index = 0;
             for (var i = 0; i < cubePositions.Length; i++)
             {
@@ -46,7 +47,7 @@ namespace _1010C.Scripts.Mono.View
 
                 cube.SetActive(true);
                 cube.transform.localPosition = newPos;
-                cube.SetColor(color);
+                cube.SetColor(pieceColors.PieceColorToColor(color));
 
                 index++;
             }
@@ -121,7 +122,7 @@ namespace _1010C.Scripts.Mono.View
             if (dif < 0) dif = -1;
 
             var multiplier = type == MovementType.Separate ? +1 : -1;
-            oldValue += dif * CubeSeparationAmount * multiplier;
+            oldValue += dif * _cubeSeparationAmount * multiplier;
 
             return oldValue;
         }

@@ -1,10 +1,12 @@
 ﻿using _1010C.Scripts.Components.Tile;
+using _1010C.Scripts.Mono.ScriptableObjects;
 using UnityEngine;
 
 namespace _1010C.Scripts.Mono.View
 {
     public class TileView : View, IGridPositionListener, ITileStateListener
     {
+        public PieceColors pieceColors;
         public SpriteRenderer spriteRenderer;
 
         protected override void AddListeners(GameEntity entity)
@@ -27,7 +29,7 @@ namespace _1010C.Scripts.Mono.View
         {
             if (value == TileState.Full)
             {
-                spriteRenderer.color = Color.black;
+                spriteRenderer.color = pieceColors.PieceColorToColor(entity.color.Value);
             }
         }
     }
