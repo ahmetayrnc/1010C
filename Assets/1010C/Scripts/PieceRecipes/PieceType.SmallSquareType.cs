@@ -9,6 +9,11 @@ namespace _1010C.Scripts.PieceRecipes
             public SmallSquareType() : base(9, "SmallSquare")
             {
             }
+            
+            public override float GetDragPivotDifference()
+            {
+                return 2f;
+            }
 
             public override Vector2[] GetPiecePositions()
             {

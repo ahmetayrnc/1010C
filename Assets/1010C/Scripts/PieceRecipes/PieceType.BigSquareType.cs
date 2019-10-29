@@ -10,6 +10,11 @@ namespace _1010C.Scripts.PieceRecipes
             {
             }
 
+            public override float GetDragPivotDifference()
+            {
+                return 2.5f;
+            }
+
             public override Vector2[] GetPiecePositions()
             {
                 return new[]

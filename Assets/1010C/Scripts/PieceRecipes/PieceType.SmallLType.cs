@@ -14,6 +14,11 @@ namespace _1010C.Scripts.PieceRecipes
             private SmallLType(int value, string name) : base(value, name)
             {
             }
+            
+            public override float GetDragPivotDifference()
+            {
+                return 2f;
+            }
 
             private class SmallL1 : SmallLType
             {

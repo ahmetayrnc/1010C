@@ -15,6 +15,11 @@ namespace _1010C.Scripts.PieceRecipes
             {
             }
 
+            public override float GetDragPivotDifference()
+            {
+                return 2.5f;
+            }
+
             private class BigL1 : BigLType
             {
                 public BigL1() : base(12, "BigL1")

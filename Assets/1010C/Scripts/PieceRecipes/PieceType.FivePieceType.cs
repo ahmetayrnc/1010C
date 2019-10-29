@@ -19,6 +19,11 @@ namespace _1010C.Scripts.PieceRecipes
                 {
                 }
 
+                public override float GetDragPivotDifference()
+                {
+                    return 3.5f;
+                }
+
                 public override Vector2[] GetPiecePositions()
                 {
                     return new[]
@@ -36,6 +41,11 @@ namespace _1010C.Scripts.PieceRecipes
             {
                 public FivePieceHorizontal() : base(17, "FivePieceHorizontal")
                 {
+                }
+
+                public override float GetDragPivotDifference()
+                {
+                    return 1.5f;
                 }
 
                 public override Vector2[] GetPiecePositions()

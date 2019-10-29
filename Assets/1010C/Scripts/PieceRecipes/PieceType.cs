@@ -32,10 +32,7 @@ namespace _1010C.Scripts.PieceRecipes
 
         public abstract Vector2[] GetPiecePositions();
 
-        public float GetDragPivotDifference()
-        {
-            return 2f;
-        }
+        public abstract float GetDragPivotDifference();
 
         public static PieceType GetNextPiece()
         {
