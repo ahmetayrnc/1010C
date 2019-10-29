@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/ColorListenerComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/ColorListenerComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IColorListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IColorListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/ColorEventSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/ColorEventSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameColorListenerComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameColorListenerComponent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Prefabs/PieceView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Prefabs/PieceView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,8 +93,6 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceCubePositionsComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceColorComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/CubeRemoverSystem.cs" />
@@ -122,16 +106,6 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GenericUi.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeCubesSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs" />
@@ -142,13 +116,25 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ITileStateListener.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/TileCleanerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" />
       </list>
     </option>
   </component>
@@ -208,7 +194,7 @@
       <workItem from="1572095240841" duration="254000" />
       <workItem from="1572195491396" duration="27471000" />
       <workItem from="1572295582503" duration="5635000" />
-      <workItem from="1572345055398" duration="12352000" />
+      <workItem from="1572345055398" duration="15075000" />
     </task>
     <servers />
   </component>

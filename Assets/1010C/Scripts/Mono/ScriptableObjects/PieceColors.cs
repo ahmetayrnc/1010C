@@ -12,22 +12,24 @@ namespace _1010C.Scripts.Mono.ScriptableObjects
         {
             switch (cubeColor)
             {
-                case CubeColor.Color0:
+                case CubeColor.Purple:
                     return colors[0];
-                case CubeColor.Color1:
+                case CubeColor.Yellow:
                     return colors[1];
-                case CubeColor.Color2:
+                case CubeColor.DarkGreen:
                     return colors[2];
-                case CubeColor.Color3:
+                case CubeColor.Orange:
                     return colors[3];
-                case CubeColor.Color4:
+                case CubeColor.LightGreen:
                     return colors[4];
-                case CubeColor.Color5:
+                case CubeColor.Pink:
                     return colors[5];
-                case CubeColor.Color6:
+                case CubeColor.Red:
                     return colors[6];
-                case CubeColor.Color7:
+                case CubeColor.Blue:
                     return colors[7];
+                case CubeColor.Cyan:
+                    return colors[8];
                 default:
                     return colors[0];
             }

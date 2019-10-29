@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _1010C.Scripts.Components.Piece;
+using UnityEngine;
 
 namespace _1010C.Scripts.PieceRecipes
 {
@@ -18,6 +19,11 @@ namespace _1010C.Scripts.PieceRecipes
             public override float GetDragPivotDifference()
             {
                 return 2.5f;
+            }
+
+            public override CubeColor GetCubeColor()
+            {
+                return CubeColor.Blue;
             }
 
             private class BigL1 : BigLType

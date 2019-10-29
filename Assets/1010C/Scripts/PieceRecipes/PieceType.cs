@@ -1,4 +1,5 @@
-﻿using _1010C.Scripts.Misc;
+﻿using _1010C.Scripts.Components.Piece;
+using _1010C.Scripts.Misc;
 using UnityEngine;
 
 namespace _1010C.Scripts.PieceRecipes
@@ -33,6 +34,8 @@ namespace _1010C.Scripts.PieceRecipes
         public abstract Vector2[] GetPiecePositions();
 
         public abstract float GetDragPivotDifference();
+
+        public abstract CubeColor GetCubeColor();
 
         public static PieceType GetNextPiece()
         {

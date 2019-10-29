@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _1010C.Scripts.Components.Piece;
+using UnityEngine;
 
 namespace _1010C.Scripts.PieceRecipes
 {
@@ -13,6 +14,11 @@ namespace _1010C.Scripts.PieceRecipes
             public override float GetDragPivotDifference()
             {
                 return 2f;
+            }
+            
+            public override CubeColor GetCubeColor()
+            {
+                return CubeColor.LightGreen;
             }
 
             public override Vector2[] GetPiecePositions()
