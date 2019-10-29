@@ -6,7 +6,7 @@ namespace _1010C.Scripts.PieceRecipes
     {
         private class SmallSquareType : PieceType
         {
-            public SmallSquareType() : base(0, "SmallSquare")
+            public SmallSquareType() : base(9, "SmallSquare")
             {
             }
 

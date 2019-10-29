@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Prefabs/TileView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Prefabs/TileView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/IdComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,10 +44,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceInAirComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ReserveSlotForPieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/PieceInReserveComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,6 +80,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/ColorComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/CleanupInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,10 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameDragStartedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameLeavingFromReserveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReturningToReserveComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/DragComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/CubeColors.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Misc/EnumarableExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeBoardSystem.cs" />
@@ -133,13 +130,17 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OnePieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" />
       </list>
     </option>
   </component>
@@ -198,7 +199,7 @@
       <workItem from="1569770914311" duration="6072000" />
       <workItem from="1572095240841" duration="254000" />
       <workItem from="1572195491396" duration="27471000" />
-      <workItem from="1572295582503" duration="2558000" />
+      <workItem from="1572295582503" duration="5241000" />
     </task>
     <servers />
   </component>

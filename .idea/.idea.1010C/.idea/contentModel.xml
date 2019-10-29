@@ -67,7 +67,11 @@
               </e>
             </e>
             <e p="PieceRecipes" t="Include">
+              <e p="PieceType.BigLType.cs" t="Include" />
+              <e p="PieceType.BigSquareType.cs" t="Include" />
               <e p="PieceType.cs" t="Include" />
+              <e p="PieceType.FivePieceType.cs" t="Include" />
+              <e p="PieceType.FourPieceType.cs" t="Include" />
               <e p="PieceType.OneType.cs" t="Include" />
               <e p="PieceType.SmallLType.cs" t="Include" />
               <e p="PieceType.SmallSquareType.cs" t="Include" />
