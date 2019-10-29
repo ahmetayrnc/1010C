@@ -11,13 +11,14 @@ namespace _1010C.Scripts.Components.Piece
 
     public enum CubeColor
     {
-        Color0,
-        Color1,
-        Color2,
-        Color3,
-        Color4,
-        Color5,
-        Color6,
-        Color7,
+        Purple,
+        Yellow,
+        DarkGreen,
+        Orange,
+        LightGreen,
+        Pink,
+        Red,
+        Blue,
+        Cyan,
     }
 }

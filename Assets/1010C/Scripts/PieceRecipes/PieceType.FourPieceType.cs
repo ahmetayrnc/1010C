@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _1010C.Scripts.Components.Piece;
+using UnityEngine;
 
 namespace _1010C.Scripts.PieceRecipes
 {
@@ -11,6 +12,11 @@ namespace _1010C.Scripts.PieceRecipes
 
             private FourPieceType(int value, string name) : base(value, name)
             {
+            }
+            
+            public override CubeColor GetCubeColor()
+            {
+                return CubeColor.Pink;
             }
 
             private class FourPieceVertical : FourPieceType
