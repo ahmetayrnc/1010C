@@ -13,7 +13,6 @@ public sealed class GameEventSystems : Feature {
         Add(new ColorEventSystem(contexts)); // priority: 0
         Add(new CubePlacedEventSystem(contexts)); // priority: 0
         Add(new CubeRemovedEventSystem(contexts)); // priority: 0
-        Add(new CubeStateEventSystem(contexts)); // priority: 0
         Add(new DestroyedEventSystem(contexts)); // priority: 0
         Add(new DragEventSystem(contexts)); // priority: 0
         Add(new DragRemovedEventSystem(contexts)); // priority: 0

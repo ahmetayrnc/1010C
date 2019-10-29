@@ -141,7 +141,6 @@
               <e p="ColorListenerComponent.cs" t="Include" />
               <e p="CubePlacedListenerComponent.cs" t="Include" />
               <e p="CubeRemovedListenerComponent.cs" t="Include" />
-              <e p="CubeStateListenerComponent.cs" t="Include" />
               <e p="DestroyedListenerComponent.cs" t="Include" />
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
@@ -155,7 +154,6 @@
               <e p="IColorListener.cs" t="Include" />
               <e p="ICubePlacedListener.cs" t="Include" />
               <e p="ICubeRemovedListener.cs" t="Include" />
-              <e p="ICubeStateListener.cs" t="Include" />
               <e p="IDestroyedListener.cs" t="Include" />
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
@@ -168,7 +166,6 @@
               <e p="ColorEventSystem.cs" t="Include" />
               <e p="CubePlacedEventSystem.cs" t="Include" />
               <e p="CubeRemovedEventSystem.cs" t="Include" />
-              <e p="CubeStateEventSystem.cs" t="Include" />
               <e p="DestroyedEventSystem.cs" t="Include" />
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
@@ -190,7 +187,6 @@
               <e p="GameCubeRemovedComponent.cs" t="Include" />
               <e p="GameCubeRemovedListenerComponent.cs" t="Include" />
               <e p="GameCubeStateComponent.cs" t="Include" />
-              <e p="GameCubeStateListenerComponent.cs" t="Include" />
               <e p="GameDestroyedComponent.cs" t="Include" />
               <e p="GameDestroyedListenerComponent.cs" t="Include" />
               <e p="GameDragComponent.cs" t="Include" />

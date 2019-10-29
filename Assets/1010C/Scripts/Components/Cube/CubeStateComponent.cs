@@ -1,5 +1,4 @@
 ﻿using Entitas;
-using Entitas.CodeGeneration.Attributes;
 
 namespace _1010C.Scripts.Components.Cube
 {
@@ -9,9 +8,9 @@ namespace _1010C.Scripts.Components.Cube
         Full
     }
 
-    [Game, Event(EventTarget.Self)]
+    [Game]
     public class CubeStateComponent : IComponent
     {
         public CubeState Value;
-    } 
+    }
 }

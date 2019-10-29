@@ -35,14 +35,13 @@ public static class GameComponentsLookup {
     public const int ColorListener = 24;
     public const int CubePlacedListener = 25;
     public const int CubeRemovedListener = 26;
-    public const int CubeStateListener = 27;
-    public const int DestroyedListener = 28;
-    public const int DragListener = 29;
-    public const int DragRemovedListener = 30;
-    public const int GridPositionListener = 31;
-    public const int PositionListener = 32;
+    public const int DestroyedListener = 27;
+    public const int DragListener = 28;
+    public const int DragRemovedListener = 29;
+    public const int GridPositionListener = 30;
+    public const int PositionListener = 31;
 
-    public const int TotalComponents = 33;
+    public const int TotalComponents = 32;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -72,7 +71,6 @@ public static class GameComponentsLookup {
         "ColorListener",
         "CubePlacedListener",
         "CubeRemovedListener",
-        "CubeStateListener",
         "DestroyedListener",
         "DragListener",
         "DragRemovedListener",
@@ -108,7 +106,6 @@ public static class GameComponentsLookup {
         typeof(ColorListenerComponent),
         typeof(CubePlacedListenerComponent),
         typeof(CubeRemovedListenerComponent),
-        typeof(CubeStateListenerComponent),
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
