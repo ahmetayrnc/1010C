@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colors: {fileID: 11400000, guid: cefcd458c976ed1408dd32e34ad11503, type: 2}
+  relativeContainer: {fileID: 2631535514025467138}
   spriteRenderer: {fileID: 7446250881029516993}
 --- !u!1 &3063396259092178922
 GameObject:

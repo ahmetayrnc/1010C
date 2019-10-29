@@ -2,14 +2,15 @@
 using _1010C.Scripts.Components.Cube;
 using _1010C.Scripts.Services;
 using Entitas;
+using UnityEngine;
 
 namespace _1010C.Scripts.Systems
 {
-    public class TileCleanerSystem : ReactiveSystem<GameEntity>
+    public class CubeRemoverSystem : ReactiveSystem<GameEntity>
     {
         private readonly Contexts _contexts;
 
-        public TileCleanerSystem(Contexts contexts) : base(contexts.game)
+        public CubeRemoverSystem(Contexts contexts) : base(contexts.game)
         {
             _contexts = contexts;
         }
@@ -94,6 +95,7 @@ namespace _1010C.Scripts.Systems
                     if (!tilesToBeCleaned[x, y]) continue;
 
                     cubes[x, y].ReplaceCubeState(CubeState.Empty);
+                    cubes[x, y].isCubeRemoved = true;
 
                     tilesCleaned++;
                 }

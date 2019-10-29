@@ -81,6 +81,7 @@ namespace _1010C.Scripts.Systems
             {
                 cube.ReplaceCubeState(CubeState.Full);
                 cube.ReplaceColor(piece.color.Value);
+                cube.isCubePlaced = true;
                 cubesFilled++;
             }
 
