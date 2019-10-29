@@ -1,17 +1,17 @@
 ﻿using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
-namespace _1010C.Scripts.Components.Tile
+namespace _1010C.Scripts.Components.Cube
 {
-    public enum TileState
+    public enum CubeState
     {
         Empty,
         Full
     }
 
     [Game, Event(EventTarget.Self)]
-    public class TileStateComponent : IComponent
+    public class CubeStateComponent : IComponent
     {
-        public TileState Value;
+        public CubeState Value;
     } 
 }

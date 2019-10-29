@@ -10,37 +10,40 @@ public static class GameComponentsLookup {
 
     public const int BoardSize = 0;
     public const int ReserveSlotPositions = 1;
-    public const int Destroyed = 2;
-    public const int GridPosition = 3;
-    public const int Id = 4;
-    public const int IdCount = 5;
-    public const int Color = 6;
-    public const int Drag = 7;
-    public const int Piece = 8;
-    public const int PieceInAir = 9;
-    public const int PieceType = 10;
-    public const int ReserveSlotForPiece = 11;
-    public const int Position = 12;
-    public const int PieceInReserve = 13;
-    public const int ReserveSlot = 14;
-    public const int Score = 15;
-    public const int Tile = 16;
-    public const int TileState = 17;
-    public const int View = 18;
-    public const int AnyBoardSizeListener = 19;
-    public const int AnyScoreListener = 20;
-    public const int DestroyedListener = 21;
-    public const int DragListener = 22;
-    public const int DragRemovedListener = 23;
-    public const int GridPositionListener = 24;
-    public const int PositionListener = 25;
-    public const int TileStateListener = 26;
+    public const int Cube = 2;
+    public const int CubeState = 3;
+    public const int Destroyed = 4;
+    public const int GridPosition = 5;
+    public const int Id = 6;
+    public const int IdCount = 7;
+    public const int Color = 8;
+    public const int Drag = 9;
+    public const int Piece = 10;
+    public const int PieceInAir = 11;
+    public const int PieceType = 12;
+    public const int ReserveSlotForPiece = 13;
+    public const int Position = 14;
+    public const int PieceInReserve = 15;
+    public const int ReserveSlot = 16;
+    public const int Score = 17;
+    public const int Tile = 18;
+    public const int View = 19;
+    public const int AnyBoardSizeListener = 20;
+    public const int AnyScoreListener = 21;
+    public const int CubeStateListener = 22;
+    public const int DestroyedListener = 23;
+    public const int DragListener = 24;
+    public const int DragRemovedListener = 25;
+    public const int GridPositionListener = 26;
+    public const int PositionListener = 27;
 
-    public const int TotalComponents = 27;
+    public const int TotalComponents = 28;
 
     public static readonly string[] componentNames = {
         "BoardSize",
         "ReserveSlotPositions",
+        "Cube",
+        "CubeState",
         "Destroyed",
         "GridPosition",
         "Id",
@@ -56,21 +59,22 @@ public static class GameComponentsLookup {
         "ReserveSlot",
         "Score",
         "Tile",
-        "TileState",
         "View",
         "AnyBoardSizeListener",
         "AnyScoreListener",
+        "CubeStateListener",
         "DestroyedListener",
         "DragListener",
         "DragRemovedListener",
         "GridPositionListener",
-        "PositionListener",
-        "TileStateListener"
+        "PositionListener"
     };
 
     public static readonly System.Type[] componentTypes = {
         typeof(_1010C.Scripts.Components.Board.BoardSizeComponent),
         typeof(_1010C.Scripts.Components.Board.ReserveSlotPositionsComponent),
+        typeof(_1010C.Scripts.Components.Cube.CubeComponent),
+        typeof(_1010C.Scripts.Components.Cube.CubeStateComponent),
         typeof(_1010C.Scripts.Components.DestroyedComponent),
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
@@ -86,15 +90,14 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
         typeof(_1010C.Scripts.Components.Score.ScoreComponent),
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
-        typeof(_1010C.Scripts.Components.Tile.TileStateComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(AnyScoreListenerComponent),
+        typeof(CubeStateListenerComponent),
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
         typeof(GridPositionListenerComponent),
-        typeof(PositionListenerComponent),
-        typeof(TileStateListenerComponent)
+        typeof(PositionListenerComponent)
     };
 }

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using _1010C.Scripts.Components.Tile;
+using _1010C.Scripts.Components.Cube;
 using _1010C.Scripts.Services;
 using Entitas;
-using UnityEngine;
 
 namespace _1010C.Scripts.Systems
 {
@@ -17,12 +16,12 @@ namespace _1010C.Scripts.Systems
 
         protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
         {
-            return context.CreateCollector(GameMatcher.TileState);
+            return context.CreateCollector(GameMatcher.CubeState);
         }
 
         protected override bool Filter(GameEntity entity)
         {
-            return entity.hasTileState;
+            return entity.hasCubeState;
         }
 
         protected override void Execute(List<GameEntity> entities)
@@ -30,11 +29,11 @@ namespace _1010C.Scripts.Systems
             var boardSize = _contexts.game.boardSize.Value;
 
             //get the tiles to check for full or empty
-            var tileList = _contexts.game.GetGroup(GameMatcher.TileState).GetEntities();
-            var tiles = new GameEntity[boardSize.x, boardSize.y];
-            foreach (var tile in tileList)
+            var cubeList = _contexts.game.GetGroup(GameMatcher.CubeState).GetEntities();
+            var cubes = new GameEntity[boardSize.x, boardSize.y];
+            foreach (var cube in cubeList)
             {
-                tiles[tile.gridPosition.Value.x, tile.gridPosition.Value.y] = tile;
+                cubes[cube.gridPosition.Value.x, cube.gridPosition.Value.y] = cube;
             }
 
             //figure out which columns to clean
@@ -52,7 +51,7 @@ namespace _1010C.Scripts.Systems
                 var fullCol = true;
                 for (var y = 0; y < boardSize.y; y++)
                 {
-                    if (tiles[x, y].tileState.Value == TileState.Empty)
+                    if (cubes[x, y].cubeState.Value == CubeState.Empty)
                     {
                         fullCol = false;
                     }
@@ -72,7 +71,7 @@ namespace _1010C.Scripts.Systems
                 var fullRow = true;
                 for (var x = 0; x < boardSize.x; x++)
                 {
-                    if (tiles[x, y].tileState.Value == TileState.Empty)
+                    if (cubes[x, y].cubeState.Value == CubeState.Empty)
                     {
                         fullRow = false;
                     }
@@ -94,8 +93,7 @@ namespace _1010C.Scripts.Systems
                 {
                     if (!tilesToBeCleaned[x, y]) continue;
 
-                    tiles[x, y].ReplaceTileState(TileState.Empty);
-                    tiles[x, y].RemoveColor();
+                    cubes[x, y].ReplaceCubeState(CubeState.Empty);
 
                     tilesCleaned++;
                 }

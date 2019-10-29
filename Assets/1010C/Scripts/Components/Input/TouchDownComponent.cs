@@ -1,5 +1,4 @@
 ﻿using Entitas;
-using Entitas.CodeGeneration.Attributes;
 using UnityEngine;
 
 namespace _1010C.Scripts.Components.Input

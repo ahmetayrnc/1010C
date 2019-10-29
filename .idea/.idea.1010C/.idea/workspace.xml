@@ -2,17 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeCubesSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeCubesSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/CubeStateListenerComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/CubeStateListenerComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ICubeStateListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ICubeStateListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/CubeStateEventSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/CubeStateEventSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeStateComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeStateComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeStateListenerComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameCubeStateListenerComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigSquareType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FivePieceType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OneType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallLType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Input/TouchDownComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileStateComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileStateComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchUpSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/TileCleanerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/TileCleanerSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/TileStateListenerComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/TileStateListenerComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ITileStateListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ITileStateListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameTileStateComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameTileStateComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameTileStateListenerComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameTileStateListenerComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +71,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeBoardSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/IdService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/GridPositionComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,7 +84,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GenericUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.FourPieceType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeCubesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/PieceCreationService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/BoardSizeComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,7 +120,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/ScoreService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -93,24 +139,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/PieceStateEventSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/DestroyedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DestroySystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Reserve/ReserveSlotStateComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Input/ProcessTouchDownSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IReserveSlotStateListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameReserveSlotStateComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/ReserveSlotStateEventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/ReserveFillSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Misc/Enumaration.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceTypeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceCubePositions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceCubePositionsComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceColorComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceColorComponent.cs" />
@@ -120,19 +154,16 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/CubeRemoverSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OnePieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/View.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeBoardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/TileCleanerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Services/ScoreService.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GenericUI.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GenericUi.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/DragSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/PieceView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.BigLType.cs" />
@@ -144,6 +175,21 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.SmallSquareType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeCubesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Tile/TileStateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameTileStateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/TileStateEventSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/ITileStateListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/TileCleanerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeTilesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/PiecePlacerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/TileView.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/AddViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/ViewFactory.cs" />
       </list>
     </option>
   </component>
@@ -203,7 +249,7 @@
       <workItem from="1572095240841" duration="254000" />
       <workItem from="1572195491396" duration="27471000" />
       <workItem from="1572295582503" duration="5635000" />
-      <workItem from="1572345055398" duration="5880000" />
+      <workItem from="1572345055398" duration="10174000" />
     </task>
     <servers />
   </component>

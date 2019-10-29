@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using _1010C.Scripts.Components.Tile;
+using _1010C.Scripts.Components.Cube;
 using _1010C.Scripts.Services;
 using Entitas;
 using UnityEngine;
@@ -42,12 +42,12 @@ namespace _1010C.Scripts.Systems
 
             var boardSize = _contexts.game.boardSize.Value;
 
-            //get the tiles to check for full or empty
-            var tileList = _contexts.game.GetGroup(GameMatcher.TileState).GetEntities();
-            var tiles = new GameEntity[boardSize.x, boardSize.y];
-            foreach (var tile in tileList)
+            //get the cubes to check for full or empty
+            var cubeList = _contexts.game.GetGroup(GameMatcher.CubeState).GetEntities();
+            var cubes = new GameEntity[boardSize.x, boardSize.y];
+            foreach (var cube in cubeList)
             {
-                tiles[tile.gridPosition.Value.x, tile.gridPosition.Value.y] = tile;
+                cubes[cube.gridPosition.Value.x, cube.gridPosition.Value.y] = cube;
             }
 
             //check if the piece can be placed
@@ -61,9 +61,9 @@ namespace _1010C.Scripts.Systems
                 if (cubeX < 0 || cubeX >= boardSize.x) return false;
                 if (cubeY < 0 || cubeY >= boardSize.y) return false;
 
-                if (tiles[cubeX, cubeY].tileState.Value == TileState.Full) return false;
+                if (cubes[cubeX, cubeY].cubeState.Value == CubeState.Full) return false;
 
-                tilesToBePlacedOn.Add(tiles[cubeX, cubeY]);
+                tilesToBePlacedOn.Add(cubes[cubeX, cubeY]);
             }
 
             return true;
@@ -75,12 +75,12 @@ namespace _1010C.Scripts.Systems
             var reserveSlot = _contexts.game.GetEntityWithId(piece.reserveSlotForPiece.Id);
             reserveSlot.RemovePieceInReserve();
 
-            var tilesFilled = 0;
             //Make the tiles occupied
+            var tilesFilled = 0;
             foreach (var tile in tilesToBePlacedOn)
             {
-                tile.ReplaceTileState(TileState.Full);
-                tile.AddColor(piece.color.Value);
+                tile.ReplaceCubeState(CubeState.Full);
+//                tile.AddColor(piece.color.Value);
                 tilesFilled++;
             }
 

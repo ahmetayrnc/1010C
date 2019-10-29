@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
-using _1010C.Scripts.Components.Piece;
-using _1010C.Scripts.Components.Reserve;
 using _1010C.Scripts.Services;
 using Entitas;
-using UnityEngine;
 
 namespace _1010C.Scripts.Systems
 {

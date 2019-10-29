@@ -23,6 +23,10 @@ namespace _1010C.Scripts.Mono.View
         public GameObject tileView;
         public GameObject pieceView;
 
+        public Transform tileParent;
+        public Transform cubeParent;
+        public Transform pieceParent;
+
         public static GameObject SpawnCube()
         {
             return Instance.SpawnCubeInternal();
@@ -50,17 +54,17 @@ namespace _1010C.Scripts.Mono.View
 
         private GameObject SpawnCubeInternal()
         {
-            return Instantiate(cubeView, transform);
+            return Instantiate(cubeView, cubeParent);
         }
 
         private GameObject SpawnTileInternal()
         {
-            return Instantiate(tileView, transform);
+            return Instantiate(tileView, tileParent);
         }
 
         private GameObject SpawnPieceInternal()
         {
-            return Instantiate(pieceView, transform);
+            return Instantiate(pieceView, pieceParent);
         }
     }
 }

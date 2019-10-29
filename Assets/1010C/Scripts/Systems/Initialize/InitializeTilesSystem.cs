@@ -1,4 +1,4 @@
-﻿using _1010C.Scripts.Components.Tile;
+﻿using _1010C.Scripts.Components.Cube;
 using Entitas;
 using UnityEngine;
 
@@ -22,6 +22,7 @@ namespace _1010C.Scripts.Systems.Initialize
                 for (var y = 0; y < boardSize.Value.y; y++)
                 {
                     CreateTile(x, y);
+                    CreateCube(x, y);
                 }
             }
         }
@@ -31,8 +32,16 @@ namespace _1010C.Scripts.Systems.Initialize
             var tileEntity = _contexts.game.CreateEntity();
 
             tileEntity.isTile = true;
-            tileEntity.AddTileState(TileState.Empty);
             tileEntity.AddGridPosition(new Vector2Int(x, y));
+        }
+
+        private void CreateCube(int x, int y)
+        {
+            var cubeEntity = _contexts.game.CreateEntity();
+
+            cubeEntity.isCube = true;
+            cubeEntity.AddCubeState(CubeState.Empty);
+            cubeEntity.AddGridPosition(new Vector2Int(x, y));
         }
     }
 }

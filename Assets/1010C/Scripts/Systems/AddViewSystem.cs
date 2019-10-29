@@ -13,12 +13,12 @@ namespace _1010C.Scripts.Systems
 
         protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
         {
-            return context.CreateCollector(GameMatcher.AnyOf(GameMatcher.Piece, GameMatcher.Tile));
+            return context.CreateCollector(GameMatcher.AnyOf(GameMatcher.Piece, GameMatcher.Tile, GameMatcher.Cube));
         }
 
         protected override bool Filter(GameEntity entity)
         {
-            return !entity.hasView && (entity.isPiece || entity.isTile);
+            return !entity.hasView && (entity.isPiece || entity.isTile || entity.isCube);
         }
 
         protected override void Execute(List<GameEntity> entities)

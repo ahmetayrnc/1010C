@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using _1010C.Scripts.Components.Piece;
 using Entitas;
-using UnityEngine;
 
 namespace _1010C.Scripts.Systems.Input
 {

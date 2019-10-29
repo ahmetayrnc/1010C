@@ -6,31 +6,31 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public sealed class TileStateEventSystem : Entitas.ReactiveSystem<GameEntity> {
+public sealed class CubeStateEventSystem : Entitas.ReactiveSystem<GameEntity> {
 
-    readonly System.Collections.Generic.List<ITileStateListener> _listenerBuffer;
+    readonly System.Collections.Generic.List<ICubeStateListener> _listenerBuffer;
 
-    public TileStateEventSystem(Contexts contexts) : base(contexts.game) {
-        _listenerBuffer = new System.Collections.Generic.List<ITileStateListener>();
+    public CubeStateEventSystem(Contexts contexts) : base(contexts.game) {
+        _listenerBuffer = new System.Collections.Generic.List<ICubeStateListener>();
     }
 
     protected override Entitas.ICollector<GameEntity> GetTrigger(Entitas.IContext<GameEntity> context) {
         return Entitas.CollectorContextExtension.CreateCollector(
-            context, Entitas.TriggerOnEventMatcherExtension.Added(GameMatcher.TileState)
+            context, Entitas.TriggerOnEventMatcherExtension.Added(GameMatcher.CubeState)
         );
     }
 
     protected override bool Filter(GameEntity entity) {
-        return entity.hasTileState && entity.hasTileStateListener;
+        return entity.hasCubeState && entity.hasCubeStateListener;
     }
 
     protected override void Execute(System.Collections.Generic.List<GameEntity> entities) {
         foreach (var e in entities) {
-            var component = e.tileState;
+            var component = e.cubeState;
             _listenerBuffer.Clear();
-            _listenerBuffer.AddRange(e.tileStateListener.value);
+            _listenerBuffer.AddRange(e.cubeStateListener.value);
             foreach (var listener in _listenerBuffer) {
-                listener.OnTileState(e, component.Value);
+                listener.OnCubeState(e, component.Value);
             }
         }
     }

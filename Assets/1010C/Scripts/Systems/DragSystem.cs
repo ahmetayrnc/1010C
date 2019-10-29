@@ -1,6 +1,4 @@
-﻿using System;
-using Entitas;
-using UnityEngine;
+﻿using Entitas;
 
 namespace _1010C.Scripts.Systems
 {
