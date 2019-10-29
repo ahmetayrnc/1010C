@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _1010C.Scripts.Components.Tile;
+using _1010C.Scripts.Services;
 using Entitas;
 using UnityEngine;
 
@@ -74,15 +75,20 @@ namespace _1010C.Scripts.Systems
             var reserveSlot = _contexts.game.GetEntityWithId(piece.reserveSlotForPiece.Id);
             reserveSlot.RemovePieceInReserve();
 
+            var tilesFilled = 0;
             //Make the tiles occupied
             foreach (var tile in tilesToBePlacedOn)
             {
                 tile.ReplaceTileState(TileState.Full);
                 tile.AddColor(piece.color.Value);
+                tilesFilled++;
             }
 
             //Destroy the piece
             piece.isDestroyed = true;
+
+            //increment the score
+            ScoreService.IncrementScore(tilesFilled);
         }
     }
 }

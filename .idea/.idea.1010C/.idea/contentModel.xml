@@ -58,6 +58,10 @@
               <e p="ScriptableObjects" t="Include">
                 <e p="PieceColors.cs" t="Include" />
               </e>
+              <e p="UI" t="Include">
+                <e p="GenericUI.cs" t="Include" />
+                <e p="ScoreUi.cs" t="Include" />
+              </e>
               <e p="View" t="Include">
                 <e p="CubeView.cs" t="Include" />
                 <e p="PieceView.cs" t="Include" />
@@ -81,10 +85,10 @@
             <e p="Services" t="Include">
               <e p="IdService.cs" t="Include" />
               <e p="PieceCreationService.cs" t="Include" />
+              <e p="ScoreService.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="AddViewSystem.cs" t="Include" />
-              <e p="CubeRemoverSystem.cs" t="Include" />
               <e p="DestroySystem.cs" t="Include" />
               <e p="DragSystem.cs" t="Include" />
               <e p="Initialize" t="Include">
@@ -99,6 +103,7 @@
               </e>
               <e p="PiecePlacerSystem.cs" t="Include" />
               <e p="ReserveFillSystem.cs" t="Include" />
+              <e p="TileCleanerSystem.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -208,6 +213,34 @@
           <e p="Entitas" t="Include">
             <e p="Entitas.xml" t="Include" />
             <e p="LICENSE.txt" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>

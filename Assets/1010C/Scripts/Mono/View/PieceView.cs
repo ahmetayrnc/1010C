@@ -68,6 +68,7 @@ namespace _1010C.Scripts.Mono.View
             MoveCubes(MovementType.Separate);
             scaleContainer.DOKill();
             scaleContainer.DOScale(BoardScale, LeaveFromReserveDuration);
+            sortingGroup.sortingLayerName = AirLayer;
         }
 
         public void OnDragRemoved(GameEntity entity)
@@ -81,6 +82,7 @@ namespace _1010C.Scripts.Mono.View
             transform.DOMove(reserveSlot.position.Value, ReturnToReserveDuration).OnComplete(() =>
             {
                 entity.ReplacePosition(reserveSlot.position.Value);
+                sortingGroup.sortingLayerName = PieceLayer;
             });
         }
 

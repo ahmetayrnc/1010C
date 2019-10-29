@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using _1010C.Scripts.Components.Tile;
+using _1010C.Scripts.Services;
 using Entitas;
 using UnityEngine;
 
 namespace _1010C.Scripts.Systems
 {
-    public class CubeRemoverSystem : ReactiveSystem<GameEntity>
+    public class TileCleanerSystem : ReactiveSystem<GameEntity>
     {
         private readonly Contexts _contexts;
 
-        public CubeRemoverSystem(Contexts contexts) : base(contexts.game)
+        public TileCleanerSystem(Contexts contexts) : base(contexts.game)
         {
             _contexts = contexts;
         }
@@ -85,6 +86,7 @@ namespace _1010C.Scripts.Systems
                 }
             }
 
+            var tilesCleaned = 0;
             //clean the tiles
             for (var x = 0; x < boardSize.x; x++)
             {
@@ -94,8 +96,15 @@ namespace _1010C.Scripts.Systems
 
                     tiles[x, y].ReplaceTileState(TileState.Empty);
                     tiles[x, y].RemoveColor();
+
+                    tilesCleaned++;
                 }
             }
+
+            if (tilesCleaned <= 0) return;
+
+            //increment the score
+            ScoreService.IncrementScore(tilesCleaned);
         }
     }
 }

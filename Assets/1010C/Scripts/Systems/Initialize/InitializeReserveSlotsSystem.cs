@@ -16,7 +16,8 @@ namespace _1010C.Scripts.Systems.Initialize
 
         public void Initialize()
         {
-            const int reserveSlotY = -2;
+            //Move these to a component pls
+            const int reserveSlotY = -3;
             var positions = new[]
             {
                 new Vector2(1f, reserveSlotY),

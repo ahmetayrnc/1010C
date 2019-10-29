@@ -9,6 +9,7 @@ namespace _1010C.Scripts.Mono.View
         protected const string TileLayer = "Tile";
         protected const string CubeLayer = "Cube";
         protected const string PieceLayer = "Piece";
+        protected const string AirLayer = "Air";
         
         public void Link(IEntity entity)
         {

@@ -43,7 +43,7 @@ namespace _1010C.Scripts.Mono
                     .Add(new PiecePlacerSystem(contexts))
 
                     //remover
-                    .Add(new CubeRemoverSystem(contexts))
+                    .Add(new TileCleanerSystem(contexts))
 
                     //
                     .Add(new ReserveFillSystem(contexts))
