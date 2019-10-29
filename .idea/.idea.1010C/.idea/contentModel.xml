@@ -124,6 +124,11 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="Fonts" t="Include">
+          <e p="Josefin_Sans" t="Include">
+            <e p="OFL.txt" t="Include" />
+          </e>
+        </e>
         <e p="Generated" t="Include">
           <e p="Contexts.cs" t="Include" />
           <e p="Events" t="Include">
