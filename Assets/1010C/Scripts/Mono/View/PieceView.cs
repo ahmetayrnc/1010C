@@ -1,5 +1,4 @@
-﻿using System;
-using _1010C.Scripts.Mono.ScriptableObjects;
+﻿using _1010C.Scripts.Mono.ScriptableObjects;
 using DG.Tweening;
 using Entitas.Unity;
 using UnityEngine;
@@ -12,13 +11,16 @@ namespace _1010C.Scripts.Mono.View
         public PieceColors pieceColors;
         public SortingGroup sortingGroup;
         public Transform relativeContainer;
-        public CubeView[] cubes;
+        public SpriteRenderer[] cubes;
 
-        private const float ReserveScale = 0.65f;
-        private const float BoardScale = 0.86f;
+        private const float PieceReserveScale = 0.6f;
+        private const float PieceBoardScale = 1f;
+
+        private const float CubeBoardScale = 0.8f;
+        private const float CubeReserveScale = 0.9f;
+
         private const float ReturnToReserveDuration = 0.5f;
         private const float LeaveFromReserveDuration = 0.24f;
-        private const float CubeSeparationAmount = 0.086f;
 
         protected override void AddListeners(GameEntity entity)
         {
@@ -43,16 +45,16 @@ namespace _1010C.Scripts.Mono.View
                 newPos.x += pos.x;
                 newPos.y += pos.y;
 
-                cube.SetActive(true);
+                cube.gameObject.SetActive(true);
                 cube.transform.localPosition = newPos;
-                cube.SetColor(pieceColors.PieceColorToColor(color));
+                cube.color = pieceColors.CubeColorToColor(color);
 
                 index++;
             }
 
             for (var i = index; i < cubes.Length; i++)
             {
-                cubes[i].SetActive(false);
+                cubes[i].gameObject.SetActive(false);
             }
         }
 
@@ -63,19 +65,30 @@ namespace _1010C.Scripts.Mono.View
 
         public void OnDrag(GameEntity entity)
         {
-            MoveCubes(MovementType.Separate);
-            relativeContainer.DOKill();
-            relativeContainer.DOScale(BoardScale, LeaveFromReserveDuration);
-            relativeContainer.DOLocalMoveY(entity.pieceType.Value.GetDragPivotDifference(), LeaveFromReserveDuration);
             sortingGroup.sortingLayerName = AirLayer;
+
+            relativeContainer.DOKill();
+            relativeContainer.DOScale(PieceBoardScale, LeaveFromReserveDuration);
+            relativeContainer.DOLocalMoveY(entity.pieceType.Value.GetDragPivotDifference(), LeaveFromReserveDuration);
+
+            foreach (var cube in cubes)
+            {
+                cube.transform.DOKill();
+                cube.transform.DOScale(CubeBoardScale, LeaveFromReserveDuration);
+            }
         }
 
         public void OnDragRemoved(GameEntity entity)
         {
-            MoveCubes(MovementType.Join);
             relativeContainer.DOKill();
-            relativeContainer.DOScale(ReserveScale, ReturnToReserveDuration);
+            relativeContainer.DOScale(PieceReserveScale, ReturnToReserveDuration);
             relativeContainer.DOLocalMoveY(0, LeaveFromReserveDuration);
+
+            foreach (var cube in cubes)
+            {
+                cube.transform.DOKill();
+                cube.transform.DOScale(CubeReserveScale, LeaveFromReserveDuration);
+            }
 
             var reserveSlot = Contexts.sharedInstance.game.GetEntityWithId(entity.reserveSlotForPiece.Id);
             transform.DOKill();
@@ -91,40 +104,6 @@ namespace _1010C.Scripts.Mono.View
             GameObject go;
             (go = gameObject).Unlink();
             ViewFactory.DestroyPiece(go);
-        }
-
-        private enum MovementType
-        {
-            Separate,
-            Join
-        }
-
-        private void MoveCubes(MovementType type)
-        {
-            foreach (var cube in cubes)
-            {
-                var cubeTransform = cube.transform;
-                var cubeLocalPosition = cubeTransform.localPosition;
-
-                var newLocalY = CalculateCubePos(cubeLocalPosition.y, type);
-                var newLocalX = CalculateCubePos(cubeLocalPosition.x, type);
-
-                cubeTransform.DOKill();
-                cubeTransform.DOLocalMoveX(newLocalX, LeaveFromReserveDuration);
-                cubeTransform.DOLocalMoveY(newLocalY, LeaveFromReserveDuration);
-            }
-        }
-
-        private static float CalculateCubePos(float localVal, MovementType type)
-        {
-            //if at the center, do not move
-            if (!(Math.Abs(localVal) >= 0.001f)) return localVal;
-
-            var multiplier = type == MovementType.Separate ? +1 : -1;
-            var amount = localVal / 0.5f;
-            localVal += amount * CubeSeparationAmount * multiplier;
-
-            return localVal;
         }
     }
 }

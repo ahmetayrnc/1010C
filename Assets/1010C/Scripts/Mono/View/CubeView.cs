@@ -1,16 +1,20 @@
 ﻿using _1010C.Scripts.Components.Cube;
+using _1010C.Scripts.Components.Piece;
+using _1010C.Scripts.Mono.ScriptableObjects;
 using UnityEngine;
 
 namespace _1010C.Scripts.Mono.View
 {
-    public class CubeView : View, ICubeStateListener, IGridPositionListener
+    public class CubeView : View, ICubeStateListener, IGridPositionListener, IColorListener
     {
+        public PieceColors colors;
         public SpriteRenderer spriteRenderer;
 
         protected override void AddListeners(GameEntity entity)
         {
             entity.AddCubeStateListener(this);
             entity.AddGridPositionListener(this);
+            entity.AddColorListener(this);
         }
 
         protected override void InitializeView(GameEntity entity)
@@ -18,33 +22,19 @@ namespace _1010C.Scripts.Mono.View
             spriteRenderer.sortingLayerName = CubeLayer;
         }
 
-        public void SetColor(Color color)
-        {
-            spriteRenderer.color = color;
-        }
-
-        public void SetActive(bool active)
-        {
-            gameObject.SetActive(active);
-        }
-
         public void OnCubeState(GameEntity entity, CubeState value)
         {
-            if (value == CubeState.Full)
-            {
-                spriteRenderer.enabled = true;
-                spriteRenderer.color = Color.black;
-            }
-
-            if (value == CubeState.Empty)
-            {
-                spriteRenderer.enabled = false;
-            }
+            spriteRenderer.enabled = value == CubeState.Full;
         }
 
         public void OnGridPosition(GameEntity entity, Vector2Int value)
         {
             transform.position = (Vector2) value;
+        }
+
+        public void OnColor(GameEntity entity, CubeColor value)
+        {
+            spriteRenderer.color = colors.CubeColorToColor(value);
         }
     }
 }

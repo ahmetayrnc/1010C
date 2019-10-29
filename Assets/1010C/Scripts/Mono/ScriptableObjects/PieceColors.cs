@@ -8,7 +8,7 @@ namespace _1010C.Scripts.Mono.ScriptableObjects
     {
         public Color[] colors;
 
-        public Color PieceColorToColor(CubeColor cubeColor)
+        public Color CubeColorToColor(CubeColor cubeColor)
         {
             switch (cubeColor)
             {

@@ -30,14 +30,15 @@ public static class GameComponentsLookup {
     public const int View = 19;
     public const int AnyBoardSizeListener = 20;
     public const int AnyScoreListener = 21;
-    public const int CubeStateListener = 22;
-    public const int DestroyedListener = 23;
-    public const int DragListener = 24;
-    public const int DragRemovedListener = 25;
-    public const int GridPositionListener = 26;
-    public const int PositionListener = 27;
+    public const int ColorListener = 22;
+    public const int CubeStateListener = 23;
+    public const int DestroyedListener = 24;
+    public const int DragListener = 25;
+    public const int DragRemovedListener = 26;
+    public const int GridPositionListener = 27;
+    public const int PositionListener = 28;
 
-    public const int TotalComponents = 28;
+    public const int TotalComponents = 29;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -62,6 +63,7 @@ public static class GameComponentsLookup {
         "View",
         "AnyBoardSizeListener",
         "AnyScoreListener",
+        "ColorListener",
         "CubeStateListener",
         "DestroyedListener",
         "DragListener",
@@ -93,6 +95,7 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(AnyScoreListenerComponent),
+        typeof(ColorListenerComponent),
         typeof(CubeStateListenerComponent),
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),

@@ -10,6 +10,7 @@ public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
         Add(new AnyBoardSizeEventSystem(contexts)); // priority: 0
+        Add(new ColorEventSystem(contexts)); // priority: 0
         Add(new CubeStateEventSystem(contexts)); // priority: 0
         Add(new DestroyedEventSystem(contexts)); // priority: 0
         Add(new DragEventSystem(contexts)); // priority: 0

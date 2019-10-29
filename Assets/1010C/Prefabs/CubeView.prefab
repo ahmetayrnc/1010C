@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad3050f4d3ce914d961fbe1584d4e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors: {fileID: 11400000, guid: cefcd458c976ed1408dd32e34ad11503, type: 2}
   spriteRenderer: {fileID: 7446250881029516993}
 --- !u!1 &3063396259092178922
 GameObject:

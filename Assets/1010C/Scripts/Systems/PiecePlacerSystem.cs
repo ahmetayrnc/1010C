@@ -36,9 +36,9 @@ namespace _1010C.Scripts.Systems
             }
         }
 
-        private bool SuitableForPlacement(GameEntity piece, out List<GameEntity> tilesToBePlacedOn)
+        private bool SuitableForPlacement(GameEntity piece, out List<GameEntity> cubesToBePlacedOn)
         {
-            tilesToBePlacedOn = new List<GameEntity>();
+            cubesToBePlacedOn = new List<GameEntity>();
 
             var boardSize = _contexts.game.boardSize.Value;
 
@@ -63,32 +63,32 @@ namespace _1010C.Scripts.Systems
 
                 if (cubes[cubeX, cubeY].cubeState.Value == CubeState.Full) return false;
 
-                tilesToBePlacedOn.Add(cubes[cubeX, cubeY]);
+                cubesToBePlacedOn.Add(cubes[cubeX, cubeY]);
             }
 
             return true;
         }
 
-        private void PlacePiece(GameEntity piece, List<GameEntity> tilesToBePlacedOn)
+        private void PlacePiece(GameEntity piece, List<GameEntity> cubesToBePlacedOn)
         {
             //Empty the reserveSlot
             var reserveSlot = _contexts.game.GetEntityWithId(piece.reserveSlotForPiece.Id);
             reserveSlot.RemovePieceInReserve();
 
             //Make the tiles occupied
-            var tilesFilled = 0;
-            foreach (var tile in tilesToBePlacedOn)
+            var cubesFilled = 0;
+            foreach (var cube in cubesToBePlacedOn)
             {
-                tile.ReplaceCubeState(CubeState.Full);
-//                tile.AddColor(piece.color.Value);
-                tilesFilled++;
+                cube.ReplaceCubeState(CubeState.Full);
+                cube.ReplaceColor(piece.color.Value);
+                cubesFilled++;
             }
 
             //Destroy the piece
             piece.isDestroyed = true;
 
             //increment the score
-            ScoreService.IncrementScore(tilesFilled);
+            ScoreService.IncrementScore(cubesFilled);
         }
     }
 }

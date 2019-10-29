@@ -1,8 +1,9 @@
 ﻿using Entitas;
+using Entitas.CodeGeneration.Attributes;
 
 namespace _1010C.Scripts.Components.Piece
 {
-    [Game]
+    [Game, Event(EventTarget.Self)]
     public class ColorComponent : IComponent
     {
         public CubeColor Value;
