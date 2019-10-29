@@ -51,7 +51,7 @@ namespace _1010C.Scripts.Systems
             }
 
             //check if the piece can be placed
-            var pos = piece.position.Value;
+            var pos = piece.position.Value + Vector2.up * piece.pieceType.Value.GetDragPivotDifference();
             foreach (var cubePos in piece.pieceType.Value.GetPiecePositions())
             {
                 //calculate the grid position from float position

@@ -25,11 +25,6 @@ namespace _1010C.Scripts.PieceRecipes
                     new Vector2(+1f, +1f),
                 };
             }
-
-            public override float GetCubeSeparationAmount()
-            {
-                return 0.086f;
-            }
         }
     }
 }

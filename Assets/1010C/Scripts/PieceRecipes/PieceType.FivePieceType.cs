@@ -13,11 +13,6 @@ namespace _1010C.Scripts.PieceRecipes
             {
             }
 
-            public override float GetCubeSeparationAmount()
-            {
-                return 0.172f;
-            }
-
             private class FivePieceVertical : FivePieceType
             {
                 public FivePieceVertical() : base(16, "FivePieceVertical")

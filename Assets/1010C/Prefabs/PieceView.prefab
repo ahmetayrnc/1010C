@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365880809620908889}
   m_Layer: 0
-  m_Name: ScaleContainer
+  m_Name: RelativeContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,8 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pieceColors: {fileID: 11400000, guid: cefcd458c976ed1408dd32e34ad11503, type: 2}
   sortingGroup: {fileID: 5842020847675850070}
-  scaleContainer: {fileID: 365880809620908889}
-  relativeContainer: {fileID: 0}
+  relativeContainer: {fileID: 365880809620908889}
   cubes:
   - {fileID: 4025606931375158105}
   - {fileID: 8142969476012999099}

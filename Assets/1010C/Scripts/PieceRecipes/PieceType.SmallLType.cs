@@ -15,11 +15,6 @@ namespace _1010C.Scripts.PieceRecipes
             {
             }
 
-            public override float GetCubeSeparationAmount()
-            {
-                return 0.086f;
-            }
-
             private class SmallL1 : SmallLType
             {
                 public SmallL1() : base(5, "SmallL1")
