@@ -14,6 +14,7 @@ namespace _1010C.Scripts.Mono.View
         public SpriteRenderer spriteRenderer;
 
         private const float CubeDisappearDuration = 0.2f;
+        private const float MaxDisappearDurationDelay = 0.6f;
         private const float CubeBoardScale = 0.9f;
 
         protected override void AddListeners(GameEntity entity)
@@ -56,7 +57,7 @@ namespace _1010C.Scripts.Mono.View
 
             var maxDistance = Vector2.Distance(boardSize, touchPos);
             var cubeDistance = Vector2.Distance(cubePos, touchPos);
-            var delay = cubeDistance.Map(0, maxDistance, 0f, 0.7f);
+            var delay = cubeDistance.Map(0, maxDistance, 0f, MaxDisappearDurationDelay);
 
             //play the animation
             relativeContainer.DOKill();
