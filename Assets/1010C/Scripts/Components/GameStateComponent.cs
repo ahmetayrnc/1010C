@@ -9,7 +9,7 @@ namespace _1010C.Scripts.Components
         Over
     }
 
-    [Game, Unique, Event(EventTarget.Self)]
+    [Game, Unique, Event(EventTarget.Any)]
     public class GameStateComponent : IComponent
     {
         public GameState Value;

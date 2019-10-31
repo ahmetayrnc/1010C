@@ -32,14 +32,14 @@ public static class GameComponentsLookup {
     public const int Tile = 21;
     public const int View = 22;
     public const int AnyBoardSizeListener = 23;
-    public const int AnyScoreListener = 24;
-    public const int ColorListener = 25;
-    public const int CubePlacedListener = 26;
-    public const int CubeRemovedListener = 27;
-    public const int DestroyedListener = 28;
-    public const int DragListener = 29;
-    public const int DragRemovedListener = 30;
-    public const int GameStateListener = 31;
+    public const int AnyGameStateListener = 24;
+    public const int AnyScoreListener = 25;
+    public const int ColorListener = 26;
+    public const int CubePlacedListener = 27;
+    public const int CubeRemovedListener = 28;
+    public const int DestroyedListener = 29;
+    public const int DragListener = 30;
+    public const int DragRemovedListener = 31;
     public const int GridPositionListener = 32;
     public const int PositionListener = 33;
 
@@ -70,6 +70,7 @@ public static class GameComponentsLookup {
         "Tile",
         "View",
         "AnyBoardSizeListener",
+        "AnyGameStateListener",
         "AnyScoreListener",
         "ColorListener",
         "CubePlacedListener",
@@ -77,7 +78,6 @@ public static class GameComponentsLookup {
         "DestroyedListener",
         "DragListener",
         "DragRemovedListener",
-        "GameStateListener",
         "GridPositionListener",
         "PositionListener"
     };
@@ -107,6 +107,7 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),
         typeof(AnyBoardSizeListenerComponent),
+        typeof(AnyGameStateListenerComponent),
         typeof(AnyScoreListenerComponent),
         typeof(ColorListenerComponent),
         typeof(CubePlacedListenerComponent),
@@ -114,7 +115,6 @@ public static class GameComponentsLookup {
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
-        typeof(GameStateListenerComponent),
         typeof(GridPositionListenerComponent),
         typeof(PositionListenerComponent)
     };

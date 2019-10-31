@@ -66,6 +66,7 @@
                 <e p="PieceColors.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
+                <e p="GameOverUi.cs" t="Include" />
                 <e p="GenericUI.cs" t="Include" />
                 <e p="ScoreUi.cs" t="Include" />
               </e>
@@ -139,6 +140,7 @@
           <e p="Events" t="Include">
             <e p="Components" t="Include">
               <e p="AnyBoardSizeListenerComponent.cs" t="Include" />
+              <e p="AnyGameStateListenerComponent.cs" t="Include" />
               <e p="AnyScoreListenerComponent.cs" t="Include" />
               <e p="ColorListenerComponent.cs" t="Include" />
               <e p="CubePlacedListenerComponent.cs" t="Include" />
@@ -146,13 +148,13 @@
               <e p="DestroyedListenerComponent.cs" t="Include" />
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
-              <e p="GameStateListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
             </e>
             <e p="GameEventSystems.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IAnyBoardSizeListener.cs" t="Include" />
+              <e p="IAnyGameStateListener.cs" t="Include" />
               <e p="IAnyScoreListener.cs" t="Include" />
               <e p="IColorListener.cs" t="Include" />
               <e p="ICubePlacedListener.cs" t="Include" />
@@ -160,12 +162,12 @@
               <e p="IDestroyedListener.cs" t="Include" />
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
-              <e p="IGameStateListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="AnyBoardSizeEventSystem.cs" t="Include" />
+              <e p="AnyGameStateEventSystem.cs" t="Include" />
               <e p="AnyScoreEventSystem.cs" t="Include" />
               <e p="ColorEventSystem.cs" t="Include" />
               <e p="CubePlacedEventSystem.cs" t="Include" />
@@ -173,7 +175,6 @@
               <e p="DestroyedEventSystem.cs" t="Include" />
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
-              <e p="GameStateEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
             </e>
@@ -182,6 +183,7 @@
           <e p="Game" t="Include">
             <e p="Components" t="Include">
               <e p="GameAnyBoardSizeListenerComponent.cs" t="Include" />
+              <e p="GameAnyGameStateListenerComponent.cs" t="Include" />
               <e p="GameAnyScoreListenerComponent.cs" t="Include" />
               <e p="GameBoardSizeComponent.cs" t="Include" />
               <e p="GameColorComponent.cs" t="Include" />
@@ -198,7 +200,6 @@
               <e p="GameDragListenerComponent.cs" t="Include" />
               <e p="GameDragRemovedListenerComponent.cs" t="Include" />
               <e p="GameGameStateComponent.cs" t="Include" />
-              <e p="GameGameStateListenerComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
               <e p="GameGridPositionListenerComponent.cs" t="Include" />
               <e p="GameIdComponent.cs" t="Include" />

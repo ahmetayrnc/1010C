@@ -6,6 +6,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public interface IGameStateListener {
-    void OnGameState(GameEntity entity, _1010C.Scripts.Components.GameState value);
+public interface IAnyGameStateListener {
+    void OnAnyGameState(GameEntity entity, _1010C.Scripts.Components.GameState value);
 }

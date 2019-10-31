@@ -7,6 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 [Entitas.CodeGeneration.Attributes.DontGenerate(false)]
-public sealed class GameStateListenerComponent : Entitas.IComponent {
-    public System.Collections.Generic.List<IGameStateListener> value;
+public sealed class AnyGameStateListenerComponent : Entitas.IComponent {
+    public System.Collections.Generic.List<IAnyGameStateListener> value;
 }
