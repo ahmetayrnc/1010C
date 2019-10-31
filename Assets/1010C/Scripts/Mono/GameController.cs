@@ -45,8 +45,13 @@ namespace _1010C.Scripts.Mono
                     //remover
                     .Add(new CubeRemoverSystem(contexts))
 
-                    //
+                    //Refill
                     .Add(new ReserveFillSystem(contexts))
+
+                    //Game over checker
+                    .Add(new GameOverSystem(contexts))
+
+                    //
                     .Add(new AddViewSystem(contexts))
                     .Add(new GameEventSystems(contexts))
 

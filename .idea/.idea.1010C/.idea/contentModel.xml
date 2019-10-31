@@ -21,6 +21,7 @@
                 <e p="CubeStateComponent.cs" t="Include" />
               </e>
               <e p="DestroyedComponent.cs" t="Include" />
+              <e p="GameStateComponent.cs" t="Include" />
               <e p="GridPositionComponent.cs" t="Include" />
               <e p="IdComponent.cs" t="Include" />
               <e p="IdCountComponent.cs" t="Include" />
@@ -98,6 +99,7 @@
               <e p="CubeRemoverSystem.cs" t="Include" />
               <e p="DestroySystem.cs" t="Include" />
               <e p="DragSystem.cs" t="Include" />
+              <e p="GameOverSystem.cs" t="Include" />
               <e p="Initialize" t="Include">
                 <e p="InitializeBoardSystem.cs" t="Include" />
                 <e p="InitializeReserveSlotsSystem.cs" t="Include" />
@@ -144,6 +146,7 @@
               <e p="DestroyedListenerComponent.cs" t="Include" />
               <e p="DragListenerComponent.cs" t="Include" />
               <e p="DragRemovedListenerComponent.cs" t="Include" />
+              <e p="GameStateListenerComponent.cs" t="Include" />
               <e p="GridPositionListenerComponent.cs" t="Include" />
               <e p="PositionListenerComponent.cs" t="Include" />
             </e>
@@ -157,6 +160,7 @@
               <e p="IDestroyedListener.cs" t="Include" />
               <e p="IDragListener.cs" t="Include" />
               <e p="IDragRemovedListener.cs" t="Include" />
+              <e p="IGameStateListener.cs" t="Include" />
               <e p="IGridPositionListener.cs" t="Include" />
               <e p="IPositionListener.cs" t="Include" />
             </e>
@@ -169,6 +173,7 @@
               <e p="DestroyedEventSystem.cs" t="Include" />
               <e p="DragEventSystem.cs" t="Include" />
               <e p="DragRemovedEventSystem.cs" t="Include" />
+              <e p="GameStateEventSystem.cs" t="Include" />
               <e p="GridPositionEventSystem.cs" t="Include" />
               <e p="PositionEventSystem.cs" t="Include" />
             </e>
@@ -192,6 +197,8 @@
               <e p="GameDragComponent.cs" t="Include" />
               <e p="GameDragListenerComponent.cs" t="Include" />
               <e p="GameDragRemovedListenerComponent.cs" t="Include" />
+              <e p="GameGameStateComponent.cs" t="Include" />
+              <e p="GameGameStateListenerComponent.cs" t="Include" />
               <e p="GameGridPositionComponent.cs" t="Include" />
               <e p="GameGridPositionListenerComponent.cs" t="Include" />
               <e p="GameIdComponent.cs" t="Include" />

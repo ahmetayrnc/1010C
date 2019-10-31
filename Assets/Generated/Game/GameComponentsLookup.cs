@@ -15,33 +15,35 @@ public static class GameComponentsLookup {
     public const int CubeRemoved = 4;
     public const int CubeState = 5;
     public const int Destroyed = 6;
-    public const int GridPosition = 7;
-    public const int Id = 8;
-    public const int IdCount = 9;
-    public const int Color = 10;
-    public const int Drag = 11;
-    public const int Piece = 12;
-    public const int PieceInAir = 13;
-    public const int PieceType = 14;
-    public const int ReserveSlotForPiece = 15;
-    public const int Position = 16;
-    public const int PieceInReserve = 17;
-    public const int ReserveSlot = 18;
-    public const int Score = 19;
-    public const int Tile = 20;
-    public const int View = 21;
-    public const int AnyBoardSizeListener = 22;
-    public const int AnyScoreListener = 23;
-    public const int ColorListener = 24;
-    public const int CubePlacedListener = 25;
-    public const int CubeRemovedListener = 26;
-    public const int DestroyedListener = 27;
-    public const int DragListener = 28;
-    public const int DragRemovedListener = 29;
-    public const int GridPositionListener = 30;
-    public const int PositionListener = 31;
+    public const int GameState = 7;
+    public const int GridPosition = 8;
+    public const int Id = 9;
+    public const int IdCount = 10;
+    public const int Color = 11;
+    public const int Drag = 12;
+    public const int Piece = 13;
+    public const int PieceInAir = 14;
+    public const int PieceType = 15;
+    public const int ReserveSlotForPiece = 16;
+    public const int Position = 17;
+    public const int PieceInReserve = 18;
+    public const int ReserveSlot = 19;
+    public const int Score = 20;
+    public const int Tile = 21;
+    public const int View = 22;
+    public const int AnyBoardSizeListener = 23;
+    public const int AnyScoreListener = 24;
+    public const int ColorListener = 25;
+    public const int CubePlacedListener = 26;
+    public const int CubeRemovedListener = 27;
+    public const int DestroyedListener = 28;
+    public const int DragListener = 29;
+    public const int DragRemovedListener = 30;
+    public const int GameStateListener = 31;
+    public const int GridPositionListener = 32;
+    public const int PositionListener = 33;
 
-    public const int TotalComponents = 32;
+    public const int TotalComponents = 34;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -51,6 +53,7 @@ public static class GameComponentsLookup {
         "CubeRemoved",
         "CubeState",
         "Destroyed",
+        "GameState",
         "GridPosition",
         "Id",
         "IdCount",
@@ -74,6 +77,7 @@ public static class GameComponentsLookup {
         "DestroyedListener",
         "DragListener",
         "DragRemovedListener",
+        "GameStateListener",
         "GridPositionListener",
         "PositionListener"
     };
@@ -86,6 +90,7 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.Cube.CubeRemovedComponent),
         typeof(_1010C.Scripts.Components.Cube.CubeStateComponent),
         typeof(_1010C.Scripts.Components.DestroyedComponent),
+        typeof(_1010C.Scripts.Components.GameStateComponent),
         typeof(_1010C.Scripts.Components.GridPositionComponent),
         typeof(_1010C.Scripts.Components.IdComponent),
         typeof(_1010C.Scripts.Components.IdCountComponent),
@@ -109,6 +114,7 @@ public static class GameComponentsLookup {
         typeof(DestroyedListenerComponent),
         typeof(DragListenerComponent),
         typeof(DragRemovedListenerComponent),
+        typeof(GameStateListenerComponent),
         typeof(GridPositionListenerComponent),
         typeof(PositionListenerComponent)
     };
