@@ -28,22 +28,24 @@ public static class GameComponentsLookup {
     public const int Position = 17;
     public const int PieceInReserve = 18;
     public const int ReserveSlot = 19;
-    public const int Score = 20;
-    public const int Tile = 21;
-    public const int View = 22;
-    public const int AnyBoardSizeListener = 23;
-    public const int AnyGameStateListener = 24;
-    public const int AnyScoreListener = 25;
-    public const int ColorListener = 26;
-    public const int CubePlacedListener = 27;
-    public const int CubeRemovedListener = 28;
-    public const int DestroyedListener = 29;
-    public const int DragListener = 30;
-    public const int DragRemovedListener = 31;
-    public const int GridPositionListener = 32;
-    public const int PositionListener = 33;
+    public const int BestScore = 20;
+    public const int Score = 21;
+    public const int Tile = 22;
+    public const int View = 23;
+    public const int AnyBestScoreListener = 24;
+    public const int AnyBoardSizeListener = 25;
+    public const int AnyGameStateListener = 26;
+    public const int AnyScoreListener = 27;
+    public const int ColorListener = 28;
+    public const int CubePlacedListener = 29;
+    public const int CubeRemovedListener = 30;
+    public const int DestroyedListener = 31;
+    public const int DragListener = 32;
+    public const int DragRemovedListener = 33;
+    public const int GridPositionListener = 34;
+    public const int PositionListener = 35;
 
-    public const int TotalComponents = 34;
+    public const int TotalComponents = 36;
 
     public static readonly string[] componentNames = {
         "BoardSize",
@@ -66,9 +68,11 @@ public static class GameComponentsLookup {
         "Position",
         "PieceInReserve",
         "ReserveSlot",
+        "BestScore",
         "Score",
         "Tile",
         "View",
+        "AnyBestScoreListener",
         "AnyBoardSizeListener",
         "AnyGameStateListener",
         "AnyScoreListener",
@@ -103,9 +107,11 @@ public static class GameComponentsLookup {
         typeof(_1010C.Scripts.Components.PositionComponent),
         typeof(_1010C.Scripts.Components.Reserve.PieceInReserveComponent),
         typeof(_1010C.Scripts.Components.Reserve.ReserveSlotComponent),
+        typeof(_1010C.Scripts.Components.Score.BestScoreComponent),
         typeof(_1010C.Scripts.Components.Score.ScoreComponent),
         typeof(_1010C.Scripts.Components.Tile.TileComponent),
         typeof(_1010C.Scripts.Components.ViewComponent),
+        typeof(AnyBestScoreListenerComponent),
         typeof(AnyBoardSizeListenerComponent),
         typeof(AnyGameStateListenerComponent),
         typeof(AnyScoreListenerComponent),

@@ -7,7 +7,7 @@ namespace _1010C.Scripts.Mono.UI
     {
         private List<GameEntity> _eventEntities = new List<GameEntity>();
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
             SubscribeToUiResetEvent();
             AddListeners();

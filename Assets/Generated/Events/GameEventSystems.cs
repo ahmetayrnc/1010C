@@ -9,6 +9,7 @@
 public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
+        Add(new AnyBestScoreEventSystem(contexts)); // priority: 0
         Add(new AnyBoardSizeEventSystem(contexts)); // priority: 0
         Add(new ColorEventSystem(contexts)); // priority: 0
         Add(new CubePlacedEventSystem(contexts)); // priority: 0
