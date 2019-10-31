@@ -1,4 +1,5 @@
-﻿using Entitas;
+﻿using _1010C.Scripts.Components;
+using Entitas;
 using UnityEngine;
 
 namespace _1010C.Scripts.Systems.Initialize
@@ -17,6 +18,7 @@ namespace _1010C.Scripts.Systems.Initialize
             _contexts.game.SetBoardSize(new Vector2Int(10, 10));
             _contexts.game.SetIdCount(0);
             _contexts.game.SetScore(0);
+            _contexts.game.SetGameState(GameState.Playing);
         }
     }
 }

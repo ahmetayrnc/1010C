@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22ca9f4-e7fb-4051-ac40-5a8b1afde9b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameOverUi.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameOverUi.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/CubeBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/CubeBig.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Home.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Restart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Restart.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/PauseUi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/PauseUi.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Play.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Rectangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/1010C/Sprites/Rectangle.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.1010C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/GameStateComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Components/GameStateComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameplayUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameplayUi.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,13 +74,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/CubeRemoverSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Misc/EnumarableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/PauseUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Misc/Enumaration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.ThreePieceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Piece/PieceComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Systems/GameOverSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.TwoPieceType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/ScoreUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameplayUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Components/Board/ReserveSlotPositionsComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Mono/ScriptableObjects/PieceColors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1010C/Scripts/Services/ScoreService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,9 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GamePieceColorComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Camera/CameraScaler.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Score/ScoreComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/PieceRecipes/PieceType.OnePieceType.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/View.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/Initialize/InitializeReserveSlotsSystem.cs" />
@@ -149,9 +149,12 @@
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/Cube/CubeStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/View/CubeView.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/GameStateComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Systems/GameOverSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameOverUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Components/GameStateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/PauseUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/UI/GameplayUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/1010C/Scripts/Mono/Input/InputEmitter.cs" />
       </list>
     </option>
   </component>
@@ -215,7 +218,7 @@
       <workItem from="1572345055398" duration="16087000" />
       <workItem from="1572365286768" duration="1162000" />
       <workItem from="1572379010453" duration="4096000" />
-      <workItem from="1572543581173" duration="4771000" />
+      <workItem from="1572543581173" duration="6467000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,9 @@
-﻿using TMPro;
+﻿using _1010C.Scripts.Components;
+using TMPro;
 
 namespace _1010C.Scripts.Mono.UI
 {
-    public class ScoreUi : GenericUi, IAnyScoreListener
+    public class GameplayUi : GenericUi, IAnyScoreListener
     {
         public TextMeshProUGUI scoreText;
 
@@ -18,6 +19,11 @@ namespace _1010C.Scripts.Mono.UI
         public void OnAnyScore(GameEntity entity, int value)
         {
             scoreText.text = value.ToString();
+        }
+
+        public void PauseGame()
+        {
+            Contexts.sharedInstance.game.ReplaceGameState(GameState.Paused);
         }
     }
 }

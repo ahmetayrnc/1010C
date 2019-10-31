@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _1010C.Scripts.Components;
+using UnityEngine;
 
 namespace _1010C.Scripts.Mono.Input
 {
@@ -18,6 +19,8 @@ namespace _1010C.Scripts.Mono.Input
         // Update is called once per frame
         private void Update()
         {
+            if (_contexts.game.gameState.Value != GameState.Playing) return;
+
             EmitInput();
         }
 

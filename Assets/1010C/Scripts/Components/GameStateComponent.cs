@@ -6,6 +6,7 @@ namespace _1010C.Scripts.Components
     public enum GameState
     {
         Playing,
+        Paused,
         Over
     }
 
